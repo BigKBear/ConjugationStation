@@ -148,6 +148,25 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[13] = "Lv3Q4VERB";
         verb[14] = "Lv3Q5VERB";
 
+        String[] image = new String[15];
+        image[0] = "Assister ";
+        image[1] = "Lv1Q2Image";
+        image[2] = "Lv1Q3Image";
+        image[3] = "Lv1Q4Image";
+        image[4] = "Lv1Q5Image";
+
+        image[5] = "Lv2Q1Image";
+        image[6] = "Lv2Q2Image";
+        image[7] = "Lv2Q3Image";
+        image[8] = "Lv2Q4Image";
+        image[9] = "Lv2Q5Image";
+
+        image[10] = "Lv3Q1Image";
+        image[11] = "Lv3Q2Image";
+        image[12] = "Lv3Q3Image";
+        image[13] = "Lv3Q4Image";
+        image[14] = "Lv3Q5Image";
+
         String[][] questionAnswers = new String[51][4];
         questionAnswers[0][0] = "attend";
         questionAnswers[0][1] = "attendent";
@@ -393,7 +412,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }).setCancelable(false)
                 .show();
-
     }
 
     @Override
