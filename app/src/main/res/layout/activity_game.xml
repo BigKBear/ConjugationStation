@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.globaltelecomunicationinc.conjugationstation.GameActivity">
+
+    <TextView
+        android:id="@+id/tvLevelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Level Name"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="#000000"
+        android:id="@+id/tvScore"
+        android:layout_alignBottom="@+id/tvLevelName"
+        android:layout_alignEnd="@+id/tvLevelName" />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_below="@+id/tvVerb"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="27dp"
+        android:layout_marginStart="29dp"
+        android:text="Mettre en Pause" />
+
+    <Button
+        android:id="@+id/btnQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnPause"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="25dp"
+        android:text="Quitter" />
+
+    <ScrollView
+        android:id="@+id/svAns"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvQuestion"
+        android:fillViewport="false">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvWrong1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/tvWrong2"
+                android:layout_marginTop="60dp"
+                android:text="Show correct answer 1"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tvWrong2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Show correct answer 2"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tvWrong3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                android:text="Show correct answer 3"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tvWrong4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:text="Show correct answer 4"
+                android:alpha="0" />
+
+            <TextView
+                android:id="@+id/tvWrong5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="34dp"
+                android:text="Show correct answer 5"
+                android:alpha="0" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tvQuestion"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnAns1"
+            android:layout_width="0dp"
+            style="android:buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Ans1"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAns2"
+            android:layout_width="0dp"
+            style="android:buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Ans2"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btnAns3"
+            android:layout_width="0dp"
+            style="android:buttonBarButtonStyle"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:text="Ans3"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct!"
+        android:id="@+id/tvResult"
+        android:textSize="40sp"
+        android:layout_above="@+id/btnPause"
+        android:layout_centerHorizontal="true"
+        android:alpha="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textColor="#000000"
+        android:id="@+id/tvScoreLabel"
+        android:layout_alignTop="@+id/tvLevelName"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verb"
+        android:textSize="15sp"
+        android:textColor="#000000"
+        android:id="@+id/tvVerb"
+        android:layout_below="@+id/tvScore"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
