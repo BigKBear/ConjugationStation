@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 //import android.widget.EditText;
 //import android.widget.ImageView;
+import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,6 +29,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     //int level = 0;//this keeps track of what level the user is at this will be stored in future to shared preferences
     int attempts = 0;
     int leveldone = 0;
+    RelativeLayout relativeLayout;
 
     //Question theQuestion;
     //Level theLevel;
@@ -46,6 +48,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion = (TextView) findViewById(R.id.tvQuestion);
         tvResult = (TextView) findViewById(R.id.tvResult);
         tvScore = (TextView) findViewById(R.id.tvScore);
+        relativeLayout = (RelativeLayout)findViewById(R.id.relativeLayout);
         tvWrong1 = (TextView) findViewById(R.id.tvWrong1);
         tvWrong2 = (TextView) findViewById(R.id.tvWrong2);
         tvWrong3 = (TextView) findViewById(R.id.tvWrong3);
@@ -349,6 +352,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
+    public void onBackPressed() {
+        moveTaskToBack(true);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
@@ -356,8 +364,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         prefs = this.getSharedPreferences("com.globaltelecomunicationinc.conjugationstation", MODE_PRIVATE);
         initViews();
         setListeners();
+        relativeLayout.getBackground().setAlpha(120);
         theUser = new User();
         theUser.score = prefs.getInt("score", -1);
+
         //theUser.level.ID = prefs.getInt("level",-1);
 
         setUpAllQuestions();
@@ -427,6 +437,22 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         } else {
             setUpAllQuestions();
             setUpAllLevels();
+            //Start level 2
+            if(prefs.getInt("level", -1) == 0){
+                Toast.makeText(getApplicationContext(), "Last time you scored \n" + prefs.getInt("levelOneOver",-1) + " on level one", Toast.LENGTH_SHORT).show();
+            }else if(prefs.getInt("level", -1) == 1){
+                Toast.makeText(getApplicationContext(), "Last time you scored \n" + prefs.getInt("levelTwoOver",-1) + " on level two", Toast.LENGTH_SHORT).show();
+            }else if(prefs.getInt("level", -1) == 2){
+                Toast.makeText(getApplicationContext(), "Last time you scored \n" + prefs.getInt("levelThreeOver",-1) + " on level two", Toast.LENGTH_SHORT).show();
+            }else{
+
+            }
+
+
+
+
+            prefs.getInt("level", -1);
+            leveldone = level1Score = level2Score = level3Score = 0;
             QuestionOneSetup();
             //setupGame(prefs.getInt("level",-1), prefs.getInt("question",-1));
         }
