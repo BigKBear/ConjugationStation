@@ -108,7 +108,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[11] = "Lv3Q2A2";
         correctAnswers[12] = "Lv3Q3A3";
         correctAnswers[13] = "Lv3Q4A1";
-        correctAnswers[14] = "Lv3Q5A3";
+        correctAnswers[14] = "Lv3Q5A2";
 
         String[] shownAnswer = new String[15];
         shownAnswer[0] = "Jean attend le bus pour aller à l'école.";
@@ -1145,7 +1145,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                         tvWrong.setText("Q5 Correct");
                         level3Score++;
-                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                        tvScore.setText(String.format("%s%s", String.valueOf(level3Score), getString(R.string.scoreValue)));
                         if(level3Score==5){
                             //Start level 2
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
@@ -1174,7 +1174,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setText("Q5 Correct");
                         level3Score++;
                         leveldone = 10;//to start Q2L1
-                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                        tvScore.setText(String.format("%s%s", String.valueOf(level3Score), getString(R.string.scoreValue)));
                         if(level3Score==5){
                             //Start level 2
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
@@ -1194,7 +1194,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setVisibility(View.VISIBLE);
                         tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                         tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
-                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                        tvScore.setText(String.format("%s%s", String.valueOf(level3Score), getString(R.string.scoreValue)));
                         leveldone = 10;//to start Q2L1
                         prefs.edit().putInt("levelThreeOver", level3Score).apply();
                         prefs.edit().putInt("level", 2).apply();
