@@ -453,7 +453,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         setListeners();
 //        tvScore.setText(String.valueOf(level1Score) + "/5");
         Log.i("level ", prefs.getInt("level", -1) + " Level Done  " + String.valueOf(leveldone));
-        // Log.i("scores: ", " level1 " + String.valueOf(level1Score) + " level2 " + String.valueOf(level2Score) + " level3 " + String.valueOf(level3Score));
+        //Log.i("scores: ", " level1 " + String.valueOf(level1Score) + " level2 " + String.valueOf(level2Score) + " level3 " + String.valueOf(level3Score));
         if ((level1Score == 5) && (level2Score == 5) && (level3Score == 5)) {
             gameOver("Game Finished", "You have read over the game!", "Play Again", "Exit");
         }else if ((prefs.getInt("level", -1) == 0) && (leveldone < 10) && ((level1Score < 5))) {
@@ -643,6 +643,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             //Start level 2
                             prefs.edit().putInt("levelOneOver", level1Score).apply();
                             prefs.edit().putInt("level", 1).apply();
+                            leveldone=0;
                             QuestionOneSetup();
                         }else{
                             //game over
@@ -671,6 +672,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             //Start level 2
                             prefs.edit().putInt("levelOneOver", level1Score).apply();
                             prefs.edit().putInt("level", 1).apply();
+                            leveldone = 0;
                             QuestionOneSetup();
                         }else{
                             //game over
@@ -715,6 +717,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
             //runLevelOne(leveldone, userAnswer);
             switch(leveldone) {
                 case 0:
+                    Toast.makeText(getApplicationContext(), "L2 Q1 Ans " + levelData[prefs.getInt("level", -1)].one.correctAnswer, Toast.LENGTH_SHORT).show();
                     if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                         //go to next question
                         Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
@@ -729,6 +732,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvScore.setText(String.valueOf(level2Score) + "/5");
                     } else {
                         Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "L2 Q1 Ans " + levelData[prefs.getInt("level", -1)].one.correctAnswer, Toast.LENGTH_SHORT).show();
                         leveldone++;
                     }
                     break;
@@ -855,7 +859,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                         leveldone++;
                     }
-                    Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
                     break;
                 case 7:
                     if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
@@ -893,13 +896,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                         if(level2Score==5){
                             //Start level 2
-                            prefs.edit().putInt("levelOneOver", level2Score).apply();
-                            prefs.edit().putInt("level", 1).apply();
+                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
+                            leveldone=0;
                             QuestionOneSetup();
                         }else{
                             //game over
-                            prefs.edit().putInt("levelOneOver", level2Score).apply();
-                            prefs.edit().putInt("level", 0).apply();
+                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
                             leveldone = 0;
                             gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                         }
@@ -921,13 +925,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvScore.setText(String.valueOf(level2Score) + "/5");
                         if(level2Score==5){
                             //Start level 2
-                            prefs.edit().putInt("levelOneOver", level2Score).apply();
-                            prefs.edit().putInt("level", 1).apply();
+                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
+                            leveldone = 0;
                             QuestionOneSetup();
                         }else{
                             //game over
-                            prefs.edit().putInt("levelOneOver", level2Score).apply();
-                            prefs.edit().putInt("level", 0).apply();
+                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
                             leveldone = 0;
                             gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                         }
@@ -939,8 +944,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                         tvScore.setText(String.valueOf(level2Score) + "/5");
                         leveldone = 10;//to start Q2L1
-                        prefs.edit().putInt("levelOneOver", level2Score).apply();
-                        prefs.edit().putInt("level", 0).apply();
+                        prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                        prefs.edit().putInt("level", 1).apply();
                         leveldone = 0;
                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
@@ -948,13 +953,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 case 10:
                     if (level2Score == 5) {
                         //Start level 2
-                        prefs.edit().putInt("levelOneOver", level2Score).apply();
-                        prefs.edit().putInt("level", 1).apply();
+                        prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                        prefs.edit().putInt("level", 2).apply();
                         QuestionOneSetup();
                     } else {
                         //game over
-                        prefs.edit().putInt("levelOneOver", level2Score).apply();
-                        prefs.edit().putInt("level", 0).apply();
+                        prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                        prefs.edit().putInt("level", 1).apply();
                         leveldone = 0;
                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
@@ -1107,7 +1112,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                         leveldone++;
                     }
-                    Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
                     break;
                 case 7:
                     if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
@@ -1145,13 +1149,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                         if(level3Score==5){
                             //Start level 2
-                            prefs.edit().putInt("levelOneOver", level3Score).apply();
-                            prefs.edit().putInt("level", 1).apply();
+                            prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
+                            leveldone=0;
                             QuestionOneSetup();
                         }else{
                             //game over
-                            prefs.edit().putInt("levelOneOver", level3Score).apply();
-                            prefs.edit().putInt("level", 0).apply();
+                            prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
                             leveldone = 0;
                             gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                         }
@@ -1173,13 +1178,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvScore.setText(String.valueOf(level3Score) + "/5");
                         if(level3Score==5){
                             //Start level 2
-                            prefs.edit().putInt("levelOneOver", level3Score).apply();
-                            prefs.edit().putInt("level", 1).apply();
+                            prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
+                            leveldone = 0;
                             QuestionOneSetup();
                         }else{
                             //game over
-                            prefs.edit().putInt("levelOneOver", level3Score).apply();
-                            prefs.edit().putInt("level", 0).apply();
+                            prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                            prefs.edit().putInt("level", 2).apply();
                             leveldone = 0;
                             gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                         }
@@ -1191,22 +1197,22 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                         tvScore.setText(String.valueOf(level3Score) + "/5");
                         leveldone = 10;//to start Q2L1
-                        prefs.edit().putInt("levelOneOver", level3Score).apply();
-                        prefs.edit().putInt("level", 0).apply();
+                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                        prefs.edit().putInt("level", 2).apply();
                         leveldone = 0;
                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
                     break;
                 case 10:
                     if (level3Score == 5) {
-                        //Start level 2
-                        prefs.edit().putInt("levelOneOver", level3Score).apply();
-                        prefs.edit().putInt("level", 1).apply();
+                        //Start level 3 Again
+                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                        prefs.edit().putInt("level", 2).apply();
                         QuestionOneSetup();
                     } else {
                         //game over
-                        prefs.edit().putInt("levelOneOver", level3Score).apply();
-                        prefs.edit().putInt("level", 0).apply();
+                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                        prefs.edit().putInt("level", 2).apply();
                         leveldone = 0;
                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
