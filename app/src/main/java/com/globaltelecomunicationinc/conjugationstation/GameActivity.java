@@ -708,704 +708,511 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }
                     break;
             }
+        }else if ((level2Score < 5) && (prefs.getInt("level", -1) == 1)){
+            tvScore.setText(String.valueOf(level2Score) + "/5");
+            //level tries to keep track of when a level needst to be retried
+            //check levelscores
+            //runLevelOne(leveldone, userAnswer);
+            switch(leveldone) {
+                case 0:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q1 Correct");
+                        level2Score++;
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 1:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q1 Correct");
+                        level2Score++;
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        //tvScore.setText(String.valueOf(level2Score) + "/5");
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    }
+                    break;
+                case 2:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q2 Correct");
+                        level2Score++;
+                        attempts = 0;
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 3:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q2 Correct");
+                        level2Score++;
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q2 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    }
+                    break;
+                case 4:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q3 Correct");
+                        level2Score++;
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 5:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q3 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q3 Correct");
+                        level2Score++;
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q3 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    }
+                    break;
+                case 6:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q4 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q4 Correct");
+                        level2Score++;
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
+                    break;
+                case 7:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q4 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q4 Correct");
+                        level2Score++;
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q4 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                    }
+                    break;
+                case 8:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q5 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q5 Correct");
+                        level2Score++;
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
 
-        }/*else if ((level2Score < 5) && (prefs.getInt("level", -1) == 1)){
-            runLevelTwo(leveldone, userAnswer);
-            //leveldone = 0;
+                        if(level2Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level2Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level2Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 9:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q5 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q5 Correct");
+                        level2Score++;
+                        leveldone = 10;//to start Q2L1
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                        if(level2Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level2Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level2Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q5 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                        tvScore.setText(String.valueOf(level2Score) + "/5");
+                        leveldone = 10;//to start Q2L1
+                        prefs.edit().putInt("levelOneOver", level2Score).apply();
+                        prefs.edit().putInt("level", 0).apply();
+                        leveldone = 0;
+                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                    }
+                    break;
+                case 10:
+                    if (level2Score == 5) {
+                        //Start level 2
+                        prefs.edit().putInt("levelOneOver", level2Score).apply();
+                        prefs.edit().putInt("level", 1).apply();
+                        QuestionOneSetup();
+                    } else {
+                        //game over
+                        prefs.edit().putInt("levelOneOver", level2Score).apply();
+                        prefs.edit().putInt("level", 0).apply();
+                        leveldone = 0;
+                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                    }
+                    break;
+            }
         }else if ((level3Score < 5) && (prefs.getInt("level", -1) == 2)) {
-            runLevelThree(leveldone, userAnswer);
-            //leveldone = 0;
-        }*/
-    }
+            tvScore.setText(String.valueOf(level3Score) + "/5");
+            //level tries to keep track of when a level needst to be retried
+            //check levelscores
+            //runLevelOne(leveldone, userAnswer);
+            switch(leveldone) {
+                case 0:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q1 Correct");
+                        level3Score++;
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 1:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q1 Correct");
+                        level3Score++;
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        //tvScore.setText(String.valueOf(level3Score) + "/5");
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                        attempts = 0;
+                        leveldone = 2;//to start Q2L1
+                        QuestionTwoSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    }
+                    break;
+                case 2:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q2 Correct");
+                        level3Score++;
+                        attempts = 0;
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 3:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q2 Correct");
+                        level3Score++;
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q2 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                        leveldone = 4;//to start Q2L1
+                        QuestionThreeSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    }
+                    break;
+                case 4:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q3 Correct");
+                        level3Score++;
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 5:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q3 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q3 Correct");
+                        level3Score++;
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q3 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                        leveldone = 6;//to start Q2L1
+                        QuestionFourSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    }
+                    break;
+                case 6:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q4 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q4 Correct");
+                        level3Score++;
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
+                    break;
+                case 7:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q4 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q4 Correct");
+                        level3Score++;
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q4 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                        leveldone = 8;//to start Q2L1
+                        QuestionFiveSetup();
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                    }
+                    break;
+                case 8:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q5 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q5 Correct");
+                        level3Score++;
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
 
-    public void runLevelOne(int leveldone, String userAnswer){
-        tvScore.setText(String.valueOf(level1Score) + "/5");
-        switch(leveldone){
-            case 0:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 1:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }
-                break;
-            case 2:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 3:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }
-                break;
-            case 4:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 5:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }
-                break;
-            case 6:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
-                break;
-            case 7:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
-                    attempts = 0;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }
-                break;
-            case 8:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    attempts = 0;
-                    leveldone = 10;//to start Q2L1
-                    if(level1Score==5){
-                        //Start level 2
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
-                        prefs.edit().putInt("level", 1).apply();
-                        QuestionOneSetup();
-                    }else{
-                        //game over
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        if(level3Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level3Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level3Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                        leveldone++;
+                    }
+                    break;
+                case 9:
+                    if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
+                        //go to next question
+                        Toast.makeText(getApplicationContext(), "Q5 Correct", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText("Q5 Correct");
+                        level3Score++;
+                        leveldone = 10;//to start Q2L1
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                        if(level3Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level3Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level3Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
+                    } else {
+                        Toast.makeText(getApplicationContext(), "Q5 Wrong", Toast.LENGTH_SHORT).show();
+                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
+                        tvWrong.setVisibility(View.VISIBLE);
+                        tvWrong.setGravity(Gravity.CENTER_VERTICAL);
+                        tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                        tvScore.setText(String.valueOf(level3Score) + "/5");
+                        leveldone = 10;//to start Q2L1
+                        prefs.edit().putInt("levelOneOver", level3Score).apply();
                         prefs.edit().putInt("level", 0).apply();
                         leveldone = 0;
-                        gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 9:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level1Score++;
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                    if(level1Score==5){
+                    break;
+                case 10:
+                    if (level3Score == 5) {
                         //Start level 2
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("levelOneOver", level3Score).apply();
                         prefs.edit().putInt("level", 1).apply();
                         QuestionOneSetup();
-                    }else{
+                    } else {
                         //game over
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("levelOneOver", level3Score).apply();
                         prefs.edit().putInt("level", 0).apply();
                         leveldone = 0;
-                        gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                     }
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                }
-                break;
-            case 10:
-                if(level1Score==5){
-                    //Start level 2
-                    prefs.edit().putInt("levelOneOver", level1Score).apply();
-                    prefs.edit().putInt("level", 1).apply();
-                    QuestionOneSetup();
-                }else{
-                    //game over
-                    prefs.edit().putInt("levelOneOver", level1Score).apply();
-                    prefs.edit().putInt("level", 0).apply();
-                    leveldone = 0;
-                    gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
-                }
-                break;
-            default:
-                prefs.edit().putInt("level", 1).apply();
-                Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
-                //update score
-                tvScore.setText(String.valueOf(level1Score) + "/5");
-                //increase the question count
-                leveldone++;
-                break;
+                    break;
+            }
         }
-    }
-
-    public void runLevelTwo(int leveldone, String userAnswer){
-        tvScore.setText(String.valueOf(level2Score) + "/5");
-        switch(leveldone){
-            case 0:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 1:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }
-                break;
-            case 2:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 3:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }
-                break;
-            case 4:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 5:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }
-                break;
-            case 6:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
-                break;
-            case 7:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
-                    attempts = 0;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }
-                break;
-            case 8:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    attempts = 0;
-                    leveldone = 10;//to start Q2L1
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 9:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level2Score++;
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                }
-                break;
-            case 10:
-                if(level2Score==5){
-                    leveldone=0;
-                    //Start level 2
-                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                    prefs.edit().putInt("level", 2).apply();
-                    QuestionOneSetup();
-                }else{
-                    //game over
-                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                    prefs.edit().putInt("level", 1).apply();
-                    leveldone = 0;
-                    gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
-                }
-                break;
-            default:
-                prefs.edit().putInt("level", 1).apply();
-                Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
-                //update score
-                tvScore.setText(String.valueOf(level2Score) + "/5");
-                //increase the question count
-                leveldone++;
-                break;
-        }
-    }
-
-    public void runLevelThree(int leveldone, String userAnswer){
-        tvScore.setText(String.valueOf(level3Score) + "/5");
-        switch(leveldone){
-            case 0:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 1:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
-                    attempts = 0;
-                    leveldone = 2;//to start Q2L1
-                    QuestionTwoSetup();
-                }
-                break;
-            case 2:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 3:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
-                    attempts = 0;
-                    leveldone = 4;//to start Q2L1
-                    QuestionThreeSetup();
-                }
-                break;
-            case 4:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 5:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
-                    leveldone = 6;//to start Q2L1
-                    QuestionFourSetup();
-                }
-                break;
-            case 6:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFourSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                Log.i("Attempts ", String.valueOf(attempts) + " Level Done  " + String.valueOf(leveldone));
-                break;
-            case 7:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
-                    attempts = 0;
-                    leveldone = 8;//to start Q2L1
-                    QuestionFiveSetup();
-                }
-                break;
-            case 8:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    attempts = 0;
-                    leveldone = 10;//to start Q2L1
-                }else {
-                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                    leveldone++;
-                }
-                break;
-            case 9:
-                if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
-                    //go to next question
-                    Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
-                    tvWrong.setVisibility(View.VISIBLE);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText("Correct");
-                    level3Score++;
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                }else {
-                    Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
-                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
-                    tvWrong.animate().alpha(1f).setDuration(1000);
-                    tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
-                    leveldone = 10;//to start Q2L1
-                    //QuestionFiveSetup();
-                }
-                break;
-            case 10:
-                if(level3Score==5){
-                    leveldone=0;
-                    //Start level 2
-                    prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                    prefs.edit().putInt("level", 2).apply();
-                    gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
-                }else{
-                    //game over
-                    prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                    prefs.edit().putInt("level", 0).apply();
-                    leveldone = 0;
-                    gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
-                }
-                break;
-            default:
-                prefs.edit().putInt("level", 1).apply();
-                Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
-                //update score
-                tvScore.setText(String.valueOf(level3Score) + "/5");
-                //increase the question count
-                leveldone++;
-                break;
-        }
-        return;
     }
 
     @Override
