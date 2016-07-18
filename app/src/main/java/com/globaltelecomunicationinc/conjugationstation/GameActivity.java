@@ -127,7 +127,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[11] = "Lv3Q2A2";
         shownAnswer[12] = "Lv3Q3A3";
         shownAnswer[13] = "Lv3Q4A1";
-        shownAnswer[14] = "Lv3Q5A3";
+        shownAnswer[14] = "Lv3Q5A2";
 
         String[] verb = new String[15];
         verb[0] = "Assister ";
