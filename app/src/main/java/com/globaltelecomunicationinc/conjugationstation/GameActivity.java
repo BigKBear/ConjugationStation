@@ -638,10 +638,19 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setText("Q5 Correct");
                         level1Score++;
                         tvScore.setText(String.valueOf(level1Score) + "/5");
-                        //Start level 2
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
-                        prefs.edit().putInt("level", 1).apply();
-                        QuestionOneSetup();
+
+                        if(level1Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level1Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level1Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
                     } else {
                         Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                         leveldone++;
@@ -658,10 +667,18 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         level1Score++;
                         leveldone = 10;//to start Q2L1
                         tvScore.setText(String.valueOf(level1Score) + "/5");
-                        //Start level 2
-                        prefs.edit().putInt("levelOneOver", level1Score).apply();
-                        prefs.edit().putInt("level", 1).apply();
-                        QuestionOneSetup();
+                        if(level1Score==5){
+                            //Start level 2
+                            prefs.edit().putInt("levelOneOver", level1Score).apply();
+                            prefs.edit().putInt("level", 1).apply();
+                            QuestionOneSetup();
+                        }else{
+                            //game over
+                            prefs.edit().putInt("levelOneOver", level1Score).apply();
+                            prefs.edit().putInt("level", 0).apply();
+                            leveldone = 0;
+                            gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                        }
                     } else {
                         Toast.makeText(getApplicationContext(), "Q5 Wrong", Toast.LENGTH_SHORT).show();
                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
@@ -871,6 +888,18 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     level1Score++;
                     attempts = 0;
                     leveldone = 10;//to start Q2L1
+                    if(level1Score==5){
+                        //Start level 2
+                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("level", 1).apply();
+                        QuestionOneSetup();
+                    }else{
+                        //game over
+                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("level", 0).apply();
+                        leveldone = 0;
+                        gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                    }
                 }else {
                     Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                     leveldone++;
@@ -887,6 +916,18 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     level1Score++;
                     leveldone = 10;//to start Q2L1
                     //QuestionFiveSetup();
+                    if(level1Score==5){
+                        //Start level 2
+                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("level", 1).apply();
+                        QuestionOneSetup();
+                    }else{
+                        //game over
+                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                        prefs.edit().putInt("level", 0).apply();
+                        leveldone = 0;
+                        gameOver(levelData[prefs.getInt("level", -1)].name +"\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                    }
                 }else {
                     Toast.makeText(getApplicationContext(), "Wrong", Toast.LENGTH_SHORT).show();
                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
