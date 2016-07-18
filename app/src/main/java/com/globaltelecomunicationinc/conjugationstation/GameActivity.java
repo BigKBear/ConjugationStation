@@ -1146,13 +1146,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         tvWrong.setText("Q5 Correct");
                         level3Score++;
                         tvScore.setText(String.valueOf(level3Score) + "/5");
-
                         if(level3Score==5){
                             //Start level 2
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
                             prefs.edit().putInt("level", 2).apply();
                             leveldone=0;
-                            QuestionOneSetup();
+                            gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
                         }else{
                             //game over
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
@@ -1181,7 +1180,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
                             prefs.edit().putInt("level", 2).apply();
                             leveldone = 0;
-                            QuestionOneSetup();
+                            gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
                         }else{
                             //game over
                             prefs.edit().putInt("levelThreeOver", level3Score).apply();
