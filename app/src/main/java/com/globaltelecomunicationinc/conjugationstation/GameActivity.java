@@ -368,8 +368,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         theUser = new User();
         theUser.score = prefs.getInt("score", -1);
 
-        //theUser.level.ID = prefs.getInt("level",-1);
-
         setUpAllQuestions();
         setUpAllLevels();
         resetGame();

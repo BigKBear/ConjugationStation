@@ -15,6 +15,7 @@ public class Question {
     String option2;
     String option3;
     String verb;
+    String bgpicture;
 
     String shownAnswer;
 
@@ -30,9 +31,10 @@ public class Question {
         correctAnswer = "";
         shownAnswer = "";
         verb = "";
+        bgpicture = "";
     }
 
-    public Question(int suppliedAttempts, String suppliedQuestion, String suppliedoption1, String suppliedoption2, String suppliedoption3, String suppliedCorrectAnswer, String suppliedShownAnswer, String suppliedVerb) {
+    public Question(int suppliedAttempts, String suppliedQuestion, String suppliedoption1, String suppliedoption2, String suppliedoption3, String suppliedCorrectAnswer, String suppliedShownAnswer, String suppliedVerb, String suppliedBgPicture) {
         attempts = suppliedAttempts;
         sentence = suppliedQuestion;
         option1 = suppliedoption1;
@@ -41,6 +43,7 @@ public class Question {
         correctAnswer = suppliedCorrectAnswer;
         shownAnswer = suppliedShownAnswer;
         verb = suppliedVerb;
+        bgpicture = suppliedBgPicture;
     }
 
 }
