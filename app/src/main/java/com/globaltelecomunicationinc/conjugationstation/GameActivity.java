@@ -75,94 +75,254 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void setUpAllQuestions() {
-        String[] LevelQuestions = new String[15];
+        String[] LevelQuestions = new String[50];
         LevelQuestions[0] = "Jean _____ le bus pour aller à l'école ";
         LevelQuestions[1] = "Level 1 Question 2";
         LevelQuestions[2] = "Level 1 Question 3";
         LevelQuestions[3] = "Level 1 Question 4";
         LevelQuestions[4] = "Level 1 Question 5";
+        LevelQuestions[5] = "Level 1 Question 6";
+        LevelQuestions[6] = "Level 1 Question 7";
+        LevelQuestions[7] = "Level 1 Question 8";
+        LevelQuestions[8] = "Level 1 Question 9";
+        LevelQuestions[9] = "Level 1 Question 10";
 
-        LevelQuestions[5] = "Level 2 Question 1";
-        LevelQuestions[6] = "Level 2 Question 2";
-        LevelQuestions[7] = "Level 2 Question 3";
-        LevelQuestions[8] = "Level 2 Question 4";
-        LevelQuestions[9] = "Level 2 Question 5";
+        LevelQuestions[10] = "Sara ___ ses devoir mewtenant elle ___ regarder le television.";
+        LevelQuestions[11] = "Sara ___ ses devoir mewtenant elle ___ regarder le television.";
+        LevelQuestions[12] = "Level 2 Question 2";
+        LevelQuestions[13] = "Level 2 Question 2.1";
+        LevelQuestions[14] = "Level 2 Question 3";
+        LevelQuestions[15] = "Level 2 Question 3.1";
+        LevelQuestions[16] = "Level 2 Question 4";
+        LevelQuestions[17] = "Level 2 Question 4.1";
+        LevelQuestions[18] = "Level 2 Question 5";
+        LevelQuestions[19] = "Level 2 Question 5.1";
+        LevelQuestions[20] = "Level 2 Question 6";
+        LevelQuestions[21] = "Level 2 Question 6.1";
+        LevelQuestions[22] = "Level 2 Question 7";
+        LevelQuestions[23] = "Level 2 Question 7.1";
+        LevelQuestions[24] = "Level 2 Question 8";
+        LevelQuestions[25] = "Level 2 Question 8.1";
+        LevelQuestions[26] = "Level 2 Question 9";
+        LevelQuestions[27] = "Level 2 Question 9.1";
+        LevelQuestions[28] = "Level 2 Question 10";
+        LevelQuestions[29] = "Level 2 Question 10.1";
 
-        LevelQuestions[10] = "Level 3 Question 1";
-        LevelQuestions[11] = "Level 3 Question 2";
-        LevelQuestions[12] = "Level 3 Question 3";
-        LevelQuestions[13] = "Level 3 Question 4";
-        LevelQuestions[14] = "Level 3 Question 5";
+        LevelQuestions[30] = "Level 3 Question 1";
+        LevelQuestions[31] = "Level 3 Question 1.1";
+        LevelQuestions[32] = "Level 3 Question 2";
+        LevelQuestions[33] = "Level 3 Question 2.1";
+        LevelQuestions[34] = "Level 3 Question 3";
+        LevelQuestions[35] = "Level 3 Question 3.1";
+        LevelQuestions[36] = "Level 3 Question 4";
+        LevelQuestions[37] = "Level 3 Question 4.1";
+        LevelQuestions[38] = "Level 3 Question 5";
+        LevelQuestions[39] = "Level 3 Question 5.1";
+        LevelQuestions[40] = "Level 3 Question 6";
+        LevelQuestions[41] = "Level 3 Question 6.1";
+        LevelQuestions[42] = "Level 3 Question 7";
+        LevelQuestions[43] = "Level 3 Question 7.1";
+        LevelQuestions[44] = "Level 3 Question 8";
+        LevelQuestions[45] = "Level 3 Question 8.1";
+        LevelQuestions[46] = "Level 3 Question 9";
+        LevelQuestions[47] = "Level 3 Question 9.1";
+        LevelQuestions[48] = "Level 3 Question 10";
+        LevelQuestions[49] = "Level 3 Question 10.1";
 
-        String[] correctAnswers = new String[15];
+        String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
         correctAnswers[1] = "Lv1Q2A2";
         correctAnswers[2] = "Lv1Q3A3";
         correctAnswers[3] = "Lv1Q4A1";
         correctAnswers[4] = "Lv1Q5A2";
+        correctAnswers[5] = "Lv1Q6A3";
+        correctAnswers[6] = "Lv1Q7A1";
+        correctAnswers[7] = "Lv1Q8A2";
+        correctAnswers[8] = "Lv1Q9A3";
+        correctAnswers[9] = "Lv1Q10A1";
 
-        correctAnswers[5] = "Lv2Q1A1";
-        correctAnswers[6] = "Lv2Q2A2";
-        correctAnswers[7] = "Lv2Q3A3";
-        correctAnswers[8] = "Lv2Q4A1";
-        correctAnswers[9] = "Lv2Q5A2";
+        correctAnswers[10] = "a fini";
+        correctAnswers[11] = "peut";
+        correctAnswers[12] = "Lv2Q2A2";
+        correctAnswers[13] = "Lv2Q2A2.1";
+        correctAnswers[14] = "Lv2Q3A3";
+        correctAnswers[15] = "Lv2Q3A3.1";
+        correctAnswers[16] = "Lv2Q4A1";
+        correctAnswers[17] = "Lv2Q4A1.1";
+        correctAnswers[18] = "Lv2Q5A2";
+        correctAnswers[19] = "Lv2Q5A2.1";
+        correctAnswers[20] = "Lv2Q6A2";
+        correctAnswers[21] = "Lv2Q6A2.1";
+        correctAnswers[22] = "Lv2Q7A2";
+        correctAnswers[23] = "Lv2Q7A2.1";
+        correctAnswers[24] = "Lv2Q8A2";
+        correctAnswers[25] = "Lv2Q8A2.1";
+        correctAnswers[26] = "Lv2Q9A2";
+        correctAnswers[27] = "Lv2Q9A2.1";
+        correctAnswers[28] = "Lv2Q10A2";
+        correctAnswers[29] = "Lv2Q10A2.1";
 
-        correctAnswers[10] = "Lv3Q1A1";
-        correctAnswers[11] = "Lv3Q2A2";
-        correctAnswers[12] = "Lv3Q3A3";
-        correctAnswers[13] = "Lv3Q4A1";
-        correctAnswers[14] = "Lv3Q5A2";
+        correctAnswers[30] = "Lv3Q1A1";
+        correctAnswers[31] = "Lv3Q1A1.1";
+        correctAnswers[32] = "Lv3Q2A2";
+        correctAnswers[33] = "Lv3Q2A2.1";
+        correctAnswers[34] = "Lv3Q3A3";
+        correctAnswers[35] = "Lv3Q3A3.1";
+        correctAnswers[36] = "Lv3Q4A1";
+        correctAnswers[37] = "Lv3Q4A1.1";
+        correctAnswers[38] = "Lv3Q5A2";
+        correctAnswers[39] = "Lv3Q5A2.1";
+        correctAnswers[40] = "Lv3Q6A3";
+        correctAnswers[41] = "Lv3Q6A3.1";
+        correctAnswers[42] = "Lv3Q7A1";
+        correctAnswers[43] = "Lv3Q7A1.1";
+        correctAnswers[44] = "Lv3Q8A2";
+        correctAnswers[45] = "Lv3Q8A2.1";
+        correctAnswers[46] = "Lv3Q9A3";
+        correctAnswers[47] = "Lv3Q9A3.1";
+        correctAnswers[48] = "Lv3Q10A1";
+        correctAnswers[49] = "Lv3Q10A1.1";
 
-        String[] shownAnswer = new String[15];
+        String[] shownAnswer = new String[50];
         shownAnswer[0] = "Jean attend le bus pour aller à l'école.";
         shownAnswer[1] = "Lv1Q2A2";
         shownAnswer[2] = "Lv1Q3A3";
         shownAnswer[3] = "Lv1Q4A1";
         shownAnswer[4] = "Lv1Q5A2";
+        shownAnswer[5] = "Lv1Q6A3";
+        shownAnswer[6] = "Lv1Q7A1";
+        shownAnswer[7] = "Lv1Q8A2";
+        shownAnswer[8] = "Lv1Q9A3";
+        shownAnswer[9] = "Lv1Q10A1";
 
-        shownAnswer[5] = "Lv2Q1A1";
-        shownAnswer[6] = "Lv2Q2A2";
-        shownAnswer[7] = "Lv2Q3A3";
-        shownAnswer[8] = "Lv2Q4A1";
-        shownAnswer[9] = "Lv2Q5A2";
+        shownAnswer[10] = "Sara a fini ses devoir mewtenant elle peut regarder le television.";
+        shownAnswer[11] = "Sara a fini ses devoir mewtenant elle peut regarder le television.";
+        shownAnswer[12] = "Lv2Q2A2";
+        shownAnswer[13] = "Lv2Q2A2.1";
+        shownAnswer[14] = "Lv2Q3A3";
+        shownAnswer[15] = "Lv2Q3A3.1";
+        shownAnswer[16] = "Lv2Q4A1";
+        shownAnswer[17] = "Lv2Q4A1.1";
+        shownAnswer[18] = "Lv2Q5A2";
+        shownAnswer[19] = "Lv2Q5A2.1";
+        shownAnswer[20] = "Lv2Q6A3";
+        shownAnswer[21] = "Lv2Q6A3.1";
+        shownAnswer[22] = "Lv2Q7A1";
+        shownAnswer[23] = "Lv2Q7A1.1";
+        shownAnswer[24] = "Lv2Q8A2";
+        shownAnswer[25] = "Lv2Q8A2.1";
+        shownAnswer[26] = "Lv2Q9A3";
+        shownAnswer[27] = "Lv2Q9A3.1";
+        shownAnswer[28] = "Lv2Q10A1";
+        shownAnswer[29] = "Lv2Q10A1.1";
 
-        shownAnswer[10] = "Lv3Q1A1";
-        shownAnswer[11] = "Lv3Q2A2";
-        shownAnswer[12] = "Lv3Q3A3";
-        shownAnswer[13] = "Lv3Q4A1";
-        shownAnswer[14] = "Lv3Q5A2";
+        shownAnswer[30] = "Lv3Q1A1";
+        shownAnswer[31] = "Lv3Q1A1.1";
+        shownAnswer[32] = "Lv3Q2A2";
+        shownAnswer[33] = "Lv3Q2A2.1";
+        shownAnswer[34] = "Lv3Q3A3";
+        shownAnswer[35] = "Lv3Q3A3.1";
+        shownAnswer[36] = "Lv3Q4A1";
+        shownAnswer[37] = "Lv3Q4A1.1";
+        shownAnswer[38] = "Lv3Q5A2";
+        shownAnswer[39] = "Lv3Q5A2.1";
+        shownAnswer[40] = "Lv3Q6A3";
+        shownAnswer[41] = "Lv3Q6A3.1";
+        shownAnswer[42] = "Lv3Q7A1";
+        shownAnswer[43] = "Lv3Q7A1.1";
+        shownAnswer[44] = "Lv3Q8A2";
+        shownAnswer[45] = "Lv3Q8A2.1";
+        shownAnswer[46] = "Lv3Q9A3";
+        shownAnswer[47] = "Lv3Q9A3.1";
+        shownAnswer[48] = "Lv3Q10A1";
+        shownAnswer[49] = "Lv3Q10A1.1";
 
-        String[] verb = new String[15];
+        String[] verb = new String[50];
         verb[0] = "Assister ";
         verb[1] = "Lv1Q2VERB";
         verb[2] = "Lv1Q3VERB";
         verb[3] = "Lv1Q4VERB";
         verb[4] = "Lv1Q5VERB";
+        verb[4] = "Lv1Q6VERB";
+        verb[4] = "Lv1Q7VERB";
+        verb[4] = "Lv1Q8VERB";
+        verb[4] = "Lv1Q9VERB";
+        verb[4] = "Lv1Q10VERB";
 
-        verb[5] = "Lv2Q1VERB";
+        verb[5] = "finir";
+        verb[5] = "pouvoir";
         verb[6] = "Lv2Q2VERB";
+        verb[6] = "Lv2Q2.1VERB";
         verb[7] = "Lv2Q3VERB";
+        verb[7] = "Lv2Q3.1VERB";
         verb[8] = "Lv2Q4VERB";
+        verb[8] = "Lv2Q4.1VERB";
         verb[9] = "Lv2Q5VERB";
+        verb[9] = "Lv2Q5.1VERB";
+        verb[9] = "Lv2Q6VERB";
+        verb[9] = "Lv2Q6.1VERB";
+        verb[9] = "Lv2Q7VERB";
+        verb[9] = "Lv2Q7.1VERB";
+        verb[9] = "Lv2Q8VERB";
+        verb[9] = "Lv2Q8.1VERB";
+        verb[9] = "Lv2Q9VERB";
+        verb[9] = "Lv2Q9.1VERB";
+        verb[9] = "Lv2Q10VERB";
+        verb[9] = "Lv2Q10.1VERB";
 
         verb[10] = "Lv3Q1VERB";
+        verb[10] = "Lv3Q1.1VERB";
         verb[11] = "Lv3Q2VERB";
+        verb[11] = "Lv3Q2.1VERB";
         verb[12] = "Lv3Q3VERB";
+        verb[12] = "Lv3Q3.1VERB";
         verb[13] = "Lv3Q4VERB";
+        verb[13] = "Lv3Q4.1VERB";
         verb[14] = "Lv3Q5VERB";
+        verb[14] = "Lv3Q5.1VERB";
+        verb[14] = "Lv3Q6VERB";
+        verb[14] = "Lv3Q6.1VERB";
+        verb[14] = "Lv3Q7VERB";
+        verb[14] = "Lv3Q7.1VERB";
+        verb[14] = "Lv3Q8VERB";
+        verb[14] = "Lv3Q8.1VERB";
+        verb[14] = "Lv3Q9VERB";
+        verb[14] = "Lv3Q9.1VERB";
+        verb[14] = "Lv3Q10VERB";
+        verb[14] = "Lv3Q10.1VERB";
 
-        /*String[] image = new String[15];
+        /*String[] image = new String[50];
         image[0] = "Assister ";
         image[1] = "Lv1Q2Image";
         image[2] = "Lv1Q3Image";
         image[3] = "Lv1Q4Image";
         image[4] = "Lv1Q5Image";
+        image[4] = "Lv1Q6Image";
+        image[4] = "Lv1Q7Image";
+        image[4] = "Lv1Q8Image";
+        image[4] = "Lv1Q9Image";
+        image[4] = "Lv1Q10Image";
 
         image[5] = "Lv2Q1Image";
+        image[5] = "Lv2Q1Image.1";
         image[6] = "Lv2Q2Image";
+        image[6] = "Lv2Q2Image.1";
         image[7] = "Lv2Q3Image";
+        image[7] = "Lv2Q3Image.1";
         image[8] = "Lv2Q4Image";
+        image[8] = "Lv2Q4Image.1";
         image[9] = "Lv2Q5Image";
+        image[9] = "Lv2Q5Image.1";
+        image[9] = "Lv2Q6Image";
+        image[9] = "Lv2Q6Image.1";
+        image[9] = "Lv2Q7Image";
+        image[9] = "Lv2Q7Image.1";
+        image[9] = "Lv2Q8Image";
+        image[9] = "Lv2Q8Image.1";
+        image[9] = "Lv2Q9Image";
+        image[9] = "Lv2Q9Image.1";
+        image[9] = "Lv2Q10Image";
+        image[9] = "Lv2Q10Image.1";
 
         image[10] = "Lv3Q1Image";
         image[11] = "Lv3Q2Image";
@@ -236,8 +396,149 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[14][2] = "Lv3Q5A3";
         // questionAnswers[9][3] = "Lv2Q5A4";
 
-        questionData = new Question[15];
-        for (int i = 0; i < 15; i++) {
+        questionAnswers[15][0] = "Lv3Q5A1";
+        questionAnswers[15][1] = "Lv3Q5A2";
+        questionAnswers[15][2] = "Lv3Q5A3";
+
+        questionAnswers[16][0] = "Lv3Q5A1";
+        questionAnswers[16][1] = "Lv3Q5A2";
+        questionAnswers[16][2] = "Lv3Q5A3";
+
+        questionAnswers[17][0] = "Lv3Q5A1";
+        questionAnswers[17][1] = "Lv3Q5A2";
+        questionAnswers[17][2] = "Lv3Q5A3";
+
+        questionAnswers[18][0] = "Lv3Q5A1";
+        questionAnswers[18][1] = "Lv3Q5A2";
+        questionAnswers[18][2] = "Lv3Q5A3";
+
+        questionAnswers[19][0] = "Lv3Q5A1";
+        questionAnswers[19][1] = "Lv3Q5A2";
+        questionAnswers[19][2] = "Lv3Q5A3";
+
+        questionAnswers[20][0] = "Lv3Q5A1";
+        questionAnswers[20][1] = "Lv3Q5A2";
+        questionAnswers[20][2] = "Lv3Q5A3";
+
+        questionAnswers[21][0] = "Lv3Q5A1";
+        questionAnswers[21][1] = "Lv3Q5A2";
+        questionAnswers[21][2] = "Lv3Q5A3";
+
+        questionAnswers[22][0] = "Lv3Q5A1";
+        questionAnswers[22][1] = "Lv3Q5A2";
+        questionAnswers[22][2] = "Lv3Q5A3";
+
+        questionAnswers[23][0] = "Lv3Q5A1";
+        questionAnswers[23][1] = "Lv3Q5A2";
+        questionAnswers[23][2] = "Lv3Q5A3";
+
+        questionAnswers[24][0] = "Lv3Q5A1";
+        questionAnswers[24][1] = "Lv3Q5A2";
+        questionAnswers[24][2] = "Lv3Q5A3";
+
+        questionAnswers[25][0] = "Lv3Q5A1";
+        questionAnswers[25][1] = "Lv3Q5A2";
+        questionAnswers[25][2] = "Lv3Q5A3";
+
+        questionAnswers[26][0] = "Lv3Q5A1";
+        questionAnswers[26][1] = "Lv3Q5A2";
+        questionAnswers[26][2] = "Lv3Q5A3";
+
+        questionAnswers[27][0] = "Lv3Q5A1";
+        questionAnswers[27][1] = "Lv3Q5A2";
+        questionAnswers[27][2] = "Lv3Q5A3";
+
+        questionAnswers[28][0] = "Lv3Q5A1";
+        questionAnswers[28][1] = "Lv3Q5A2";
+        questionAnswers[28][2] = "Lv3Q5A3";
+
+        questionAnswers[29][0] = "Lv3Q5A1";
+        questionAnswers[29][1] = "Lv3Q5A2";
+        questionAnswers[29][2] = "Lv3Q5A3";
+
+        questionAnswers[30][0] = "Lv3Q5A1";
+        questionAnswers[30][1] = "Lv3Q5A2";
+        questionAnswers[30][2] = "Lv3Q5A3";
+
+        questionAnswers[31][0] = "Lv3Q5A1";
+        questionAnswers[31][1] = "Lv3Q5A2";
+        questionAnswers[31][2] = "Lv3Q5A3";
+
+        questionAnswers[32][0] = "Lv3Q5A1";
+        questionAnswers[32][1] = "Lv3Q5A2";
+        questionAnswers[32][2] = "Lv3Q5A3";
+
+        questionAnswers[33][0] = "Lv3Q5A1";
+        questionAnswers[33][1] = "Lv3Q5A2";
+        questionAnswers[33][2] = "Lv3Q5A3";
+
+        questionAnswers[34][0] = "Lv3Q5A1";
+        questionAnswers[34][1] = "Lv3Q5A2";
+        questionAnswers[34][2] = "Lv3Q5A3";
+
+        questionAnswers[35][0] = "Lv3Q5A1";
+        questionAnswers[35][1] = "Lv3Q5A2";
+        questionAnswers[35][2] = "Lv3Q5A3";
+
+        questionAnswers[36][0] = "Lv3Q5A1";
+        questionAnswers[36][1] = "Lv3Q5A2";
+        questionAnswers[36][2] = "Lv3Q5A3";
+
+        questionAnswers[37][0] = "Lv3Q5A1";
+        questionAnswers[37][1] = "Lv3Q5A2";
+        questionAnswers[37][2] = "Lv3Q5A3";
+
+        questionAnswers[38][0] = "Lv3Q5A1";
+        questionAnswers[38][1] = "Lv3Q5A2";
+        questionAnswers[38][2] = "Lv3Q5A3";
+
+        questionAnswers[39][0] = "Lv3Q5A1";
+        questionAnswers[39][1] = "Lv3Q5A2";
+        questionAnswers[39][2] = "Lv3Q5A3";
+
+        questionAnswers[40][0] = "Lv3Q5A1";
+        questionAnswers[40][1] = "Lv3Q5A2";
+        questionAnswers[40][2] = "Lv3Q5A3";
+
+        questionAnswers[41][0] = "Lv3Q5A1";
+        questionAnswers[41][1] = "Lv3Q5A2";
+        questionAnswers[41][2] = "Lv3Q5A3";
+
+        questionAnswers[42][0] = "Lv3Q5A1";
+        questionAnswers[42][1] = "Lv3Q5A2";
+        questionAnswers[42][2] = "Lv3Q5A3";
+
+        questionAnswers[43][0] = "Lv3Q5A1";
+        questionAnswers[43][1] = "Lv3Q5A2";
+        questionAnswers[43][2] = "Lv3Q5A3";
+
+        questionAnswers[44][0] = "Lv3Q5A1";
+        questionAnswers[44][1] = "Lv3Q5A2";
+        questionAnswers[44][2] = "Lv3Q5A3";
+
+        questionAnswers[45][0] = "Lv3Q5A1";
+        questionAnswers[45][1] = "Lv3Q5A2";
+        questionAnswers[45][2] = "Lv3Q5A3";
+
+        questionAnswers[46][0] = "Lv3Q5A1";
+        questionAnswers[46][1] = "Lv3Q5A2";
+        questionAnswers[46][2] = "Lv3Q5A3";
+
+        questionAnswers[47][0] = "Lv3Q5A1";
+        questionAnswers[47][1] = "Lv3Q5A2";
+        questionAnswers[47][2] = "Lv3Q5A3";
+
+        questionAnswers[48][0] = "Lv3Q5A1";
+        questionAnswers[48][1] = "Lv3Q5A2";
+        questionAnswers[48][2] = "Lv3Q5A3";
+
+        questionAnswers[49][0] = "Lv3Q5A1";
+        questionAnswers[49][1] = "Lv3Q5A2";
+        questionAnswers[49][2] = "Lv3Q5A3";
+
+
+        questionData = new Question[49];
+        for (int i = 0; i < 50; i++) {
             questionData[i] = new Question();
             questionData[i].ID = i;
             questionData[i].attempts = 0;
@@ -271,20 +572,57 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     levelData[i].three = questionData[2];
                     levelData[i].four = questionData[3];
                     levelData[i].five = questionData[4];
+                    levelData[i].six = questionData[5];
+                    levelData[i].seven = questionData[6];
+                    levelData[i].eight = questionData[7];
+                    levelData[i].nine = questionData[8];
+                    levelData[i].ten = questionData[9];
                     break;
                 case 1:
-                    levelData[i].one = questionData[5];
-                    levelData[i].two = questionData[6];
-                    levelData[i].three = questionData[7];
-                    levelData[i].four = questionData[8];
-                    levelData[i].five = questionData[9];
-                    break;
-                case 2:
                     levelData[i].one = questionData[10];
                     levelData[i].two = questionData[11];
                     levelData[i].three = questionData[12];
                     levelData[i].four = questionData[13];
                     levelData[i].five = questionData[14];
+                    levelData[i].six = questionData[15];
+                    levelData[i].seven = questionData[16];
+                    levelData[i].eight = questionData[17];
+                    levelData[i].nine = questionData[18];
+                    levelData[i].ten = questionData[19];
+
+                    levelData[i].one1 = questionData[20];
+                    levelData[i].two1 = questionData[21];
+                    levelData[i].three1 = questionData[22];
+                    levelData[i].four1 = questionData[23];
+                    levelData[i].five1 = questionData[24];
+                    levelData[i].six1 = questionData[25];
+                    levelData[i].seven1 = questionData[26];
+                    levelData[i].eight1 = questionData[27];
+                    levelData[i].nine1 = questionData[28];
+                    levelData[i].ten1 = questionData[29];
+                    break;
+                case 2:
+                    levelData[i].one = questionData[30];
+                    levelData[i].two = questionData[31];
+                    levelData[i].three = questionData[32];
+                    levelData[i].four = questionData[33];
+                    levelData[i].five = questionData[34];
+                    levelData[i].six = questionData[35];
+                    levelData[i].seven = questionData[36];
+                    levelData[i].eight = questionData[37];
+                    levelData[i].nine = questionData[38];
+                    levelData[i].ten = questionData[39];
+
+                    levelData[i].one1 = questionData[40];
+                    levelData[i].two1 = questionData[41];
+                    levelData[i].three1 = questionData[42];
+                    levelData[i].four1 = questionData[43];
+                    levelData[i].five1 = questionData[44];
+                    levelData[i].six1 = questionData[45];
+                    levelData[i].seven1 = questionData[46];
+                    levelData[i].eight1 = questionData[47];
+                    levelData[i].nine1 = questionData[48];
+                    levelData[i].ten1 = questionData[49];
                     break;
                 default:
                     levelData[i].one = questionData[0];
@@ -292,6 +630,23 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     levelData[i].three = questionData[2];
                     levelData[i].four = questionData[3];
                     levelData[i].five = questionData[4];
+                    levelData[i].six = questionData[5];
+                    levelData[i].seven = questionData[6];
+                    levelData[i].eight = questionData[7];
+                    levelData[i].nine = questionData[8];
+                    levelData[i].ten = questionData[9];
+
+                    levelData[i].one1 = questionData[10];
+                    levelData[i].two1 = questionData[11];
+                    levelData[i].three1 = questionData[12];
+                    levelData[i].four1 = questionData[13];
+                    levelData[i].five1 = questionData[14];
+                    levelData[i].six1 = questionData[15];
+                    levelData[i].seven1 = questionData[16];
+                    levelData[i].eight1 = questionData[17];
+                    levelData[i].nine1 = questionData[18];
+                    levelData[i].ten1 = questionData[19];
+                    break;
             }
         }
     }
@@ -307,6 +662,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         btnAns3.setText(levelData[prefs.getInt("level", -1)].one.option3);
     }
 
+    public void QuestionOneP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].one1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].one1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].one1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].one1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].one1.option3);
+    }
+
     public void QuestionTwoSetup() {
         tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
         tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
@@ -316,6 +682,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         btnAns1.setText(levelData[prefs.getInt("level", -1)].two.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].two.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].two.option3);
+    }
+
+    public void QuestionTwoP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].two1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].two1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].two1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].two1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].two1.option3);
     }
 
     public void QuestionThreeSetup() {
@@ -329,6 +706,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         btnAns3.setText(levelData[prefs.getInt("level", -1)].three.option3);
     }
 
+    public void QuestionThreeP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].three1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].three1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].three1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].three1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].three1.option3);
+    }
+
     public void QuestionFourSetup() {
         tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
         tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
@@ -340,6 +728,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         btnAns3.setText(levelData[prefs.getInt("level", -1)].four.option3);
     }
 
+    public void QuestionFourP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].four1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].four1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].four1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].four1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].four1.option3);
+    }
+
     public void QuestionFiveSetup() {
         tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
         tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
@@ -349,6 +748,127 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         btnAns1.setText(levelData[prefs.getInt("level", -1)].five.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].five.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].five.option3);
+    }
+
+    public void QuestionFiveP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].five1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].five1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].five1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].five1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].five1.option3);
+    }
+
+    public void QuestionSixSetup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].six.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].six.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].six.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].six.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].six.option3);
+    }
+
+    public void QuestionSixP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].six1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].six1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].six1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].six1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].six1.option3);
+    }
+
+    public void QuestionSevenSetup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].seven.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].seven.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].seven.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].seven.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].seven.option3);
+    }
+
+    public void QuestionSevenP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].seven1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].seven1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].seven1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].seven1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].seven1.option3);
+    }
+
+    public void QuestionEightSetup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].eight.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].eight.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].eight.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].eight.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].eight.option3);
+    }
+
+    public void QuestionEightP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].eight1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].eight1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].eight1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].eight1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].eight1.option3);
+    }
+
+    public void QuestionNineSetup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].nine.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].nine.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].nine.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].nine.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].nine.option3);
+    }
+
+    public void QuestionNineP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].nine1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].nine1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].nine1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].nine1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].nine1.option3);
+    }
+
+    public void QuestionTenSetup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].ten.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].ten.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].ten.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].ten.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].ten.option3);
+    }
+
+    public void QuestionTenP2Setup() {
+        tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
+        tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
+
+        tvQuestion.setText(levelData[prefs.getInt("level", -1)].ten1.sentence);
+        tvVerb.setText(levelData[prefs.getInt("level", -1)].ten1.verb);
+        btnAns1.setText(levelData[prefs.getInt("level", -1)].ten1.option1);
+        btnAns2.setText(levelData[prefs.getInt("level", -1)].ten1.option2);
+        btnAns3.setText(levelData[prefs.getInt("level", -1)].ten1.option3);
     }
 
     @Override
