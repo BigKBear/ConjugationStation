@@ -70,7 +70,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     public void setUpAllQuestions() {
         String[] LevelQuestions = new String[50];
         LevelQuestions[0] = "Jean _____ le bus pour aller à l'école ";
-        LevelQuestions[1] = "Aie! Jl ___ mal au vent!";
+        LevelQuestions[1] = "Aie! J' ___ mal au vent!";
         LevelQuestions[2] = "Level 1 Question 3";
         LevelQuestions[3] = "Level 1 Question 4";
         LevelQuestions[4] = "Level 1 Question 5";
@@ -986,6 +986,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1015,6 +1016,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1036,6 +1038,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                             leveldone = 2;//to start Q2L1
@@ -1051,6 +1054,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1080,6 +1084,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1101,6 +1106,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                             leveldone = 4;//to start Q3L1
@@ -1116,6 +1122,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q3 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1145,6 +1152,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q3 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1166,6 +1174,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                             leveldone = 6;//to start Q4L1
@@ -1181,6 +1190,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1210,6 +1220,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q4 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1231,6 +1242,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                             leveldone = 8;//to start Q4L1
@@ -1246,6 +1258,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1275,6 +1288,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1296,6 +1310,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                             leveldone = 10;//to start Q6L1
@@ -1311,6 +1326,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1340,6 +1356,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1361,6 +1378,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q6 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                             leveldone = 12;//to start Q7L1
@@ -1376,6 +1394,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1405,6 +1424,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1426,6 +1446,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                             leveldone = 14;//to start Q8L1
@@ -1441,6 +1462,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1470,6 +1492,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1491,6 +1514,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                             leveldone = 16;//to start Q9L1
@@ -1506,6 +1530,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1535,6 +1560,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1556,6 +1582,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                             leveldone = 18;//to start Q10L1
@@ -1571,6 +1598,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "L1Q10 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                             new CountDownTimer(1500, 1000) {
@@ -1611,6 +1639,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "Q10 Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText("Q10p2 Correct");
                             level1Score++;
@@ -1633,6 +1662,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "Q10 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                             tvWrong.setVisibility(View.VISIBLE);
+                            tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                             tvScore.setText(String.valueOf(level1Score) + "/10");
@@ -1657,6 +1687,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1686,6 +1717,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1707,6 +1739,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                 leveldone = 2;//to start Q2L1
@@ -1721,6 +1754,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1750,6 +1784,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1771,6 +1806,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                 leveldone = 4;//to start Q2L1
@@ -1786,6 +1822,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1815,6 +1852,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1836,6 +1874,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 leveldone = 6;//to start Q3L1
@@ -1850,6 +1889,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1879,6 +1919,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1900,6 +1941,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q2.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                 leveldone = 8;//to start Q3L1
@@ -1915,6 +1957,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1944,6 +1987,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -1965,6 +2009,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                 leveldone = 10;//to start Q4L1
@@ -1979,6 +2024,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2008,6 +2054,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2029,6 +2076,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q3.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                 leveldone = 12;//to start Q4L1
@@ -2044,6 +2092,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2073,6 +2122,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2094,6 +2144,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                 leveldone = 14;//to start Q4L1
@@ -2108,6 +2159,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2137,6 +2189,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2158,6 +2211,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q4.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                 leveldone = 16;//to start Q4L1
@@ -2173,6 +2227,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2202,6 +2257,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2223,6 +2279,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                 leveldone = 18;//to start Q6L1
@@ -2237,6 +2294,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2266,6 +2324,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2287,6 +2346,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                 leveldone = 20;//to start Q6L1
@@ -2302,6 +2362,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2331,6 +2392,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2352,6 +2414,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q6 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                 leveldone = 22;//to start Q7L1
@@ -2366,6 +2429,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2395,6 +2459,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2416,6 +2481,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                 leveldone = 24;//to start Q7L1
@@ -2431,6 +2497,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2460,6 +2527,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2481,6 +2549,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                 leveldone = 26;//to start Q8L1
@@ -2495,6 +2564,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2524,6 +2594,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2545,6 +2616,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                 leveldone = 28;//to start Q8L1
@@ -2560,6 +2632,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2589,6 +2662,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2610,6 +2684,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                 leveldone = 30;//to start Q9L1
@@ -2624,6 +2699,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2653,6 +2729,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2674,6 +2751,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                 leveldone = 32;//to start Q9L1
@@ -2689,6 +2767,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2718,6 +2797,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2739,6 +2819,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 leveldone = 34;//to start Q10L1
@@ -2753,6 +2834,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2782,6 +2864,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2803,6 +2886,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 leveldone = 36;//to start Q10L1
@@ -2819,6 +2903,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2848,6 +2933,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2869,6 +2955,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                 leveldone = 36;//to start Q10L1
@@ -2884,6 +2971,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
                                 new CountDownTimer(1500, 1000) {
@@ -2924,6 +3012,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q10.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText("L1Q10p2 Correct");
                                 level1Score++;
@@ -2946,6 +3035,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 Toast.makeText(getApplicationContext(), "L1Q10.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
+                                tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
                                 tvScore.setText(String.valueOf(level2Score) + "/10");
@@ -2973,6 +3063,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3002,6 +3093,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3023,6 +3115,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                     leveldone = 2;//to start Q2L1
@@ -3037,6 +3130,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3066,6 +3160,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3087,6 +3182,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
                                     leveldone = 4;//to start Q2L1
@@ -3102,6 +3198,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3131,6 +3228,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3152,6 +3250,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                     leveldone = 6;//to start Q3L1
@@ -3166,6 +3265,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3195,6 +3295,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3216,6 +3317,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q2.1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                     leveldone = 8;//to start Q3L1
@@ -3231,6 +3333,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3260,6 +3363,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3281,6 +3385,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
                                     leveldone = 10;//to start Q4L1
@@ -3295,6 +3400,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3324,6 +3430,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3345,6 +3452,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q3.1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
                                     leveldone = 12;//to start Q4L1
@@ -3360,6 +3468,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3389,6 +3498,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3410,6 +3520,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                     leveldone = 14;//to start Q4L1
@@ -3424,6 +3535,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3453,6 +3565,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3474,6 +3587,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q4.1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
                                     leveldone = 16;//to start Q4L1
@@ -3489,6 +3603,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3518,6 +3633,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3539,6 +3655,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                     leveldone = 18;//to start Q6L1
@@ -3553,6 +3670,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3582,6 +3700,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3603,6 +3722,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
                                     leveldone = 20;//to start Q6L1
@@ -3618,6 +3738,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3647,6 +3768,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3668,6 +3790,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q6 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
                                     leveldone = 22;//to start Q7L1
@@ -3682,6 +3805,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3711,6 +3835,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3732,6 +3857,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q6.1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
                                     leveldone = 24;//to start Q7L1
@@ -3747,6 +3873,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3776,6 +3903,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3797,6 +3925,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                     leveldone = 26;//to start Q8L1
@@ -3811,6 +3940,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3840,6 +3970,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3861,6 +3992,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
                                     leveldone = 28;//to start Q8L1
@@ -3876,6 +4008,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3905,6 +4038,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3926,6 +4060,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
                                     leveldone = 30;//to start Q9L1
@@ -3940,6 +4075,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3969,6 +4105,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -3990,6 +4127,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
                                     leveldone = 32;//to start Q9L1
@@ -4005,6 +4143,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4034,6 +4173,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4055,6 +4195,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                     leveldone = 34;//to start Q10L1
@@ -4069,6 +4210,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4098,6 +4240,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4119,6 +4262,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                     leveldone = 36;//to start Q10L1
@@ -4135,6 +4279,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4164,6 +4309,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4185,6 +4331,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                     leveldone = 36;//to start Q10L1
@@ -4200,6 +4347,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
                                     new CountDownTimer(1500, 1000) {
@@ -4217,14 +4365,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                     if (level3Score == 20) {
                                         //Start level 2
-                                        prefs.edit().putInt("levelTwoOver", level3Score).apply();
+                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 1).apply();
                                         leveldone = 0;
                                         QuestionOneSetup();
                                     } else {
                                         //game over
-                                        prefs.edit().putInt("levelTwoOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 0).apply();
+                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                        prefs.edit().putInt("level", 2).apply();
                                         leveldone = 0;
                                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                                     }
@@ -4240,6 +4388,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q10.1 Correct", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText("L1Q10p2 Correct");
                                     level1Score++;
@@ -4247,13 +4396,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvScore.setText(String.valueOf(level1Score) + "/20");
                                     if (level1Score == 20) {
                                         //Start level 3
-                                        prefs.edit().putInt("levelTwoOver", level3Score).apply();
+                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 2).apply();
                                         leveldone = 0;
-                                        QuestionOneSetup();
+                                        gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
                                     } else {
                                         //game over
-                                        prefs.edit().putInt("levelTwoOver", level3Score).apply();
+                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 0).apply();
                                         leveldone = 0;
                                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
@@ -4262,11 +4411,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     Toast.makeText(getApplicationContext(), "L1Q10.1 Wrong", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
+                                    tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
                                     tvScore.setText(String.valueOf(level3Score) + "/10");
                                     leveldone = 40;//to start Q2L1
-                                    prefs.edit().putInt("levelTwoOver", level3Score).apply();
+                                    prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
