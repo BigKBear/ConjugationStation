@@ -178,7 +178,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[49] = "Lv3Q10A1.1";
 
         String[] shownAnswer = new String[50];
-        shownAnswer[0] = "<b>Jean attend le bus pour aller à l'école.</b>";
+        shownAnswer[0] = "<b>Jean <u>attend</u> le bus pour aller à l'école.</b>";
         shownAnswer[1] = "<b>Aie! J' <u>ai</u> mal au vent!</b>";
         shownAnswer[2] = "<b>Oh la la! Il <u>fait</u> chaud!</b>";
         shownAnswer[3] = "<b>Marie <u>aime</u> de marcher. Ca fait du bien!</b>";
@@ -235,7 +235,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[0] = "ASSISTER";
         verb[1] = "AVOIR";
         verb[2] = "FAIRE";
-        verb[3] = "AINIER";
+        verb[3] = "AIMER";
         verb[4] = "";
         verb[5] = "";
         verb[6] = "MANGER";
@@ -365,7 +365,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[5][1] = "chaussures";
         questionAnswers[5][2] = "chausettes";
         // questionAnswers[5][3] = "Lv2Q1A4";
-        questionAnswers[6][0] = "managent";
+        questionAnswers[6][0] = "mangent";
         questionAnswers[6][1] = "manges";
         questionAnswers[6][2] = "mangeons";
         //questionAnswers[6][3] = "Lv2Q2A4";

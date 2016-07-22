@@ -220,12 +220,14 @@
             style="android:buttonBarButtonStyle"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
+            android:textAllCaps="false"
             android:text="Ans1"
             android:textSize="12sp" />
 
         <Button
             android:id="@+id/btnAns2"
             android:layout_width="0dp"
+            android:textAllCaps="false"
             style="android:buttonBarButtonStyle"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
@@ -235,6 +237,7 @@
         <Button
             android:id="@+id/btnAns3"
             android:layout_width="0dp"
+            android:textAllCaps="false"
             style="android:buttonBarButtonStyle"
             android:layout_height="wrap_content"
             android:layout_weight=".25"
