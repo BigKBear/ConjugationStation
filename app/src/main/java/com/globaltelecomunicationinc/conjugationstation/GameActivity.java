@@ -367,190 +367,166 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[4][2] = "Lv1Q5A3";
         //questionAnswers[4][3] = "Lv1Q5A4";
 
-        questionAnswers[5][0] = "Lv2Q1A1";
-        questionAnswers[5][1] = "Lv2Q1A2";
-        questionAnswers[5][2] = "Lv2Q1A3";
+        questionAnswers[5][0] = "Lv1Q6A1";
+        questionAnswers[5][1] = "Lv1Q6A2";
+        questionAnswers[5][2] = "Lv1Q6A3";
         // questionAnswers[5][3] = "Lv2Q1A4";
-        questionAnswers[6][0] = "Lv2Q2A1";
-        questionAnswers[6][1] = "Lv2Q2A2";
-        questionAnswers[6][2] = "Lv2Q2A3";
+        questionAnswers[6][0] = "Lv1Q7A1";
+        questionAnswers[6][1] = "Lv1Q7A2";
+        questionAnswers[6][2] = "Lv1Q7A3";
         //questionAnswers[6][3] = "Lv2Q2A4";
-        questionAnswers[7][0] = "Lv2Q3A1";
-        questionAnswers[7][1] = "Lv2Q3A2";
-        questionAnswers[7][2] = "Lv2Q3A3";
+        questionAnswers[7][0] = "Lv1Q8A1";
+        questionAnswers[7][1] = "Lv1Q8A2";
+        questionAnswers[7][2] = "Lv1Q8A3";
         // questionAnswers[7][3] = "Lv2Q3A4";
-        questionAnswers[8][0] = "Lv2Q4A1";
-        questionAnswers[8][1] = "Lv2Q4A2";
-        questionAnswers[8][2] = "Lv2Q4A3";
+        questionAnswers[8][0] = "Lv1Q9A1";
+        questionAnswers[8][1] = "Lv1Q9A2";
+        questionAnswers[8][2] = "Lv1Q9A3";
         //questionAnswers[8][3] = "Lv2Q4A4";
-        questionAnswers[9][0] = "Lv2Q5A1";
-        questionAnswers[9][1] = "Lv2Q5A2";
-        questionAnswers[9][2] = "Lv2Q5A3";
+        questionAnswers[9][0] = "Lv1Q10A1";
+        questionAnswers[9][1] = "Lv1Q10A2";
+        questionAnswers[9][2] = "Lv1Q10A3";
         // questionAnswers[9][3] = "Lv2Q5A4";
 
-        questionAnswers[10][0] = "Lv3Q1A1";
-        questionAnswers[10][1] = "Lv3Q1A2";
-        questionAnswers[10][2] = "Lv3Q1A3";
-        // questionAnswers[9][3] = "Lv2Q5A4";
-        questionAnswers[11][0] = "Lv3Q2A1";
-        questionAnswers[11][1] = "Lv3Q2A2";
-        questionAnswers[11][2] = "Lv3Q2A3";
-        // questionAnswers[9][3] = "Lv2Q5A4";
-        questionAnswers[12][0] = "Lv3Q3A1";
-        questionAnswers[12][1] = "Lv3Q3A2";
-        questionAnswers[12][2] = "Lv3Q3A3";
-        // questionAnswers[9][3] = "Lv2Q5A4";
+        questionAnswers[10][0] = "Lv2Q1A1";
+        questionAnswers[10][1] = "Lv2Q1A2";
+        questionAnswers[10][2] = "Lv2Q1A3";
+        questionAnswers[11][0] = "Lv2Q1.1A1";
+        questionAnswers[11][1] = "Lv2Q1.1A2";
+        questionAnswers[11][2] = "Lv2Q1.1A3";
 
-        questionAnswers[13][0] = "Lv3Q4A1";
-        questionAnswers[13][1] = "Lv3Q4A2";
-        questionAnswers[13][2] = "Lv3Q4A3";
-        // questionAnswers[9][3] = "Lv2Q5A4";
+        questionAnswers[12][0] = "Lv2Q2A1";
+        questionAnswers[12][1] = "Lv2Q2A2";
+        questionAnswers[12][2] = "Lv2Q2A3";
+        questionAnswers[13][0] = "Lv2Q2.1A1";
+        questionAnswers[13][1] = "Lv2Q2.1A2";
+        questionAnswers[13][2] = "Lv2Q2.1A3";
 
-        questionAnswers[14][0] = "Lv3Q5A1";
-        questionAnswers[14][1] = "Lv3Q5A2";
-        questionAnswers[14][2] = "Lv3Q5A3";
-        // questionAnswers[9][3] = "Lv2Q5A4";
+        questionAnswers[14][0] = "Lv2Q3A1";
+        questionAnswers[14][1] = "Lv2Q3A2";
+        questionAnswers[14][2] = "Lv2Q3A3";
+        questionAnswers[15][0] = "Lv2Q3.1A1";
+        questionAnswers[15][1] = "Lv2Q3.1A2";
+        questionAnswers[15][2] = "Lv2Q3.1A3";
 
-        questionAnswers[15][0] = "Lv3Q5A1";
-        questionAnswers[15][1] = "Lv3Q5A2";
-        questionAnswers[15][2] = "Lv3Q5A3";
+        questionAnswers[16][0] = "Lv2Q4A1";
+        questionAnswers[16][1] = "Lv2Q4A2";
+        questionAnswers[16][2] = "Lv2Q4A3";
+        questionAnswers[17][0] = "Lv2Q4.1A1";
+        questionAnswers[17][1] = "Lv2Q4.1A2";
+        questionAnswers[17][2] = "Lv2Q4.1A3";
 
-        questionAnswers[16][0] = "Lv3Q5A1";
-        questionAnswers[16][1] = "Lv3Q5A2";
-        questionAnswers[16][2] = "Lv3Q5A3";
+        questionAnswers[18][0] = "Lv2Q5A1";
+        questionAnswers[18][1] = "Lv2Q5A2";
+        questionAnswers[18][2] = "Lv2Q5A3";
+        questionAnswers[19][0] = "Lv2Q5.1A1";
+        questionAnswers[19][1] = "Lv2Q5.1A2";
+        questionAnswers[19][2] = "Lv2Q5.1A3";
 
-        questionAnswers[17][0] = "Lv3Q5A1";
-        questionAnswers[17][1] = "Lv3Q5A2";
-        questionAnswers[17][2] = "Lv3Q5A3";
+        questionAnswers[20][0] = "Lv2Q6A1";
+        questionAnswers[20][1] = "Lv2Q6A2";
+        questionAnswers[20][2] = "Lv2Q6A3";
+        questionAnswers[21][0] = "Lv2Q6.1A1";
+        questionAnswers[21][1] = "Lv2Q6.1A2";
+        questionAnswers[21][2] = "Lv2Q6.1A3";
 
-        questionAnswers[18][0] = "Lv3Q5A1";
-        questionAnswers[18][1] = "Lv3Q5A2";
-        questionAnswers[18][2] = "Lv3Q5A3";
+        questionAnswers[22][0] = "Lv2Q7A1";
+        questionAnswers[22][1] = "Lv2Q7A2";
+        questionAnswers[22][2] = "Lv2Q7A3";
+        questionAnswers[23][0] = "Lv2Q7.1A1";
+        questionAnswers[23][1] = "Lv2Q7.1A2";
+        questionAnswers[23][2] = "Lv2Q7.1A3";
 
-        questionAnswers[19][0] = "Lv3Q5A1";
-        questionAnswers[19][1] = "Lv3Q5A2";
-        questionAnswers[19][2] = "Lv3Q5A3";
+        questionAnswers[24][0] = "Lv2Q8A1";
+        questionAnswers[24][1] = "Lv2Q8A2";
+        questionAnswers[24][2] = "Lv2Q8A3";
+        questionAnswers[25][0] = "Lv2Q8.1A1";
+        questionAnswers[25][1] = "Lv2Q8.1A2";
+        questionAnswers[25][2] = "Lv2Q8.1A3";
 
-        questionAnswers[20][0] = "Lv3Q5A1";
-        questionAnswers[20][1] = "Lv3Q5A2";
-        questionAnswers[20][2] = "Lv3Q5A3";
+        questionAnswers[26][0] = "Lv2Q9A1";
+        questionAnswers[26][1] = "Lv2Q9A2";
+        questionAnswers[26][2] = "Lv2Q9A3";
+        questionAnswers[27][0] = "Lv2Q9.1A1";
+        questionAnswers[27][1] = "Lv2Q9.1A2";
+        questionAnswers[27][2] = "Lv2Q9.1A3";
 
-        questionAnswers[21][0] = "Lv3Q5A1";
-        questionAnswers[21][1] = "Lv3Q5A2";
-        questionAnswers[21][2] = "Lv3Q5A3";
+        questionAnswers[28][0] = "Lv2Q10A1";
+        questionAnswers[28][1] = "Lv2Q10A2";
+        questionAnswers[28][2] = "Lv2Q10A3";
+        questionAnswers[29][0] = "Lv2Q10.1A1";
+        questionAnswers[29][1] = "Lv2Q10.1A2";
+        questionAnswers[29][2] = "Lv2Q10.1A3";
 
-        questionAnswers[22][0] = "Lv3Q5A1";
-        questionAnswers[22][1] = "Lv3Q5A2";
-        questionAnswers[22][2] = "Lv3Q5A3";
+        questionAnswers[30][0] = "Lv3Q1A1";
+        questionAnswers[30][1] = "Lv3Q1A2";
+        questionAnswers[30][2] = "Lv3Q1A3";
+        questionAnswers[31][0] = "Lv3Q1.1A1";
+        questionAnswers[31][1] = "Lv3Q1.1A2";
+        questionAnswers[31][2] = "Lv3Q1.1A3";
 
-        questionAnswers[23][0] = "Lv3Q5A1";
-        questionAnswers[23][1] = "Lv3Q5A2";
-        questionAnswers[23][2] = "Lv3Q5A3";
+        questionAnswers[32][0] = "Lv3Q2A1";
+        questionAnswers[32][1] = "Lv3Q2A2";
+        questionAnswers[32][2] = "Lv3Q2A3";
+        questionAnswers[33][0] = "Lv3Q2.1A1";
+        questionAnswers[33][1] = "Lv3Q2.1A2";
+        questionAnswers[33][2] = "Lv3Q2.1A3";
 
-        questionAnswers[24][0] = "Lv3Q5A1";
-        questionAnswers[24][1] = "Lv3Q5A2";
-        questionAnswers[24][2] = "Lv3Q5A3";
+        questionAnswers[34][0] = "Lv3Q3A1";
+        questionAnswers[34][1] = "Lv3Q3A2";
+        questionAnswers[34][2] = "Lv3Q3A3";
+        questionAnswers[35][0] = "Lv3Q3.1A1";
+        questionAnswers[35][1] = "Lv3Q3.1A2";
+        questionAnswers[35][2] = "Lv3Q3.1A3";
 
-        questionAnswers[25][0] = "Lv3Q5A1";
-        questionAnswers[25][1] = "Lv3Q5A2";
-        questionAnswers[25][2] = "Lv3Q5A3";
-
-        questionAnswers[26][0] = "Lv3Q5A1";
-        questionAnswers[26][1] = "Lv3Q5A2";
-        questionAnswers[26][2] = "Lv3Q5A3";
-
-        questionAnswers[27][0] = "Lv3Q5A1";
-        questionAnswers[27][1] = "Lv3Q5A2";
-        questionAnswers[27][2] = "Lv3Q5A3";
-
-        questionAnswers[28][0] = "Lv3Q5A1";
-        questionAnswers[28][1] = "Lv3Q5A2";
-        questionAnswers[28][2] = "Lv3Q5A3";
-
-        questionAnswers[29][0] = "Lv3Q5A1";
-        questionAnswers[29][1] = "Lv3Q5A2";
-        questionAnswers[29][2] = "Lv3Q5A3";
-
-        questionAnswers[30][0] = "Lv3Q5A1";
-        questionAnswers[30][1] = "Lv3Q5A2";
-        questionAnswers[30][2] = "Lv3Q5A3";
-
-        questionAnswers[31][0] = "Lv3Q5A1";
-        questionAnswers[31][1] = "Lv3Q5A2";
-        questionAnswers[31][2] = "Lv3Q5A3";
-
-        questionAnswers[32][0] = "Lv3Q5A1";
-        questionAnswers[32][1] = "Lv3Q5A2";
-        questionAnswers[32][2] = "Lv3Q5A3";
-
-        questionAnswers[33][0] = "Lv3Q5A1";
-        questionAnswers[33][1] = "Lv3Q5A2";
-        questionAnswers[33][2] = "Lv3Q5A3";
-
-        questionAnswers[34][0] = "Lv3Q5A1";
-        questionAnswers[34][1] = "Lv3Q5A2";
-        questionAnswers[34][2] = "Lv3Q5A3";
-
-        questionAnswers[35][0] = "Lv3Q5A1";
-        questionAnswers[35][1] = "Lv3Q5A2";
-        questionAnswers[35][2] = "Lv3Q5A3";
-
-        questionAnswers[36][0] = "Lv3Q5A1";
-        questionAnswers[36][1] = "Lv3Q5A2";
-        questionAnswers[36][2] = "Lv3Q5A3";
-
-        questionAnswers[37][0] = "Lv3Q5A1";
-        questionAnswers[37][1] = "Lv3Q5A2";
-        questionAnswers[37][2] = "Lv3Q5A3";
+        questionAnswers[36][0] = "Lv3Q4A1";
+        questionAnswers[36][1] = "Lv3Q4A2";
+        questionAnswers[36][2] = "Lv3Q4A3";
+        questionAnswers[37][0] = "Lv3Q4.1A1";
+        questionAnswers[37][1] = "Lv3Q4.1A2";
+        questionAnswers[37][2] = "Lv3Q4.1A3";
 
         questionAnswers[38][0] = "Lv3Q5A1";
         questionAnswers[38][1] = "Lv3Q5A2";
         questionAnswers[38][2] = "Lv3Q5A3";
+        questionAnswers[39][0] = "Lv3Q5.1A1";
+        questionAnswers[39][1] = "Lv3Q5.1A2";
+        questionAnswers[39][2] = "Lv3Q5.1A3";
 
-        questionAnswers[39][0] = "Lv3Q5A1";
-        questionAnswers[39][1] = "Lv3Q5A2";
-        questionAnswers[39][2] = "Lv3Q5A3";
+        questionAnswers[40][0] = "Lv3Q6A1";
+        questionAnswers[40][1] = "Lv3Q6A2";
+        questionAnswers[40][2] = "Lv3Q6A3";
+        questionAnswers[41][0] = "Lv3Q6.1A1";
+        questionAnswers[41][1] = "Lv3Q6.1A2";
+        questionAnswers[41][2] = "Lv3Q6.1A3";
 
-        questionAnswers[40][0] = "Lv3Q5A1";
-        questionAnswers[40][1] = "Lv3Q5A2";
-        questionAnswers[40][2] = "Lv3Q5A3";
+        questionAnswers[42][0] = "Lv3Q7A1";
+        questionAnswers[42][1] = "Lv3Q7A2";
+        questionAnswers[42][2] = "Lv3Q7A3";
+        questionAnswers[43][0] = "Lv3Q7.1A1";
+        questionAnswers[43][1] = "Lv3Q7.1A2";
+        questionAnswers[43][2] = "Lv3Q7.1A3";
 
-        questionAnswers[41][0] = "Lv3Q5A1";
-        questionAnswers[41][1] = "Lv3Q5A2";
-        questionAnswers[41][2] = "Lv3Q5A3";
+        questionAnswers[44][0] = "Lv3Q8A1";
+        questionAnswers[44][1] = "Lv3Q8A2";
+        questionAnswers[44][2] = "Lv3Q8A3";
+        questionAnswers[45][0] = "Lv3Q8.1A1";
+        questionAnswers[45][1] = "Lv3Q8.1A2";
+        questionAnswers[45][2] = "Lv3Q8.1A3";
 
-        questionAnswers[42][0] = "Lv3Q5A1";
-        questionAnswers[42][1] = "Lv3Q5A2";
-        questionAnswers[42][2] = "Lv3Q5A3";
+        questionAnswers[46][0] = "Lv3Q9A1";
+        questionAnswers[46][1] = "Lv3Q9A2";
+        questionAnswers[46][2] = "Lv3Q9A3";
+        questionAnswers[47][0] = "Lv3Q9.1A1";
+        questionAnswers[47][1] = "Lv3Q9.1A2";
+        questionAnswers[47][2] = "Lv3Q9.1A3";
 
-        questionAnswers[43][0] = "Lv3Q5A1";
-        questionAnswers[43][1] = "Lv3Q5A2";
-        questionAnswers[43][2] = "Lv3Q5A3";
-
-        questionAnswers[44][0] = "Lv3Q5A1";
-        questionAnswers[44][1] = "Lv3Q5A2";
-        questionAnswers[44][2] = "Lv3Q5A3";
-
-        questionAnswers[45][0] = "Lv3Q5A1";
-        questionAnswers[45][1] = "Lv3Q5A2";
-        questionAnswers[45][2] = "Lv3Q5A3";
-
-        questionAnswers[46][0] = "Lv3Q5A1";
-        questionAnswers[46][1] = "Lv3Q5A2";
-        questionAnswers[46][2] = "Lv3Q5A3";
-
-        questionAnswers[47][0] = "Lv3Q5A1";
-        questionAnswers[47][1] = "Lv3Q5A2";
-        questionAnswers[47][2] = "Lv3Q5A3";
-
-        questionAnswers[48][0] = "Lv3Q5A1";
-        questionAnswers[48][1] = "Lv3Q5A2";
-        questionAnswers[48][2] = "Lv3Q5A3";
-
-        questionAnswers[49][0] = "Lv3Q5A1";
-        questionAnswers[49][1] = "Lv3Q5A2";
-        questionAnswers[49][2] = "Lv3Q5A3";
-
+        questionAnswers[48][0] = "Lv3Q10A1";
+        questionAnswers[48][1] = "Lv3Q10A2";
+        questionAnswers[48][2] = "Lv3Q10A3";
+        questionAnswers[49][0] = "Lv3Q10.1A1";
+        questionAnswers[49][1] = "Lv3Q10.1A2";
+        questionAnswers[49][2] = "Lv3Q10.1A3";
 
         questionData = new Question[49];
         for (int i = 0; i < 50; i++) {
