@@ -125,15 +125,15 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
-        correctAnswers[1] = "Lv1Q2A2";
-        correctAnswers[2] = "Lv1Q3A3";
-        correctAnswers[3] = "Lv1Q4A1";
-        correctAnswers[4] = "Lv1Q5A2";
-        correctAnswers[5] = "Lv1Q6A3";
-        correctAnswers[6] = "Lv1Q7A1";
-        correctAnswers[7] = "Lv1Q8A2";
-        correctAnswers[8] = "Lv1Q9A3";
-        correctAnswers[9] = "Lv1Q10A1";
+        correctAnswers[1] = "ai";
+        correctAnswers[2] = "fait";
+        correctAnswers[3] = "aime";
+        correctAnswers[4] = "robe";
+        correctAnswers[5] = "chaussures";
+        correctAnswers[6] = "managent";
+        correctAnswers[7] = "sont";
+        correctAnswers[8] = "neige";
+        correctAnswers[9] = "pantalons";
 
         correctAnswers[10] = "a fini";
         correctAnswers[11] = "peut";
@@ -232,16 +232,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[49] = "Lv3Q10A1.1";
 
         String[] verb = new String[50];
-        verb[0] = "Assister ";
-        verb[1] = "Lv1Q2VERB";
-        verb[2] = "Lv1Q3VERB";
-        verb[3] = "Lv1Q4VERB";
-        verb[4] = "Lv1Q5VERB";
-        verb[5] = "Lv1Q6VERB";
-        verb[6] = "Lv1Q7VERB";
-        verb[7] = "Lv1Q8VERB";
-        verb[8] = "Lv1Q9VERB";
-        verb[9] = "Lv1Q10VERB";
+        verb[0] = "ASSISTER";
+        verb[1] = "AVOIR";
+        verb[2] = "FAIRE";
+        verb[3] = "AINIER";
+        verb[4] = "";
+        verb[5] = "";
+        verb[6] = "MANAGER";
+        verb[7] = "ETRE";
+        verb[8] = "NEIGER";
+        verb[9] = "";
 
         verb[10] = "finir";
         verb[11] = "pouvoir";
@@ -657,6 +657,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].one.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].one.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].one.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].one.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].one.option3);
@@ -669,6 +670,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].one1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].one1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].one1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].one1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].one1.option3);
@@ -681,6 +683,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].two.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].two.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].two.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].two.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].two.option3);
@@ -693,6 +696,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].two1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].two1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].two1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].two1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].two1.option3);
@@ -705,6 +709,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].three.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].three.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].three.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].three.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].three.option3);
@@ -717,6 +722,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].three1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].three1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].three1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].three1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].three1.option3);
@@ -729,6 +735,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].four.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].four.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].four.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].four.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].four.option3);
@@ -741,6 +748,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].four1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].four1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].four1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].four1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].four1.option3);
@@ -753,6 +761,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].five.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].five.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].five.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].five.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].five.option3);
@@ -765,6 +774,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].five1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].five1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].five1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].five1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].five1.option3);
@@ -777,6 +787,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].six.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].six.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].six.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].six.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].six.option3);
@@ -789,6 +800,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].six1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].six1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].six1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].six1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].six1.option3);
@@ -801,6 +813,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].seven.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].seven.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].seven.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].seven.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].seven.option3);
@@ -813,6 +826,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].seven1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].seven1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].seven1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].seven1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].seven1.option3);
@@ -825,6 +839,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].eight.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].eight.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].eight.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].eight.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].eight.option3);
@@ -837,6 +852,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].eight1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].eight1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].eight1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].eight1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].eight1.option3);
@@ -849,6 +865,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].nine.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].nine.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].nine.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].nine.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].nine.option3);
@@ -861,6 +878,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].nine1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].nine1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].nine1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].nine1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].nine1.option3);
@@ -873,6 +891,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].ten.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].ten.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].ten.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].ten.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].ten.option3);
@@ -885,6 +904,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         tvQuestion.setText(levelData[prefs.getInt("level", -1)].ten1.sentence);
         tvVerb.setText(levelData[prefs.getInt("level", -1)].ten1.verb);
         tvVerb.setBackgroundResource(R.drawable.brick2);
+        tvVerb.getBackground().setAlpha(120);
         btnAns1.setText(levelData[prefs.getInt("level", -1)].ten1.option1);
         btnAns2.setText(levelData[prefs.getInt("level", -1)].ten1.option2);
         btnAns3.setText(levelData[prefs.getInt("level", -1)].ten1.option3);
@@ -1229,6 +1249,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 8;//to start Q2L1
                             QuestionFiveSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                             leveldone++;
@@ -1259,6 +1280,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 8;//to start Q4L1
                             QuestionFiveSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
@@ -1269,6 +1291,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 8;//to start Q4L1
                             QuestionFiveSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         }
                         break;
 
@@ -1297,6 +1320,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 10;//to start Q6L1
                             QuestionSixSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                             leveldone++;
@@ -1327,6 +1351,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 10;//to start Q6L1
                             QuestionSixSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
@@ -1337,6 +1362,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 10;//to start Q6L1
                             QuestionSixSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         }
                         break;
 
@@ -1569,6 +1595,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 18;//to start Q2L1
                             QuestionTenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                             leveldone++;
@@ -1599,6 +1626,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 18;//to start Q10L1
                             QuestionTenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         } else {
                             Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
@@ -1609,6 +1637,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             leveldone = 18;//to start Q10L1
                             QuestionTenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
+                            tvVerb.getBackground().setAlpha(0);
                         }
                         break;
 
