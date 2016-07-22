@@ -329,21 +329,20 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         image[12] = "Lv3Q3Image";
         image[13] = "Lv3Q4Image";
         image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-        image[14] = "Lv3Q5Image";
-
+        image[14] = "Lv3Q6Image";
+        image[14] = "Lv3Q7Image";
+        image[14] = "Lv3Q8Image";
+        image[14] = "Lv3Q9Image";
+        image[14] = "Lv3Q10Image";
+        image[14] = "Lv3Q1Image.1";
+        image[14] = "Lv3Q2Image.1";
+        image[14] = "Lv3Q3Image.1";
+        image[14] = "Lv3Q4Image.1";
+        image[14] = "Lv3Q5Image.1";
+        image[14] = "Lv3Q6Image.1";
+        image[14] = "Lv3Q8Image.1";
+        image[14] = "Lv3Q9Image.1";
+        image[14] = "Lv3Q10Image.1";
         */
 
         String[][] questionAnswers = new String[51][4];
