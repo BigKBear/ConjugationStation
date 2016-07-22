@@ -84,7 +84,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvWrong1"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
                 android:text="Show correct answer 2"
                 android:visibility="invisible" />
 
@@ -92,9 +91,8 @@
                 android:id="@+id/tvWrong3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tvWrong1"
+                android:layout_below="@+id/tvWrong2"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="80dp"
                 android:text="Show correct answer 3"
                 android:visibility="invisible" />
 
@@ -104,7 +102,6 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvWrong3"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="30dp"
                 android:text="Show correct answer 4"
                 android:visibility="invisible" />
 
@@ -114,8 +111,52 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tvWrong4"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="34dp"
                 android:text="Show correct answer 5"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvWrong6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong5"
+                android:layout_centerHorizontal="true"
+                android:text="Show correct answer 6"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvWrong7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong6"
+                android:layout_centerHorizontal="true"
+                android:text="Show correct answer 7"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvWrong8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong7"
+                android:layout_centerHorizontal="true"
+                android:text="Show correct answer 8"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvWrong9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong8"
+                android:layout_centerHorizontal="true"
+                android:text="Show correct answer 9"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tvWrong10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvWrong9"
+                android:layout_centerHorizontal="true"
+                android:text="Show correct answer 10"
                 android:visibility="invisible" />
         </RelativeLayout>
     </ScrollView>
