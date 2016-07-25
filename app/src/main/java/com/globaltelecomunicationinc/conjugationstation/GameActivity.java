@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 //import android.graphics.Color;
+//import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -20,7 +21,6 @@ import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 //import java.util.Random;
 
 public class GameActivity extends AppCompatActivity implements View.OnClickListener {
@@ -73,13 +73,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[0] = "Jean _____ le bus pour aller à l'école.";
         LevelQuestions[1] = "Aie! J' ___ mal au vent!";
         LevelQuestions[2] = "Oh la la! Il ___ chaud!";
-        LevelQuestions[3] = "Marie ___ de marcher. Ca fait du bien!";
+        LevelQuestions[3] = "Marie ___ de marcher. Ça fait du bien!";
         LevelQuestions[4] = "Voia ma jolie ___ !";
-        LevelQuestions[5] = "Ces sont ses ___ préferés";
+        LevelQuestions[5] = "Ces sont ses ___ préfèrés";
         LevelQuestions[6] = "Pendant l'été les personnes ___ beacoup des mangues.";
         LevelQuestions[7] = "Les plages de la Barbade ___ les plus belles";
         LevelQuestions[8] = "Quand il ___ il feut froid.";
-        LevelQuestions[9] = "Ses ___ sont trop sérré.";
+        LevelQuestions[9] = "Ses ___ sont trôp sérré.";
 
         LevelQuestions[10] = "Ma soeur ___ est trois ans plus jeune que moi.";
         LevelQuestions[11] = "No part 2 click Lv2Q1A1.1";
@@ -102,26 +102,26 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[28] = "Nous ___ les jeux de viders pendant tout le3 soir!";
         LevelQuestions[29] = "No part 2 click Lv2Q10A1.1";
 
-        LevelQuestions[30] = "Oh non! Le chien ___ le petit garcon!";
+        LevelQuestions[30] = "Oh non! Le chien ___ le petit garçon!";
         LevelQuestions[31] = "No part 2 click Lv3Q1A1.1";
-        LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'annee passe.";
+        LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'année passe.";
         LevelQuestions[33] = "No part 2 click Lv3Q2A1.1";
-        LevelQuestions[34] = "Le garcon mechant ___ les jeux de video au lieu de ___ ses devoirs.";
-        LevelQuestions[35] = "Le garcon mechant ___ les jeux de video au lieu de ___ ses devoirs.";
+        LevelQuestions[34] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
+        LevelQuestions[35] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
         LevelQuestions[36] = "Marle ___ de ___ au Marco.";
         LevelQuestions[37] = "Marle ___ de ___ au Marco.";
         LevelQuestions[38] = "Cecile et ses amies ___ ent ville pour acheter les tenues nouvellrs pour CropOver.";
         LevelQuestions[39] = "No part 2 click Lv3Q5A1.1";
         LevelQuestions[40] = "La fille ___ et elle ___ son bras.";
         LevelQuestions[41] = "No part 2 click Lv3Q6A1.1";
-        LevelQuestions[42] = "Elodie a Pleure beaucoup parce son chat ___.";
+        LevelQuestions[42] = "Elodie a pleuré beaucoup parce son chat ___.";
         LevelQuestions[43] = "No part 2 click Lv3Q7A1.1";
         LevelQuestions[44] = "Yanis ___ ses lunettes.";
         LevelQuestions[45] = "No part 2 click Lv3Q8A1.1";
         LevelQuestions[46] = "Le maman de Pierre lui accompagne partout parce qui'l ___ facilement.";
         LevelQuestions[47] = "No part 2 click Lv3Q9A1.1";
-        LevelQuestions[48] = "Nous ___ nons examens donc hes parent nous ___.";
-        LevelQuestions[49] = "Nous ___ nons examens donc hes parent nous ___.";
+        LevelQuestions[48] = "Nous ___ à nons examens donc hes parent nous ___.";
+        LevelQuestions[49] = "Nous ___ à nons examens donc hes parent nous ___.";
 
         String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
@@ -141,13 +141,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[13] = "Lv2Q2A1.1";
         correctAnswers[14] = "pleut";
         correctAnswers[15] = "prendre";
-        correctAnswers[16] = "rnnuyeuses";
+        correctAnswers[16] = "ennuyeuses";
         correctAnswers[17] = "Lv2Q4A1.1";
         correctAnswers[18] = "a blesse";
         correctAnswers[19] = "Lv2Q5A1.1";
         correctAnswers[20] = "bavard";
         correctAnswers[21] = "Lv2Q6A1.1";
-        correctAnswers[22] = "Felicitations!";
+        correctAnswers[22] = "Felicitations";
         correctAnswers[23] = "Lv2Q7A1.1";
         correctAnswers[24] = "mets";
         correctAnswers[25] = "Lv2Q8A1.1";
@@ -181,55 +181,55 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[0] = "<b>Jean <u>attend</u> le bus pour aller à l'école.</b>";
         shownAnswer[1] = "<b>Aie! J' <u>ai</u> mal au vent!</b>";
         shownAnswer[2] = "<b>Oh la la! Il <u>fait</u> chaud!</b>";
-        shownAnswer[3] = "<b>Marie <u>aime</u> de marcher. Ca fait du bien!</b>";
+        shownAnswer[3] = "<b>Marie <u>aime</u> de marcher. Ça fait du bien!</b>";
         shownAnswer[4] = "<b>Voia ma jolie <u>robe</u>!</b>";
-        shownAnswer[5] = "<b>Ces sont ses <u>chaussures</u> préferés.</b>";
+        shownAnswer[5] = "<b>Ces sont ses <u>chaussures</u> préfèrés.</b>";
         shownAnswer[6] = "<b>Pendant l'été les personnes <u>managent</u> beacoup des mangues.</b>";
         shownAnswer[7] = "<b>Les plages de la Barbade <u>sont</u> les plus belles.</b>";
         shownAnswer[8] = "<b>Quand il <u>neige</u> il feut froid.</b>";
-        shownAnswer[9] = "<b>Ses <u>pantalons</u> sont trop sérré.</b>";
+        shownAnswer[9] = "<b>Ses <u>pantalons</u> sont trôp sérré.</b>";
 
         shownAnswer[10] = "<b>Ma soeur <u>cadette</u> est trois ans plus jeune que moi.</b>";
         shownAnswer[11] = "<b>L2Q1A1.1";
-        shownAnswer[12] = "<b><u>Faites</u> attention! le prof a dit aux eleves in attentives.</b>";
+        shownAnswer[12] = "<b><u>Faites</u> attention! le prof a dit aux élèves inattentives.</b>";
         shownAnswer[13] = "<b>L2Q2A1.1";
         shownAnswer[14] = "<b>Il <u>pleut</u> aujourd 'hui, donc je ___ mon parapluie.</b>";
         shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je <u>umon</u> parapluie.</b>";
-        shownAnswer[16] = "<b>Les Mathematique sont si <u>ennuyeuses</u> les eleves endorment.</b>";
+        shownAnswer[16] = "<b>Les Mathematique sont si <u>ennuyeuses</u> les élèves endorment.</b>";
         shownAnswer[17] = "<b>L2Q4A1.1";
         shownAnswer[18] = "<b>Chloe <u>a blesse</u> sa jambe hier soir.</b>";
         shownAnswer[19] = "<b>L2Q5A1.1";
-        shownAnswer[20] = "<b>Claude est tres <u>bavard</u> une feis qui! commencera parler, il est impossible de L'arreter!</b>";
+        shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qui! commencerà parler, il est impossible de L'arrêter!</b>";
         shownAnswer[21] = "<b>L2Q6A1.1";
         shownAnswer[22] = "<b><u>Felicitations!</u> le pref a dit avant les.</b>";
         shownAnswer[23] = "<b>L2Q7A1.1";
-        shownAnswer[24] = "<b>Je <u>mets</u> le repulsif parce que moustiques mardae beaucoup!</b>";
+        shownAnswer[24] = "<b>Je <u>mets</u> le répulsif parce que moustiques mardae beaucoup!</b>";
         shownAnswer[25] = "<b>L2Q8A1.1";
-        shownAnswer[26] = "<b>Sara a <u>fini</u> ses devoir mewtenant elle ____ regarder le television.</b>";
-        shownAnswer[27] = "<b>Sara a <u>fini</u> ses devoir mewtenant elle <u>peut</u> regarder le television.</b>";
-        shownAnswer[28] = "<b>Les jeux <u>olympique</u> auront lieu ete en Bresil.</b>";
+        shownAnswer[26] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle ____ regarder le télévision.</b>";
+        shownAnswer[27] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle <u>peut</u> regarder le télévision.</b>";
+        shownAnswer[28] = "<b>Les jeux olympique <u>auront</u> lieu été en Brésil.</b>";
         shownAnswer[29] = "<b>L2Q10A1.1";
 
-        shownAnswer[30] = "<b>Oh non! Le chien <u>a mordu</u> le petit garcon!</b>";
+        shownAnswer[30] = "<b>Oh non! Le chien <u>a mordu</u> le petit garçon!</b>";
         shownAnswer[31] = "<b>Lv3Q1A1.1</b>";
-        shownAnswer[32] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'annee passe.</b>";
+        shownAnswer[32] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année passe.</b>";
         shownAnswer[33] = "<b>Lv3Q2A2.1</b>";
-        shownAnswer[34] = "<b>Le garcon mechant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
-        shownAnswer[35] = "<b>Le garcon mechant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
+        shownAnswer[34] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
+        shownAnswer[35] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
         shownAnswer[36] = "<b>Marle <u>___</u> de <u>___</u> au Marco.</b>";
         shownAnswer[37] = "<b>Marle <u>___</u> de <u>___</u> au Marco.</b>";
         shownAnswer[38] = "<b>Cecile et ses amies <u>___</u> ent ville pour acheter les tenues nouvellrs pour CropOver.</b>";
         shownAnswer[39] = "<b>Lv3Q5A2.1</b>";
         shownAnswer[40] = "<b>La fille <u>___</u> et elle <u>___</u> son bras.</b>";
         shownAnswer[41] = "<b>La fille <u>___</u> et elle <u>___</u> son bras.</b>";
-        shownAnswer[42] = "<b>Elodie a Pleure beaucoup parce son chat <u>___</u>.</b>";
+        shownAnswer[42] = "<b>Elodie a pleuré beaucoup parce son chat <u>___</u>.</b>";
         shownAnswer[43] = "<b>Lv3Q7A1.1</b>";
         shownAnswer[44] = "<b>Yanis <u>___</u> ses lunettes.</b>";
         shownAnswer[45] = "<b>Lv3Q8A2.1</b>";
         shownAnswer[46] = "<b>Le maman de Pierre lui accompagne partout parce qui'l <u>___</u> facilement.</b>";
         shownAnswer[47] = "<b>Lv3Q9A3.1</b>";
-        shownAnswer[48] = "<b>Nous <u>___</u> nons examens donc hes parent nous <u>___</u>.</b>";
-        shownAnswer[49] = "<b>Nous <u>___</u> nons examens donc hes parent nous <u>___</u>.</b>";
+        shownAnswer[48] = "<b>Nous <u>___</u> à nons examens donc hes parent nous <u>___</u>.</b>";
+        shownAnswer[49] = "<b>Nous <u>___</u> à nons examens donc hes parent nous <u>___</u>.</b>";
 
         String[] verb = new String[50];
         verb[0] = "ASSISTER";
@@ -239,7 +239,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[4] = "";
         verb[5] = "";
         verb[6] = "MANGER";
-        verb[7] = "ETRE";
+        verb[7] = "ÊTRE";
         verb[8] = "NEIGER";
         verb[9] = "";
 
@@ -380,145 +380,145 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[9][1] = "pantalons";
         questionAnswers[9][2] = "short";
 
-        questionAnswers[10][0] = "a fini";
-        questionAnswers[10][1] = "Lv2Q1A2";
-        questionAnswers[10][2] = "Lv2Q1A3";
-        questionAnswers[11][0] = "Lv2Q1.1A1";
-        questionAnswers[11][1] = "peut";
-        questionAnswers[11][2] = "Lv2Q1.1A3";
+        questionAnswers[10][0] = "cadette";
+        questionAnswers[10][1] = "aîné";
+        questionAnswers[10][2] = "âgé";
+        questionAnswers[11][0] = "Lv2Q1A1.1";
+        questionAnswers[11][1] = "Lv2Q1A2.1";
+        questionAnswers[11][2] = "Lv2Q1A3.1";
 
-        questionAnswers[12][0] = "Lv2Q2A1";
-        questionAnswers[12][1] = "Lv2Q2A2";
-        questionAnswers[12][2] = "Lv2Q2A3";
-        questionAnswers[13][0] = "Lv2Q2A2.1";
-        questionAnswers[13][1] = "Lv2Q2.1A2";
-        questionAnswers[13][2] = "Lv2Q2.1A3";
+        questionAnswers[12][0] = "fais";
+        questionAnswers[12][1] = "faites";
+        questionAnswers[12][2] = "faisons";
+        questionAnswers[13][0] = "Lv2Q2A1.1";
+        questionAnswers[13][1] = "Lv2Q2A2.1";
+        questionAnswers[13][2] = "Lv2Q2A3.1";
 
-        questionAnswers[14][0] = "Lv2Q3A1";
-        questionAnswers[14][1] = "Lv2Q3A2";
-        questionAnswers[14][2] = "Lv2Q3A3";
-        questionAnswers[15][0] = "Lv2Q3.1A1";
-        questionAnswers[15][1] = "Lv2Q3A3.1";
-        questionAnswers[15][2] = "Lv2Q3.1A3";
+        questionAnswers[14][0] = "pleut";
+        questionAnswers[14][1] = "pleuvent";
+        questionAnswers[14][2] = "pleuvoir";
+        questionAnswers[15][0] = "pris";
+        questionAnswers[15][1] = "prends";
+        questionAnswers[15][2] = "prendre";
 
-        questionAnswers[16][0] = "Lv2Q4A1";
-        questionAnswers[16][1] = "Lv2Q4A2";
-        questionAnswers[16][2] = "Lv2Q4A3";
+        questionAnswers[16][0] = "ennuyeux";
+        questionAnswers[16][1] = "ennuyeuses";
+        questionAnswers[16][2] = "intéressant";
         questionAnswers[17][0] = "Lv2Q4A1.1";
-        questionAnswers[17][1] = "Lv2Q4.1A2";
-        questionAnswers[17][2] = "Lv2Q4.1A3";
+        questionAnswers[17][1] = "Lv2Q4A2.1";
+        questionAnswers[17][2] = "Lv2Q4A3.1";
 
-        questionAnswers[18][0] = "Lv2Q5A1";
-        questionAnswers[18][1] = "Lv2Q5A2";
-        questionAnswers[18][2] = "Lv2Q5A3";
-        questionAnswers[19][0] = "Lv2Q5.1A1";
+        questionAnswers[18][0] = "a blesser";
+        questionAnswers[18][1] = "a blesse";
+        questionAnswers[18][2] = "est blessé";
+        questionAnswers[19][0] = "Lv2Q5A1.1";
         questionAnswers[19][1] = "Lv2Q5A2.1";
-        questionAnswers[19][2] = "Lv2Q5.1A3";
+        questionAnswers[19][2] = "Lv2Q5A3.1";
 
-        questionAnswers[20][0] = "Lv2Q6A1";
-        questionAnswers[20][1] = "Lv2Q6A2";
-        questionAnswers[20][2] = "Lv2Q6A3";
-        questionAnswers[21][0] = "Lv2Q6.1A1";
-        questionAnswers[21][1] = "Lv2Q6.1A2";
+        questionAnswers[20][0] = "timide";
+        questionAnswers[20][1] = "bavard";
+        questionAnswers[20][2] = "sociable";
+        questionAnswers[21][0] = "Lv2Q6A1.1";
+        questionAnswers[21][1] = "Lv2Q6A2.1";
         questionAnswers[21][2] = "Lv2Q6A3.1";
 
-        questionAnswers[22][0] = "Lv2Q7A1";
-        questionAnswers[22][1] = "Lv2Q7A2";
-        questionAnswers[22][2] = "Lv2Q7A3";
+        questionAnswers[22][0] = "Bon voyage";
+        questionAnswers[22][1] = "Bonne dnance";
+        questionAnswers[22][2] = "Felicitations";
         questionAnswers[23][0] = "Lv2Q7A1.1";
-        questionAnswers[23][1] = "Lv2Q7.1A2";
-        questionAnswers[23][2] = "Lv2Q7.1A3";
+        questionAnswers[23][1] = "Lv2Q7A2.1";
+        questionAnswers[23][2] = "Lv2Q7A3.1";
 
-        questionAnswers[24][0] = "Lv2Q8A1";
-        questionAnswers[24][1] = "Lv2Q8A2";
-        questionAnswers[24][2] = "Lv2Q8A3";
-        questionAnswers[25][0] = "Lv2Q8.1A1";
+        questionAnswers[24][0] = "met";
+        questionAnswers[24][1] = "mets";
+        questionAnswers[24][2] = "mettent";
+        questionAnswers[25][0] = "Lv2Q8A1.1";
         questionAnswers[25][1] = "Lv2Q8A2.1";
-        questionAnswers[25][2] = "Lv2Q8.1A3";
+        questionAnswers[25][2] = "Lv2Q8A3.1";
 
-        questionAnswers[26][0] = "Lv2Q9A1";
-        questionAnswers[26][1] = "Lv2Q9A2";
-        questionAnswers[26][2] = "Lv2Q9A3";
-        questionAnswers[27][0] = "Lv2Q9.1A1";
-        questionAnswers[27][1] = "Lv2Q9.1A2";
-        questionAnswers[27][2] = "Lv2Q9A3.1";
+        questionAnswers[26][0] = "a fini";
+        questionAnswers[26][1] = "est fini ";
+        questionAnswers[26][2] = "ont fini";
+        questionAnswers[27][0] = "pouvons";
+        questionAnswers[27][1] = "peuvent.";
+        questionAnswers[27][2] = "peut";
 
-        questionAnswers[28][0] = "Lv2Q10A1";
-        questionAnswers[28][1] = "Lv2Q10A2";
-        questionAnswers[28][2] = "Lv2Q10A3";
+        questionAnswers[28][0] = "aurai";
+        questionAnswers[28][1] = "auriez";
+        questionAnswers[28][2] = "auront";
         questionAnswers[29][0] = "Lv2Q10A1.1";
-        questionAnswers[29][1] = "Lv2Q10.1A2";
-        questionAnswers[29][2] = "Lv2Q10.1A3";
+        questionAnswers[29][1] = "Lv2Q10A2.1";
+        questionAnswers[29][2] = "Lv2Q10A3.1";
 
-        questionAnswers[30][0] = "Lv3Q1A1";
-        questionAnswers[30][1] = "Lv3Q1A2";
-        questionAnswers[30][2] = "Lv3Q1A3";
+        questionAnswers[30][0] = "a mordu";
+        questionAnswers[30][1] = "as mordu";
+        questionAnswers[30][2] = "ont mordu";
         questionAnswers[31][0] = "Lv3Q1A1.1";
-        questionAnswers[31][1] = "Lv3Q1.1A2";
-        questionAnswers[31][2] = "Lv3Q1.1A3";
+        questionAnswers[31][1] = "Lv3Q1A2.1";
+        questionAnswers[31][2] = "Lv3Q1A3.1";
 
-        questionAnswers[32][0] = "Lv3Q2A1";
-        questionAnswers[32][1] = "Lv3Q2A2";
-        questionAnswers[32][2] = "Lv3Q2A3";
-        questionAnswers[33][0] = "Lv3Q2.1A1";
+        questionAnswers[32][0] = "a visiter";
+        questionAnswers[32][1] = "ont visité";
+        questionAnswers[32][2] = "a visité";
+        questionAnswers[33][0] = "Lv3Q2A1.1";
         questionAnswers[33][1] = "Lv3Q2A2.1";
-        questionAnswers[33][2] = "Lv3Q2.1A3";
+        questionAnswers[33][2] = "Lv3Q2A3.1";
 
-        questionAnswers[34][0] = "Lv3Q3A1";
-        questionAnswers[34][1] = "Lv3Q3A2";
-        questionAnswers[34][2] = "Lv3Q3A3";
-        questionAnswers[35][0] = "Lv3Q3.1A1";
-        questionAnswers[35][1] = "Lv3Q3.1A2";
-        questionAnswers[35][2] = "Lv3Q3A3.1";
+        questionAnswers[34][0] = "ont joue";
+        questionAnswers[34][1] = "a joue";
+        questionAnswers[34][2] = "avons joue";
+        questionAnswers[35][0] = "fais";
+        questionAnswers[35][1] = "faire";
+        questionAnswers[35][2] = "faites";
 
-        questionAnswers[36][0] = "Lv3Q4A1";
-        questionAnswers[36][1] = "Lv3Q4A2";
-        questionAnswers[36][2] = "Lv3Q4A3";
-        questionAnswers[37][0] = "Lv3Q4A1.1";
-        questionAnswers[37][1] = "Lv3Q4.1A2";
-        questionAnswers[37][2] = "Lv3Q4.1A3";
+        questionAnswers[36][0] = "-";
+        questionAnswers[36][1] = "-";
+        questionAnswers[36][2] = "-";
+        questionAnswers[37][0] = "-";
+        questionAnswers[37][1] = "-";
+        questionAnswers[37][2] = "-";
 
-        questionAnswers[38][0] = "Lv3Q5A1";
-        questionAnswers[38][1] = "Lv3Q5A2";
-        questionAnswers[38][2] = "Lv3Q5A3";
-        questionAnswers[39][0] = "Lv3Q5.1A1";
+        questionAnswers[38][0] = "est allé";
+        questionAnswers[38][1] = "sommes allé";
+        questionAnswers[38][2] = "sont allé";
+        questionAnswers[39][0] = "Lv3Q5A1.1";
         questionAnswers[39][1] = "Lv3Q5A2.1";
-        questionAnswers[39][2] = "Lv3Q5.1A3";
+        questionAnswers[39][2] = "Lv3Q5A3.1";
 
-        questionAnswers[40][0] = "Lv3Q6A1";
-        questionAnswers[40][1] = "Lv3Q6A2";
-        questionAnswers[40][2] = "Lv3Q6A3";
-        questionAnswers[41][0] = "Lv3Q6.1A1";
-        questionAnswers[41][1] = "Lv3Q6.1A2";
-        questionAnswers[41][2] = "Lv3Q6A3.1";
+        questionAnswers[40][0] = "sont tombé";
+        questionAnswers[40][1] = "est tombé";
+        questionAnswers[40][2] = "es tombé";
+        questionAnswers[41][0] = "a cassé";
+        questionAnswers[41][1] = "est cassé";
+        questionAnswers[41][2] = "sont cassé";
 
-        questionAnswers[42][0] = "Lv3Q7A1";
-        questionAnswers[42][1] = "Lv3Q7A2";
-        questionAnswers[42][2] = "Lv3Q7A3";
+        questionAnswers[42][0] = "suis mort";
+        questionAnswers[42][1] = "sont morts";
+        questionAnswers[42][2] = "est mort";
         questionAnswers[43][0] = "Lv3Q7A1.1";
-        questionAnswers[43][1] = "Lv3Q7.1A2";
-        questionAnswers[43][2] = "Lv3Q7.1A3";
+        questionAnswers[43][1] = "Lv3Q7A2.1";
+        questionAnswers[43][2] = "Lv3Q7A3.1";
 
-        questionAnswers[44][0] = "Lv3Q8A1";
-        questionAnswers[44][1] = "Lv3Q8A2";
-        questionAnswers[44][2] = "Lv3Q8A3";
-        questionAnswers[45][0] = "Lv3Q8.1A1";
+        questionAnswers[44][0] = "a perdei";
+        questionAnswers[44][1] = "est perdu";
+        questionAnswers[44][2] = "ont perdu";
+        questionAnswers[45][0] = "Lv3Q8A1.1";
         questionAnswers[45][1] = "Lv3Q8A2.1";
-        questionAnswers[45][2] = "Lv3Q8.1A3";
+        questionAnswers[45][2] = "Lv3Q8A3.1";
 
-        questionAnswers[46][0] = "Lv3Q9A1";
-        questionAnswers[46][1] = "Lv3Q9A2";
-        questionAnswers[46][2] = "Lv3Q9A3";
-        questionAnswers[47][0] = "Lv3Q9.1A1";
-        questionAnswers[47][1] = "Lv3Q9.1A2";
+        questionAnswers[46][0] = "me perds";
+        questionAnswers[46][1] = "se perd";
+        questionAnswers[46][2] = "se perder";
+        questionAnswers[47][0] = "Lv3Q9A1.1";
+        questionAnswers[47][1] = "Lv3Q9A2.1";
         questionAnswers[47][2] = "Lv3Q9A3.1";
 
-        questionAnswers[48][0] = "Lv3Q10A1";
-        questionAnswers[48][1] = "Lv3Q10A2";
-        questionAnswers[48][2] = "Lv3Q10A3";
-        questionAnswers[49][0] = "Lv3Q10A1.1";
-        questionAnswers[49][1] = "Lv3Q10.1A2";
-        questionAnswers[49][2] = "Lv3Q10.1A3";
+        questionAnswers[48][0] = "avons réussi";
+        questionAnswers[48][1] = "son tries reussi";
+        questionAnswers[48][2] = "avons réussi";
+        questionAnswers[49][0] = "achèterai";
+        questionAnswers[49][1] = "achètera";
+        questionAnswers[49][2] = "achèteras";
 
         questionData = new Question[50];
         for (int i = 0; i < 50; i++) {
@@ -2832,7 +2832,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 32:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2862,7 +2862,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 33:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2884,7 +2884,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2899,7 +2899,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 34:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2918,7 +2918,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 36;//to start Q2L1
-                                QuestionTenP2Setup();
+                                QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
@@ -2929,7 +2929,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 35:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2951,7 +2951,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q9.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2968,7 +2968,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 36:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2998,7 +2998,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 37:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3016,11 +3016,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     }
                                 }.start();
                                 level2Score++;
-                                leveldone = 36;//to start Q10L1
+                                leveldone = 38;//to start Q10L1
                                 QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3077,7 +3077,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 39:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3087,9 +3087,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone = 40;//to start Q2L1
                                 tvScore.setText(String.valueOf(level1Score) + "/20");
                                 if (level1Score == 20) {
-                                    //Start level 3
+                                    //Start level 2
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
+                                    prefs.edit().putInt("level", 3).apply();
                                     leveldone = 0;
                                     QuestionOneSetup();
                                 } else {
@@ -3100,14 +3100,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                                 }
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q10.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10.1 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
-                                tvScore.setText(String.valueOf(level2Score) + "/10");
-                                leveldone = 40;//to start Q2L1
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten1.shownAnswer));
+                                tvScore.setText(String.valueOf(level2Score) + "/20");
+                                leveldone = 10;//to start Q2L1
                                 prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
@@ -4488,6 +4488,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+
                                 }
                                 break;
                         }
