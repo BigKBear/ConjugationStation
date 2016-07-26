@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
 //import android.graphics.Color;
-//import android.media.MediaPlayer;
+import android.media.MediaPlayer;
 import android.os.CountDownTimer;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -81,47 +81,47 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[8] = "Quand il ___ il feut froid.";
         LevelQuestions[9] = "Ses ___ sont trôp sérré.";
 
-        LevelQuestions[10] = "Ma soeur ___ est trois ans plus jeune que moi.";
-        LevelQuestions[11] = "No part 2 click Lv2Q1A1.1";
-        LevelQuestions[12] = "___ attention! le prof a dit aux eleves in attentives.";
-        LevelQuestions[13] = "No part 2 click Lv2Q2A1.1";
+        LevelQuestions[10] = "Ma soeur ___ est trois ans ___ jeune que moi.";
+        LevelQuestions[11] = "Ma soeur ___ est trois ans ___ jeune que moi.";
+        LevelQuestions[12] = "les jeux olympique ___ lieu ___ en Brésil.";
+        LevelQuestions[13] = "les jeux olympique ___ lieu ___ en Brésil.";
         LevelQuestions[14] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
         LevelQuestions[15] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
-        LevelQuestions[16] = "Les Mathematique sont si ___ les eleves endorment.";
-        LevelQuestions[17] = "No part 2 click Lv2Q4A1.1";
-        LevelQuestions[18] = "Chloe ___ sa jambe hier soir.";
-        LevelQuestions[19] = "No part 2 click Lv2Q5A1.1";
-        LevelQuestions[20] = "Claude est tres ___ une feis qui! commencera parler, il est impossible de L'arreter!";
-        LevelQuestions[21] = "No part 2 click L2Q6A1.1";
-        LevelQuestions[22] = "___ ! le pref a dit avant les.";
-        LevelQuestions[23] = "No part 2 click Lv2Q7A1.1";
-        LevelQuestions[24] = "Je ___ le repulsif parce que moustiques mardae beaucoup!";
-        LevelQuestions[25] = "No part 2 click L2Q8A1.1";
+        LevelQuestions[16] = "Les Mathematique ___ si ___ les eleves endorment.";
+        LevelQuestions[17] = "Les Mathematique ___ si ___ les eleves endorment.";
+        LevelQuestions[18] = "Chloe ___ sa jambe ___ soir.";
+        LevelQuestions[19] = "Chloe ___ sa jambe ___ soir.";
+        LevelQuestions[20] = "Claude est tres ___ une feis qui! ___ parler, il est impossible de L'arreter!";
+        LevelQuestions[21] = "Claude est tres ___ une feis qui! ___ parler, il est impossible de L'arreter!";
+        LevelQuestions[22] = "___ attention! le prof ___ aux eleves in attentives.";
+        LevelQuestions[23] = "___ attention! le prof ___ aux eleves in attentives.";
+        LevelQuestions[24] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
+        LevelQuestions[25] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
         LevelQuestions[26] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
         LevelQuestions[27] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
-        LevelQuestions[28] = "Nous ___ les jeux de viders pendant tout le3 soir!";
-        LevelQuestions[29] = "No part 2 click Lv2Q10A1.1";
+        LevelQuestions[28] = "Nous ___ les jeux de viders ___ tout le soir!";
+        LevelQuestions[29] = "Nous ___ les jeux de viders ___ tout le soir!";
 
         LevelQuestions[30] = "Oh non! Le chien ___ le petit garçon!";
-        LevelQuestions[31] = "No part 2 click Lv3Q1A1.1";
-        LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'année passe.";
-        LevelQuestions[33] = "No part 2 click Lv3Q2A1.1";
+        LevelQuestions[31] = "Ça c'est très ___. ";
+        LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'année ___.";
+        LevelQuestions[33] = "Manon ___ Paris avec sa fanille l'année ___.";
         LevelQuestions[34] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
         LevelQuestions[35] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
         LevelQuestions[36] = "Marle ___ de ___ au Marco.";
         LevelQuestions[37] = "Marle ___ de ___ au Marco.";
-        LevelQuestions[38] = "Cecile et ses amies ___ ent ville pour acheter les tenues nouvellrs pour CropOver.";
-        LevelQuestions[39] = "No part 2 click Lv3Q5A1.1";
+        LevelQuestions[38] = "Cecile et ses amies ___ ent ville pour acheter les tenues ___ pour CropOver.";
+        LevelQuestions[39] = "Cecile et ses amies ___ ent ville pour acheter les tenues ___ pour CropOver.";
         LevelQuestions[40] = "La fille ___ et elle ___ son bras.";
-        LevelQuestions[41] = "No part 2 click Lv3Q6A1.1";
-        LevelQuestions[42] = "Elodie a pleuré beaucoup parce son chat ___.";
-        LevelQuestions[43] = "No part 2 click Lv3Q7A1.1";
-        LevelQuestions[44] = "Yanis ___ ses lunettes.";
-        LevelQuestions[45] = "No part 2 click Lv3Q8A1.1";
-        LevelQuestions[46] = "Le maman de Pierre lui accompagne partout parce qui'l ___ facilement.";
-        LevelQuestions[47] = "No part 2 click Lv3Q9A1.1";
-        LevelQuestions[48] = "Nous ___ à nons examens donc hes parent nous ___.";
-        LevelQuestions[49] = "Nous ___ à nons examens donc hes parent nous ___.";
+        LevelQuestions[41] = "La fille ___ et elle ___ son bras.";
+        LevelQuestions[42] = "Elodie ___ beaucoup parce son chat ___.";
+        LevelQuestions[43] = "Elodie ___ beaucoup parce son chat ___.";
+        LevelQuestions[44] = "Yanis ___ ses lunettes et il peut pas ___.";
+        LevelQuestions[45] = "Yanis ___ ses lunettes et il peut pas ___.";
+        LevelQuestions[46] = "Le maman de Pierre lui ___ partout parce qui'l ___ facilement.";
+        LevelQuestions[47] = "Le maman de Pierre lui ___ partout parce qui'l ___ facilement.";
+        LevelQuestions[48] = "Nous ___ à nos examens donc nos parents nous ___.";
+        LevelQuestions[49] = "Nous ___ à nos examens donc nos parents nous ___.";
 
         String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
@@ -136,46 +136,46 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[9] = "pantalons";
 
         correctAnswers[10] = "cadette";
-        correctAnswers[11] = "Lv2Q1A1.1";
-        correctAnswers[12] = "faites";
-        correctAnswers[13] = "Lv2Q2A1.1";
+        correctAnswers[11] = "plus";
+        correctAnswers[12] = "auront";
+        correctAnswers[13] = "été";
         correctAnswers[14] = "pleut";
         correctAnswers[15] = "prendre";
-        correctAnswers[16] = "ennuyeuses";
-        correctAnswers[17] = "Lv2Q4A1.1";
+        correctAnswers[16] = "sont";
+        correctAnswers[17] = "ennuyeuses";
         correctAnswers[18] = "a blesse";
-        correctAnswers[19] = "Lv2Q5A1.1";
+        correctAnswers[19] = "hier";
         correctAnswers[20] = "bavard";
-        correctAnswers[21] = "Lv2Q6A1.1";
-        correctAnswers[22] = "Felicitations";
-        correctAnswers[23] = "Lv2Q7A1.1";
+        correctAnswers[21] = "commencer";
+        correctAnswers[22] = "faites";
+        correctAnswers[23] = "a dit";
         correctAnswers[24] = "mets";
-        correctAnswers[25] = "Lv2Q8A1.1";
+        correctAnswers[25] = "mordent";
         correctAnswers[26] = "a fini";
         correctAnswers[27] = "peut";
-        correctAnswers[28] = "auront";
-        correctAnswers[29] = "Lv2Q10A1.1";
+        correctAnswers[28] = "jouerons";
+        correctAnswers[29] = "pendant";
 
         correctAnswers[30] = "a mordu";
-        correctAnswers[31] = "Lv3Q1A1.1";
+        correctAnswers[31] = "malheureux";
         correctAnswers[32] = "a visite";
-        correctAnswers[33] = "Lv3Q2A1.1";
+        correctAnswers[33] = "passé";
         correctAnswers[34] = "a joue";
         correctAnswers[35] = "faire";
-        correctAnswers[36] = "-";
-        correctAnswers[37] = "-";
-        correctAnswers[38] = "-";
-        correctAnswers[39] = "Lv3Q5A1.1";
-        correctAnswers[40] = "-";
-        correctAnswers[41] = "-";
-        correctAnswers[42] = "-";
-        correctAnswers[43] = "Lv3Q7A1.1";
-        correctAnswers[44] = "-";
-        correctAnswers[45] = "Lv3Q8A1.1";
-        correctAnswers[46] = "-";
-        correctAnswers[47] = "Lv3Q9A1.1";
-        correctAnswers[48] = "-";
-        correctAnswers[49] = "-";
+        correctAnswers[36] = "rêve";
+        correctAnswers[37] = "voyoger";
+        correctAnswers[38] = "sont allé";
+        correctAnswers[39] = "nouvelles";
+        correctAnswers[40] = "est tombé";
+        correctAnswers[41] = "a cassé";
+        correctAnswers[42] = "a pleuré";
+        correctAnswers[43] = "est mort";
+        correctAnswers[44] = "a perdu";
+        correctAnswers[45] = "voir";
+        correctAnswers[46] = "accompagne";
+        correctAnswers[47] = "se perd";
+        correctAnswers[48] = "avons réussi";
+        correctAnswers[49] = "achèteront";
 
         String[] shownAnswer = new String[50];
         shownAnswer[0] = "<b>Jean <u>attend</u> le bus pour aller à l'école.</b>";
@@ -189,47 +189,47 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[8] = "<b>Quand il <u>neige</u> il feut froid.</b>";
         shownAnswer[9] = "<b>Ses <u>pantalons</u> sont trôp sérré.</b>";
 
-        shownAnswer[10] = "<b>Ma soeur <u>cadette</u> est trois ans plus jeune que moi.</b>";
-        shownAnswer[11] = "<b>L2Q1A1.1";
-        shownAnswer[12] = "<b><u>Faites</u> attention! le prof a dit aux élèves inattentives.</b>";
-        shownAnswer[13] = "<b>L2Q2A1.1";
+        shownAnswer[10] = "<b>Ma soeur <u>cadette</u> est trois ans ___ jeune que moi.</b>";
+        shownAnswer[11] = "<b>Ma soeur <u>cadette</u> est trois ans <u>plus</u> jeune que moi.</b>";
+        shownAnswer[12] = "<b>les jeux olympique <u>auront</u> lieu ___ en Brésil.</b>";
+        shownAnswer[13] = "<b>les jeux olympique <u>auront</u> lieu <u>été</u> en Brésil.</b>";
         shownAnswer[14] = "<b>Il <u>pleut</u> aujourd 'hui, donc je ___ mon parapluie.</b>";
         shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je <u>umon</u> parapluie.</b>";
-        shownAnswer[16] = "<b>Les Mathematique sont si <u>ennuyeuses</u> les élèves endorment.</b>";
-        shownAnswer[17] = "<b>L2Q4A1.1";
-        shownAnswer[18] = "<b>Chloe <u>a blesse</u> sa jambe hier soir.</b>";
-        shownAnswer[19] = "<b>L2Q5A1.1";
-        shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qui! commencerà parler, il est impossible de L'arrêter!</b>";
-        shownAnswer[21] = "<b>L2Q6A1.1";
-        shownAnswer[22] = "<b><u>Felicitations!</u> le pref a dit avant les.</b>";
-        shownAnswer[23] = "<b>L2Q7A1.1";
-        shownAnswer[24] = "<b>Je <u>mets</u> le répulsif parce que moustiques mardae beaucoup!</b>";
-        shownAnswer[25] = "<b>L2Q8A1.1";
+        shownAnswer[16] = "<b>Les Mathematiques <u>sont</u> si ___ les élèves endorment.</b>";
+        shownAnswer[17] = "<b>Les Mathematiques <u>sont</u> si <u>ennuyeuses</u> les élèves endorment.</b>";
+        shownAnswer[18] = "<b>Chloe <u>a blesse</u> sa jambe ___ soir.</b>";
+        shownAnswer[19] = "<b>Chloe <u>a blesse</u> sa jambe <u>hier</u> soir.</b>";
+        shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qui! ___ à parler, il est impossible de L'arrêter!</b>";
+        shownAnswer[21] = "<b>Claude est très <u>bavard</u> une feis qui! <u>commencer</u> à parler, il est impossible de L'arrêter!</b>";
+        shownAnswer[22] = "<b><u>Faites</u> attention! le prof ___ aux élèves inattentives.</b>";
+        shownAnswer[23] = "<b><u>Faites</u> attention! le prof <u>a dit</u> aux élèves inattentives.</b>";
+        shownAnswer[24] = "<b>Je <u>mets</u> le répulsif parce que moustiques me ___ beaucoup!</b>";
+        shownAnswer[25] = "<b>Je <u>mets</u> le répulsif parce que moustiques me <u>mordre</u> beaucoup!</b>";
         shownAnswer[26] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle ____ regarder le télévision.</b>";
         shownAnswer[27] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle <u>peut</u> regarder le télévision.</b>";
-        shownAnswer[28] = "<b>Les jeux olympique <u>auront</u> lieu été en Brésil.</b>";
-        shownAnswer[29] = "<b>L2Q10A1.1";
+        shownAnswer[28] = "<b>Nous <u>jouerons</u> les jeux de viders ___ tout le soir!</b>";
+        shownAnswer[29] = "<b>Nous <u>jouerons</u> les jeux de viders <u>pendant</u> tout le soir!</b>";
 
         shownAnswer[30] = "<b>Oh non! Le chien <u>a mordu</u> le petit garçon!</b>";
-        shownAnswer[31] = "<b>Lv3Q1A1.1</b>";
-        shownAnswer[32] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année passe.</b>";
-        shownAnswer[33] = "<b>Lv3Q2A2.1</b>";
+        shownAnswer[31] = "<b>Ça c'est très <u>malheureux</u>.</b>";
+        shownAnswer[32] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année ___.</b>";
+        shownAnswer[33] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année <u>passé</u>.</b>";
         shownAnswer[34] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
         shownAnswer[35] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
-        shownAnswer[36] = "<b>Marle <u>___</u> de <u>___</u> au Marco.</b>";
-        shownAnswer[37] = "<b>Marle <u>___</u> de <u>___</u> au Marco.</b>";
-        shownAnswer[38] = "<b>Cecile et ses amies <u>___</u> ent ville pour acheter les tenues nouvellrs pour CropOver.</b>";
-        shownAnswer[39] = "<b>Lv3Q5A2.1</b>";
-        shownAnswer[40] = "<b>La fille <u>___</u> et elle <u>___</u> son bras.</b>";
-        shownAnswer[41] = "<b>La fille <u>___</u> et elle <u>___</u> son bras.</b>";
-        shownAnswer[42] = "<b>Elodie a pleuré beaucoup parce son chat <u>___</u>.</b>";
-        shownAnswer[43] = "<b>Lv3Q7A1.1</b>";
-        shownAnswer[44] = "<b>Yanis <u>___</u> ses lunettes.</b>";
-        shownAnswer[45] = "<b>Lv3Q8A2.1</b>";
-        shownAnswer[46] = "<b>Le maman de Pierre lui accompagne partout parce qui'l <u>___</u> facilement.</b>";
-        shownAnswer[47] = "<b>Lv3Q9A3.1</b>";
-        shownAnswer[48] = "<b>Nous <u>___</u> à nons examens donc hes parent nous <u>___</u>.</b>";
-        shownAnswer[49] = "<b>Nous <u>___</u> à nons examens donc hes parent nous <u>___</u>.</b>";
+        shownAnswer[36] = "<b>Marle <u>rêve</u> de ___ au Marco.</b>";
+        shownAnswer[37] = "<b>Marle <u>rêve</u> de <u>voyoger</u> au Marco.</b>";
+        shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues ___ pour CropOver.</b>";
+        shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues <u>nouvelles</u> pour CropOver.</b>";
+        shownAnswer[40] = "<b>La fille <u>est tombé</u> et elle ___ son bras.</b>";
+        shownAnswer[41] = "<b>La fille <u>est tombé</u> et elle <u>a cassé</u> son bras.</b>";
+        shownAnswer[42] = "<b>Elodie a <u>pleuré</u> beaucoup parce son chat ___.</b>";
+        shownAnswer[43] = "<b>Elodie a <u>pleuré</u> beaucoup parce son chat <u>est mort</u>.</b>";
+        shownAnswer[44] = "<b>Yanis <u>a perdu</u> ses lunettes et il peut pas ___.</b>";
+        shownAnswer[45] = "<b>Yanis <u>a perdu</u> ses lunettes et il peut pas <u>voir</u>.</b>";
+        shownAnswer[46] = "<b>Le maman de Pierre lui <u>accompangne</u> partout parce qui'l ___ facilement.</b>";
+        shownAnswer[47] = "<b>Le maman de Pierre lui <u>accompangne</u> partout parce qui'l <u>se perd</u> facilement.</b>";
+        shownAnswer[48] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parent nous ___.</b>";
+        shownAnswer[49] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parent nous <u>achèteront</u>.</b>";
 
         String[] verb = new String[50];
         verb[0] = "ASSISTER";
@@ -243,46 +243,46 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[8] = "NEIGER";
         verb[9] = "";
 
-        verb[10] = "Lv2Q1VERB";
-        verb[11] = "Lv2Q1.1VERB";
-        verb[12] = "FAIRE";
-        verb[13] = "Lv2Q2.1VERB";
+        verb[10] = "";
+        verb[11] = "";
+        verb[12] = "AVOIR";
+        verb[13] = "";
         verb[14] = "PLEUVOIR";
         verb[15] = "PRENDRE";
-        verb[16] = "Lv2Q4VERB";
-        verb[17] = "Lv2Q4.1VERB";
+        verb[16] = "ETRE";
+        verb[17] = "";
         verb[18] = "BLESSER";
-        verb[19] = "Lv2Q5.1VERB";
-        verb[20] = "Lv2Q6VERB";
-        verb[21] = "Lv2Q6.1VERB";
-        verb[22] = "Lv2Q7VERB";
-        verb[23] = "Lv2Q7.1VERB";
+        verb[19] = "";
+        verb[20] = "";
+        verb[21] = "";
+        verb[22] = "FAIRE";
+        verb[23] = "DIRE";
         verb[24] = "METTRE";
-        verb[25] = "Lv2Q8.1VERB";
+        verb[25] = "MORDRE";
         verb[26] = "FINIR";
         verb[27] = "POUVOIR";
-        verb[28] = "AVOIR";
-        verb[29] = "Lv2Q10.1VERB";
+        verb[28] = "JOUER";
+        verb[29] = "";
 
         verb[30] = "MORDRER";
-        verb[31] = "Lv3Q1.1VERB";
+        verb[31] = "";
         verb[32] = "VISITER";
-        verb[33] = "Lv3Q2.1VERB";
+        verb[33] = "";
         verb[34] = "JOUER";
         verb[35] = "FAIRE";
-        verb[36] = "REVER";
-        verb[37] = "VOGAGER";
+        verb[36] = "RÊVER";
+        verb[37] = "VOYAGER";
         verb[38] = "ALLER";
-        verb[39] = "Lv3Q5.1VERB";
+        verb[39] = "";
         verb[40] = "TOMBER";
         verb[41] = "CASSER";
-        verb[42] = "Lv3Q7VERB";
-        verb[43] = "Lv3Q7.1VERB";
+        verb[42] = "PLEURER";
+        verb[43] = "";
         verb[44] = "PERDRE";
-        verb[45] = "Lv3Q8.1VERB";
-        verb[46] = "SE PERDRE";
-        verb[47] = "Lv3Q9.1VERB";
-        verb[48] = "REUSSIR";
+        verb[45] = "VOIR";
+        verb[46] = "ACCOMPAGNER";
+        verb[47] = "SE PERDRE";
+        verb[48] = "RÉUSSIR";
         verb[49] = "ACHETTER";
 
         /*String[] image = new String[50];
@@ -383,16 +383,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[10][0] = "cadette";
         questionAnswers[10][1] = "aîné";
         questionAnswers[10][2] = "âgé";
-        questionAnswers[11][0] = "Lv2Q1A1.1";
-        questionAnswers[11][1] = "Lv2Q1A2.1";
-        questionAnswers[11][2] = "Lv2Q1A3.1";
+        questionAnswers[11][0] = "moins";
+        questionAnswers[11][1] = "plus";
+        questionAnswers[11][2] = "assez";
 
-        questionAnswers[12][0] = "fais";
-        questionAnswers[12][1] = "faites";
-        questionAnswers[12][2] = "faisons";
-        questionAnswers[13][0] = "Lv2Q2A1.1";
-        questionAnswers[13][1] = "Lv2Q2A2.1";
-        questionAnswers[13][2] = "Lv2Q2A3.1";
+        questionAnswers[12][0] = "aurai";
+        questionAnswers[12][1] = "auriez";
+        questionAnswers[12][2] = "auront";
+        questionAnswers[13][0] = "été";
+        questionAnswers[13][1] = "hiver";
+        questionAnswers[13][2] = "printernps";
 
         questionAnswers[14][0] = "pleut";
         questionAnswers[14][1] = "pleuvent";
@@ -401,40 +401,40 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[15][1] = "prends";
         questionAnswers[15][2] = "prendre";
 
-        questionAnswers[16][0] = "ennuyeux";
-        questionAnswers[16][1] = "ennuyeuses";
-        questionAnswers[16][2] = "intéressant";
-        questionAnswers[17][0] = "Lv2Q4A1.1";
-        questionAnswers[17][1] = "Lv2Q4A2.1";
-        questionAnswers[17][2] = "Lv2Q4A3.1";
+        questionAnswers[16][0] = "sont";
+        questionAnswers[16][1] = "est";
+        questionAnswers[16][2] = "etes";
+        questionAnswers[17][0] = "ennuyeux";
+        questionAnswers[17][1] = "ennuyeuses";
+        questionAnswers[17][2] = "intéressant";
 
         questionAnswers[18][0] = "a blesser";
         questionAnswers[18][1] = "a blesse";
         questionAnswers[18][2] = "est blessé";
-        questionAnswers[19][0] = "Lv2Q5A1.1";
-        questionAnswers[19][1] = "Lv2Q5A2.1";
-        questionAnswers[19][2] = "Lv2Q5A3.1";
+        questionAnswers[19][0] = "prochaine";
+        questionAnswers[19][1] = "hier";
+        questionAnswers[19][2] = "denier";
 
         questionAnswers[20][0] = "timide";
         questionAnswers[20][1] = "bavard";
         questionAnswers[20][2] = "sociable";
-        questionAnswers[21][0] = "Lv2Q6A1.1";
-        questionAnswers[21][1] = "Lv2Q6A2.1";
-        questionAnswers[21][2] = "Lv2Q6A3.1";
+        questionAnswers[21][0] = "commence";
+        questionAnswers[21][1] = "commencer";
+        questionAnswers[21][2] = "commendent";
 
-        questionAnswers[22][0] = "Bon voyage";
-        questionAnswers[22][1] = "Bonne dnance";
-        questionAnswers[22][2] = "Felicitations";
-        questionAnswers[23][0] = "Lv2Q7A1.1";
-        questionAnswers[23][1] = "Lv2Q7A2.1";
-        questionAnswers[23][2] = "Lv2Q7A3.1";
+        questionAnswers[22][0] = "fais";
+        questionAnswers[22][1] = "faites";
+        questionAnswers[22][2] = "faisons";
+        questionAnswers[23][0] = "ont dit";
+        questionAnswers[23][1] = "a dit";
+        questionAnswers[23][2] = "est dit";
 
         questionAnswers[24][0] = "met";
         questionAnswers[24][1] = "mets";
         questionAnswers[24][2] = "mettent";
-        questionAnswers[25][0] = "Lv2Q8A1.1";
-        questionAnswers[25][1] = "Lv2Q8A2.1";
-        questionAnswers[25][2] = "Lv2Q8A3.1";
+        questionAnswers[25][0] = "mordent";
+        questionAnswers[25][1] = "mord";
+        questionAnswers[25][2] = "mords";
 
         questionAnswers[26][0] = "a fini";
         questionAnswers[26][1] = "est fini ";
@@ -443,26 +443,26 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[27][1] = "peuvent.";
         questionAnswers[27][2] = "peut";
 
-        questionAnswers[28][0] = "aurai";
-        questionAnswers[28][1] = "auriez";
-        questionAnswers[28][2] = "auront";
-        questionAnswers[29][0] = "Lv2Q10A1.1";
-        questionAnswers[29][1] = "Lv2Q10A2.1";
-        questionAnswers[29][2] = "Lv2Q10A3.1";
+        questionAnswers[28][0] = "joueront";
+        questionAnswers[28][1] = "jouerons";
+        questionAnswers[28][2] = "jouera";
+        questionAnswers[29][0] = "ensuite";
+        questionAnswers[29][1] = "après";
+        questionAnswers[29][2] = "pendant";
 
         questionAnswers[30][0] = "a mordu";
         questionAnswers[30][1] = "as mordu";
         questionAnswers[30][2] = "ont mordu";
-        questionAnswers[31][0] = "Lv3Q1A1.1";
-        questionAnswers[31][1] = "Lv3Q1A2.1";
-        questionAnswers[31][2] = "Lv3Q1A3.1";
+        questionAnswers[31][0] = "intéressant";
+        questionAnswers[31][1] = "amusant";
+        questionAnswers[31][2] = "malheureux";
 
         questionAnswers[32][0] = "a visiter";
         questionAnswers[32][1] = "ont visité";
         questionAnswers[32][2] = "a visité";
-        questionAnswers[33][0] = "Lv3Q2A1.1";
-        questionAnswers[33][1] = "Lv3Q2A2.1";
-        questionAnswers[33][2] = "Lv3Q2A3.1";
+        questionAnswers[33][0] = "passé";
+        questionAnswers[33][1] = "prochaine";
+        questionAnswers[33][2] = "";
 
         questionAnswers[34][0] = "ont joue";
         questionAnswers[34][1] = "a joue";
@@ -471,19 +471,19 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[35][1] = "faire";
         questionAnswers[35][2] = "faites";
 
-        questionAnswers[36][0] = "-";
-        questionAnswers[36][1] = "-";
-        questionAnswers[36][2] = "-";
-        questionAnswers[37][0] = "-";
-        questionAnswers[37][1] = "-";
-        questionAnswers[37][2] = "-";
+        questionAnswers[36][0] = "rêve";
+        questionAnswers[36][1] = "rêvera";
+        questionAnswers[36][2] = "rêves";
+        questionAnswers[37][0] = "voyage";
+        questionAnswers[37][1] = "voyagera";
+        questionAnswers[37][2] = "voyoger";
 
         questionAnswers[38][0] = "est allé";
         questionAnswers[38][1] = "sommes allé";
         questionAnswers[38][2] = "sont allé";
-        questionAnswers[39][0] = "Lv3Q5A1.1";
-        questionAnswers[39][1] = "Lv3Q5A2.1";
-        questionAnswers[39][2] = "Lv3Q5A3.1";
+        questionAnswers[39][0] = "nouveaux";
+        questionAnswers[39][1] = "nouvelles";
+        questionAnswers[39][2] = "";
 
         questionAnswers[40][0] = "sont tombé";
         questionAnswers[40][1] = "est tombé";
@@ -492,33 +492,33 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[41][1] = "est cassé";
         questionAnswers[41][2] = "sont cassé";
 
-        questionAnswers[42][0] = "suis mort";
-        questionAnswers[42][1] = "sont morts";
-        questionAnswers[42][2] = "est mort";
-        questionAnswers[43][0] = "Lv3Q7A1.1";
-        questionAnswers[43][1] = "Lv3Q7A2.1";
-        questionAnswers[43][2] = "Lv3Q7A3.1";
+        questionAnswers[42][0] = "a pleuré";
+        questionAnswers[42][1] = "est perdu";
+        questionAnswers[42][2] = "est pleurer";
+        questionAnswers[43][0] = "sont morts";
+        questionAnswers[43][1] = "est mort";
+        questionAnswers[43][2] = "suis mort";
 
-        questionAnswers[44][0] = "a perdei";
+        questionAnswers[44][0] = "a perdu";
         questionAnswers[44][1] = "est perdu";
         questionAnswers[44][2] = "ont perdu";
-        questionAnswers[45][0] = "Lv3Q8A1.1";
-        questionAnswers[45][1] = "Lv3Q8A2.1";
-        questionAnswers[45][2] = "Lv3Q8A3.1";
+        questionAnswers[45][0] = "voit";
+        questionAnswers[45][1] = "vois";
+        questionAnswers[45][2] = "voir";
 
-        questionAnswers[46][0] = "me perds";
-        questionAnswers[46][1] = "se perd";
-        questionAnswers[46][2] = "se perder";
-        questionAnswers[47][0] = "Lv3Q9A1.1";
-        questionAnswers[47][1] = "Lv3Q9A2.1";
-        questionAnswers[47][2] = "Lv3Q9A3.1";
+        questionAnswers[46][0] = "a accompagné";
+        questionAnswers[46][1] = "accompagné";
+        questionAnswers[46][2] = "accompagne";
+        questionAnswers[47][0] = "me perds";
+        questionAnswers[47][1] = "se perd";
+        questionAnswers[47][2] = "se perder";
 
         questionAnswers[48][0] = "avons réussi";
-        questionAnswers[48][1] = "son tries reussi";
-        questionAnswers[48][2] = "avons réussi";
-        questionAnswers[49][0] = "achèterai";
+        questionAnswers[48][1] = "sommes reussi";
+        questionAnswers[48][2] = "avez réussi";
+        questionAnswers[49][0] = "achèterons";
         questionAnswers[49][1] = "achètera";
-        questionAnswers[49][2] = "achèteras";
+        questionAnswers[49][2] = "achèteront";
 
         questionData = new Question[50];
         for (int i = 0; i < 50; i++) {
@@ -1757,7 +1757,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1787,7 +1787,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1809,7 +1809,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                 leveldone = 2;//to start Q2L1
                                 QuestionOneP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -1824,7 +1824,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1854,7 +1854,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1876,7 +1876,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                 leveldone = 4;//to start Q2L1
                                 QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -1892,7 +1892,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1922,7 +1922,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1944,7 +1944,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                 leveldone = 6;//to start Q3L1
                                 QuestionTwoP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -1959,7 +1959,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1989,7 +1989,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2011,7 +2011,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                 leveldone = 8;//to start Q3L1
                                 QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2027,7 +2027,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2057,7 +2057,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2079,7 +2079,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                 leveldone = 10;//to start Q4L1
                                 QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2094,7 +2094,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2124,7 +2124,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2146,7 +2146,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                 leveldone = 12;//to start Q4L1
                                 QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2162,7 +2162,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2192,7 +2192,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2214,7 +2214,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 leveldone = 14;//to start Q4L1
                                 QuestionFourP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2229,7 +2229,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2259,7 +2259,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2281,7 +2281,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 leveldone = 16;//to start Q4L1
                                 QuestionFiveSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2297,7 +2297,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2327,7 +2327,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2349,7 +2349,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 leveldone = 18;//to start Q6L1
                                 QuestionFiveP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2364,7 +2364,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2394,7 +2394,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2416,7 +2416,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 leveldone = 20;//to start Q6L1
                                 QuestionSixSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2432,7 +2432,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2462,7 +2462,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2484,7 +2484,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                 leveldone = 22;//to start Q7L1
                                 QuestionSixP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2499,7 +2499,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2529,7 +2529,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2551,7 +2551,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                 leveldone = 24;//to start Q7L1
                                 QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2567,7 +2567,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2597,7 +2597,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2619,7 +2619,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 leveldone = 26;//to start Q8L1
                                 QuestionSevenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2634,7 +2634,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2664,7 +2664,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2686,7 +2686,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 leveldone = 28;//to start Q8L1
                                 QuestionEightSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2702,7 +2702,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2732,7 +2732,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2754,7 +2754,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                 leveldone = 30;//to start Q9L1
                                 QuestionEightP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2769,7 +2769,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2799,7 +2799,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2821,7 +2821,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                 leveldone = 32;//to start Q9L1
                                 QuestionNineSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2837,7 +2837,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2867,7 +2867,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2889,7 +2889,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 leveldone = 34;//to start Q10L1
                                 QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2904,7 +2904,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2934,7 +2934,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2956,7 +2956,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 leveldone = 36;//to start Q10L1
                                 QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -2973,7 +2973,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -3003,7 +3003,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -3025,7 +3025,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                 leveldone = 36;//to start Q10L1
                                 QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
@@ -3041,7 +3041,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
+                                tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten1.shownAnswer));
                                 new CountDownTimer(1500, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -3133,7 +3133,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3163,7 +3163,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3185,7 +3185,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                     leveldone = 2;//to start Q2L1
                                     QuestionOneP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3200,7 +3200,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3230,7 +3230,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3252,7 +3252,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                     leveldone = 4;//to start Q2L1
                                     QuestionTwoSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3268,7 +3268,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3298,7 +3298,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3320,7 +3320,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                     leveldone = 6;//to start Q3L1
                                     QuestionTwoP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3335,7 +3335,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3365,7 +3365,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3387,7 +3387,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                     leveldone = 8;//to start Q3L1
                                     QuestionThreeSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3403,7 +3403,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3433,7 +3433,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3455,7 +3455,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                     leveldone = 10;//to start Q4L1
                                     QuestionThreeP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3470,7 +3470,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3500,7 +3500,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3522,7 +3522,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].three1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                     leveldone = 12;//to start Q4L1
                                     QuestionFourSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3538,7 +3538,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3568,7 +3568,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3590,7 +3590,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     leveldone = 14;//to start Q4L1
                                     QuestionFourP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3605,7 +3605,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3635,7 +3635,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3657,7 +3657,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].four.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     leveldone = 16;//to start Q4L1
                                     QuestionFiveSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3673,7 +3673,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3703,7 +3703,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3725,7 +3725,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     leveldone = 18;//to start Q6L1
                                     QuestionFiveP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3740,7 +3740,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3770,7 +3770,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3792,7 +3792,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].five.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     leveldone = 20;//to start Q6L1
                                     QuestionSixSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3808,7 +3808,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3838,7 +3838,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3860,7 +3860,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                     leveldone = 22;//to start Q7L1
                                     QuestionSixP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3875,7 +3875,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3905,7 +3905,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3927,7 +3927,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                     leveldone = 24;//to start Q7L1
                                     QuestionSevenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -3943,7 +3943,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3973,7 +3973,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -3995,7 +3995,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     leveldone = 26;//to start Q8L1
                                     QuestionSevenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4010,7 +4010,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4040,7 +4040,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4062,7 +4062,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     leveldone = 28;//to start Q8L1
                                     QuestionEightSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4078,7 +4078,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4108,7 +4108,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4130,7 +4130,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                     leveldone = 30;//to start Q9L1
                                     QuestionEightP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4145,7 +4145,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4175,7 +4175,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4197,7 +4197,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                     leveldone = 32;//to start Q9L1
                                     QuestionNineSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4213,7 +4213,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4243,7 +4243,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4265,7 +4265,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     leveldone = 34;//to start Q10L1
                                     QuestionNineP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4280,7 +4280,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4310,7 +4310,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4332,7 +4332,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     leveldone = 36;//to start Q10L1
                                     QuestionTenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4349,7 +4349,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4379,7 +4379,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4401,7 +4401,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                     leveldone = 36;//to start Q10L1
                                     QuestionTenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
@@ -4417,7 +4417,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten1.shownAnswer));
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -4481,7 +4481,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                    tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
+                                    tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten1.shownAnswer));
                                     tvScore.setText(String.valueOf(level3Score) + "/10");
                                     leveldone = 40;//to start Q2L1
                                     prefs.edit().putInt("levelThreeOver", level3Score).apply();
