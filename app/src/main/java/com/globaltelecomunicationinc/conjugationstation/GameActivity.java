@@ -94,38 +94,38 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[14] = "Les Mathematique sont si ___ les eleves endorment.";
         //LevelQuestions[17] = "No part 2 click Lv2Q4A1.1";
         LevelQuestions[15] = "Chloe ___ sa jambe hier soir.";
-        LevelQuestions[16] = "No part 2 click Lv2Q5A1.1";
-        LevelQuestions[17] = "Claude est tres ___ une feis qui! commencera parler, il est impossible de L'arreter!";
+        //LevelQuestions[16] = "No part 2 click Lv2Q5A1.1";
+        LevelQuestions[16] = "Claude est tres ___ une feis qui! commencera parler, il est impossible de L'arreter!";
         //LevelQuestions[21] = "No part 2 click L2Q6A1.1";
-        LevelQuestions[18] = "___ ! le pref a dit avant les.";
+        LevelQuestions[17] = "___ ! le pref a dit avant les.";
         //LevelQuestions[23] = "No part 2 click Lv2Q7A1.1";
-        LevelQuestions[19] = "Je ___ le repulsif parce que moustiques mardae beaucoup!";
+        LevelQuestions[18] = "Je ___ le repulsif parce que moustiques mardae beaucoup!";
         //LevelQuestions[25] = "No part 2 click L2Q8A1.1";
+        LevelQuestions[19] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
         LevelQuestions[20] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
-        LevelQuestions[21] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
-        LevelQuestions[22] = "Nous ___ les jeux de viders pendant tout le3 soir!";
+        LevelQuestions[21] = "Nous ___ les jeux de viders pendant tout le3 soir!";
         //LevelQuestions[29] = "No part 2 click Lv2Q10A1.1";
 
-        LevelQuestions[23] = "Oh non! Le chien ___ le petit garçon!";
+        LevelQuestions[22] = "Oh non! Le chien ___ le petit garçon!";
         //LevelQuestions[31] = "No part 2 click Lv3Q1A1.1";
-        LevelQuestions[24] = "Manon ___ Paris avec sa fanille l'année passe.";
+        LevelQuestions[23] = "Manon ___ Paris avec sa fanille l'année passe.";
         //LevelQuestions[33] = "No part 2 click Lv3Q2A1.1";
+        LevelQuestions[24] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
         LevelQuestions[25] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
-        LevelQuestions[26] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
+        LevelQuestions[26] = "Marle ___ de ___ au Marco.";
         LevelQuestions[27] = "Marle ___ de ___ au Marco.";
-        LevelQuestions[28] = "Marle ___ de ___ au Marco.";
-        LevelQuestions[29] = "Cecile et ses amies ___ ent ville pour acheter les tenues nouvellrs pour CropOver.";
+        LevelQuestions[28] = "Cecile et ses amies ___ ent ville pour acheter les tenues nouvellrs pour CropOver.";
         //LevelQuestions[39] = "No part 2 click Lv3Q5A1.1";
-        LevelQuestions[30] = "La fille ___ et elle ___ son bras.";
+        LevelQuestions[29] = "La fille ___ et elle ___ son bras.";
         //LevelQuestions[41] = "No part 2 click Lv3Q6A1.1";
-        LevelQuestions[31] = "Elodie a pleuré beaucoup parce son chat ___.";
+        LevelQuestions[30] = "Elodie a pleuré beaucoup parce son chat ___.";
         //LevelQuestions[43] = "No part 2 click Lv3Q7A1.1";
-        LevelQuestions[32] = "Yanis ___ ses lunettes.";
+        LevelQuestions[31] = "Yanis ___ ses lunettes.";
         //LevelQuestions[45] = "No part 2 click Lv3Q8A1.1";
-        LevelQuestions[33] = "Le maman de Pierre lui accompagne partout parce qui'l ___ facilement.";
+        LevelQuestions[32] = "Le maman de Pierre lui accompagne partout parce qui'l ___ facilement.";
         //LevelQuestions[47] = "No part 2 click Lv3Q9A1.1";
+        LevelQuestions[33] = "Nous ___ à nons examens donc hes parent nous ___.";
         LevelQuestions[34] = "Nous ___ à nons examens donc hes parent nous ___.";
-        LevelQuestions[35] = "Nous ___ à nons examens donc hes parent nous ___.";
 
         String[] correctAnswers = new String[TOTAL_QUESTIONS];
         correctAnswers[0] = "attend";
@@ -253,7 +253,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         //verb[13] = "Lv2Q2.1VERB";
         verb[12] = "PLEUVOIR";
         verb[13] = "PRENDRE";
-        verb[14] = "Lv2Q4VERB";
+        //verb[14] = "Lv2Q4VERB";
         //verb[17] = "Lv2Q4.1VERB";
         verb[15] = "BLESSER";
         //verb[19] = "Lv2Q5.1VERB";
@@ -567,80 +567,60 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     break;
                 case 1:
                     levelData[i].one = questionData[10];
-                    levelData[i].one1 = questionData[11];
+                    //levelData[i].one1 = questionData[11];
 
-                    levelData[i].two = questionData[12];
-                    levelData[i].two1 = questionData[13];
+                    levelData[i].two = questionData[11];
+                    //levelData[i].two1 = questionData[13];
 
-                    levelData[i].three = questionData[14];
-                    levelData[i].three1 = questionData[15];
+                    levelData[i].three = questionData[12];
+                    levelData[i].three1 = questionData[13];
 
-                    levelData[i].four = questionData[16];
-                    levelData[i].four1 = questionData[17];
+                    levelData[i].four = questionData[14];
+                    //levelData[i].four1 = questionData[17];
 
-                    levelData[i].five = questionData[18];
-                    levelData[i].five1 = questionData[19];
+                    levelData[i].five = questionData[15];
+                    //levelData[i].five1 = questionData[19];
 
-                    levelData[i].six = questionData[20];
-                    levelData[i].six1 = questionData[21];
+                    levelData[i].six = questionData[16];
+                    //levelData[i].six1 = questionData[21];
 
-                    levelData[i].seven = questionData[22];
-                    levelData[i].seven1 = questionData[23];
+                    levelData[i].seven = questionData[17];
+                    //levelData[i].seven1 = questionData[23];
 
-                    levelData[i].eight = questionData[24];
-                    levelData[i].eight1 = questionData[25];
+                    levelData[i].eight = questionData[18];
+                    //levelData[i].eight1 = questionData[25];
 
-                    levelData[i].nine = questionData[26];
-                    levelData[i].nine1 = questionData[27];
+                    levelData[i].nine = questionData[19];
+                    levelData[i].nine1 = questionData[20];
 
-                    levelData[i].ten = questionData[28];
-                    levelData[i].ten1 = questionData[29];
+                    levelData[i].ten = questionData[21];
+                    //levelData[i].ten1 = questionData[29];
                     break;
                 case 2:
-                    levelData[i].one = questionData[30];
-                    levelData[i].one1 = questionData[31];
+                    levelData[i].one = questionData[22];
+                    //levelData[i].one1 = questionData[31];
 
-                    levelData[i].two = questionData[32];
-                    levelData[i].two1 = questionData[33];
-                    levelData[i].three = questionData[34];
-                    levelData[i].three1 = questionData[35];
-                    levelData[i].four = questionData[TOTAL_QUESTIONS];
-                    levelData[i].four1 = questionData[37];
-                    levelData[i].five = questionData[38];
-                    levelData[i].five1 = questionData[39];
-                    levelData[i].six = questionData[40];
-                    levelData[i].six1 = questionData[41];
-                    levelData[i].seven = questionData[42];
-                    levelData[i].seven1 = questionData[43];
-                    levelData[i].eight = questionData[44];
-                    levelData[i].eight1 = questionData[45];
-                    levelData[i].nine = questionData[46];
-                    levelData[i].nine1 = questionData[47];
-                    levelData[i].ten = questionData[48];
-                    levelData[i].ten1 = questionData[49];
+                    levelData[i].two = questionData[23];
+                    //levelData[i].two1 = questionData[33];
+                    levelData[i].three = questionData[24];
+                    levelData[i].three1 = questionData[25];
+                    levelData[i].four = questionData[26];
+                    levelData[i].four1 = questionData[27];
+                    levelData[i].five = questionData[28];
+                    //levelData[i].five1 = questionData[39];
+                    levelData[i].six = questionData[29];
+                    levelData[i].six1 = questionData[30];
+                    levelData[i].seven = questionData[31];
+                    //levelData[i].seven1 = questionData[43];
+                    levelData[i].eight = questionData[32];
+                    //levelData[i].eight1 = questionData[45];
+                    levelData[i].nine = questionData[33];
+                    //levelData[i].nine1 = questionData[47];
+                    levelData[i].ten = questionData[34];
+                    levelData[i].ten1 = questionData[35];
                     break;
                 default:
-                    levelData[i].one = questionData[0];
-                    levelData[i].two = questionData[1];
-                    levelData[i].three = questionData[2];
-                    levelData[i].four = questionData[3];
-                    levelData[i].five = questionData[4];
-                    levelData[i].six = questionData[5];
-                    levelData[i].seven = questionData[6];
-                    levelData[i].eight = questionData[7];
-                    levelData[i].nine = questionData[8];
-                    levelData[i].ten = questionData[9];
-
-                    levelData[i].one1 = questionData[10];
-                    levelData[i].two1 = questionData[11];
-                    levelData[i].three1 = questionData[12];
-                    levelData[i].four1 = questionData[13];
-                    levelData[i].five1 = questionData[14];
-                    levelData[i].six1 = questionData[15];
-                    levelData[i].seven1 = questionData[16];
-                    levelData[i].eight1 = questionData[17];
-                    levelData[i].nine1 = questionData[18];
-                    levelData[i].ten1 = questionData[19];
+                    Log.i("Error ", "Setting up level data");
                     break;
             }
         }
@@ -1775,7 +1755,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
+                                QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
@@ -1805,7 +1785,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
+                                QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q1 Wrong", Toast.LENGTH_SHORT).show();
@@ -1815,20 +1795,20 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].one.shownAnswer);
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
+                                QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 1.1 attempt 1
+                        //level 2 question 2 attempt 1
                         case 2:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1842,23 +1822,23 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
+                                QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 1.1 attempt 2
+                        //level 2 question 2 attempt 2
                         case 3:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -1872,7 +1852,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
+                                QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q1.1 Wrong", Toast.LENGTH_SHORT).show();
@@ -1880,14 +1860,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].one1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
+                                QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
 
-                        //level 2 question 2 attempt 1
+                        //level 2 question 3 attempt 1
                         case 4:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
@@ -1910,14 +1890,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 6;//to start Q2L1
-                                QuestionTwoP2Setup();
+                                QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 2 attempt 2
+                        //level 2 question 3 attempt 2
                         case 5:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
@@ -1940,7 +1920,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 6;//to start Q3L1
-                                QuestionTwoP2Setup();
+                                QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q2 Wrong", Toast.LENGTH_SHORT).show();
@@ -1950,11 +1930,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two.shownAnswer);
                                 leveldone = 6;//to start Q3L1
-                                QuestionTwoP2Setup();
+                                QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 2.1 attempt 1
+                        //level 2 question 3.1 attempt 1
                         case 6:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two1.correctAnswer)) {
                                 //go to next question
@@ -1977,14 +1957,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 8;//to start Q2L1
-                                QuestionThreeSetup();
+                                QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 2.1 attempt 2
+                        //level 2 question 3.1 attempt 2
                         case 7:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two1.correctAnswer)) {
                                 //go to next question
@@ -2007,7 +1987,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }.start();
                                 level2Score++;
                                 leveldone = 8;//to start Q3L1
-                                QuestionThreeSetup();
+                                QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q2.1 Wrong", Toast.LENGTH_SHORT).show();
@@ -2017,12 +1997,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(levelData[prefs.getInt("level", -1)].two1.shownAnswer);
                                 leveldone = 8;//to start Q3L1
-                                QuestionThreeSetup();
+                                QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
 
-                        //level 2 question 3 attempt 1
+                        //level 2 question 4 attempt 1
                         case 8:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                 //go to next question
@@ -2052,7 +2032,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 3 attempt 2
+                        //level 2 question 4 attempt 2
                         case 9:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                 //go to next question
@@ -2089,7 +2069,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 3.1 attempt 1
+                        //level 2 question 5 attempt 1
                         case 10:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                 //go to next question
@@ -2119,7 +2099,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 3.1 attempt 2
+                        //level 2 question 5 attempt 2
                         case 11:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                 //go to next question
@@ -2157,7 +2137,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             }
                             break;
 
-                        //level 2 question 4 attempt 1
+                        //level 2 question 6 attempt 1
                         case 12:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                 //go to next question
@@ -2187,7 +2167,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 4 attempt 2
+                        //level 2 question 6 attempt 2
                         case 13:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                 //go to next question
@@ -2224,7 +2204,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 4.1 attempt 1
+                        //level 2 question 7 attempt 1
                         case 14:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                 //go to next question
@@ -2254,7 +2234,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 4.1 attempt 2
+                        //level 2 question 7 attempt 2
                         case 15:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                 //go to next question
@@ -2292,7 +2272,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             }
                             break;
 
-                        //level 2 question 5 attempt 1
+                        //level 2 question 8 attempt 1
                         case 16:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                 //go to next question
@@ -2322,7 +2302,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 5 attempt 2
+                        //level 2 question 8 attempt 2
                         case 17:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                 //go to next question
@@ -2359,7 +2339,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 5.1 attempt 1
+                        //level 2 question 9 attempt 1
                         case 18:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                 //go to next question
@@ -2389,7 +2369,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 5.1 attempt 2
+                        //level 2 question 9 attempt 2
                         case 19:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                 //go to next question
@@ -2427,16 +2407,17 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             }
                             break;
 
-                        //level 2 question 6 attempt 1
+
+                        //level 2 question 9 attempt 1
                         case 20:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2457,16 +2438,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 6 attempt 2
+                        //level 2 question 9 attempt 2
                         case 21:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2494,16 +2475,19 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
-                        //level 2 question 6.1 attempt 1
+
+
+
+                        //level 2 question 9.1 attempt 1
                         case 22:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
+                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2524,16 +2508,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 6.1 attempt 2
+                        //level 2 question 9.1 attempt 2
                         case 23:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
+                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -2551,501 +2535,29 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q6.1 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
+                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].six1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
                                 leveldone = 24;//to start Q7L1
                                 QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
 
-                        //level 2 question 7 attempt 1
-                        case 24:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 26;//to start Q2L1
-                                QuestionSevenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 7 attempt 2
-                        case 25:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 26;//to start Q8L1
-                                QuestionSevenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
-                                leveldone = 26;//to start Q8L1
-                                QuestionSevenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-                        //level 2 question 7.1 attempt 1
-                        case 26:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 28;//to start Q2L1
-                                QuestionEightSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 7.1 attempt 2
-                        case 27:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 28;//to start Q8L1
-                                QuestionEightSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].seven.shownAnswer);
-                                leveldone = 28;//to start Q8L1
-                                QuestionEightSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-
-                        //level 2 question 8 attempt 1
-                        case 28:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 30;//to start Q2L1
-                                QuestionEightP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 8 attempt 2
-                        case 29:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 30;//to start Q9L1
-                                QuestionEightP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight.shownAnswer);
-                                leveldone = 30;//to start Q9L1
-                                QuestionEightP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-                        //level 2 question 8.1 attempt 1
-                        case 30:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 32;//to start Q2L1
-                                QuestionNineSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 8.1 attempt 2
-                        case 31:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 32;//to start Q9L1
-                                QuestionNineSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].eight1.shownAnswer);
-                                leveldone = 32;//to start Q9L1
-                                QuestionNineSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-
-                        //level 2 question 9 attempt 1
-                        case 32:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 34;//to start Q2L1
-                                QuestionNineP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 9 attempt 2
-                        case 33:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 34;//to start Q10L1
-                                QuestionNineP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L2Q9 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
-                                leveldone = 34;//to start Q10L1
-                                QuestionNineP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-                        //level 2 question 9.1 attempt 1
-                        case 34:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = TOTAL_QUESTIONS;//to start Q2L1
-                                QuestionTenSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 9.1 attempt 2
-                        case 35:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine1.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = TOTAL_QUESTIONS;//to start Q10L1
-                                QuestionTenSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].nine.shownAnswer);
-                                leveldone = TOTAL_QUESTIONS;//to start Q10L1
-                                QuestionTenSetup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
 
 
                         //level 2 question 10 attempt 1
-                        case TOTAL_QUESTIONS:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 38;//to start Q2L1
-                                QuestionTenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
-                                leveldone++;
-                            }
-                            break;
-                        //level 2 question 10 attempt 2
-                        case 37:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
-                                //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
-                                new CountDownTimer(ANSWER_DELAY, 1000) {
-                                    public void onTick(long miliSecondsUntilDone) {
-                                        //Countdown is counting down (in this case every second)
-                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
-                                    }
-
-                                    public void onFinish() {
-                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
-                                        tvWrong.setVisibility(View.INVISIBLE);
-                                    }
-                                }.start();
-                                level2Score++;
-                                leveldone = 38;//to start Q10L1
-                                QuestionTenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            } else {
-                                Toast.makeText(getApplicationContext(), "L2Q10 Wrong", Toast.LENGTH_SHORT).show();
-                                TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
-                                tvWrong.setVisibility(View.VISIBLE);
-                                tvWrong.setBackgroundResource(R.drawable.brick2);
-                                tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
-                                leveldone = TOTAL_QUESTIONS;//to start Q10L1
-                                QuestionTenP2Setup();
-                                tvScore.setText(String.valueOf(level2Score) + "/20");
-                            }
-                            break;
-
-                        //level 2 question 10.1 attempt 1
                         case 38:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten1.shownAnswer);
+                                tvWrong.setText(levelData[prefs.getInt("level", -1)].ten.shownAnswer);
                                 new CountDownTimer(ANSWER_DELAY, 1000) {
                                     public void onTick(long miliSecondsUntilDone) {
                                         //Countdown is counting down (in this case every second)
@@ -3077,11 +2589,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 leveldone++;
                             }
                             break;
-                        //level 2 question 10.1 attempt 2
+                        //level 2 question 10 attempt 2
                         case 39:
-                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
+                            if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3104,7 +2616,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
                                 }
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "L2Q10 Wrong", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
