@@ -514,7 +514,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[47][2] = "se perder";
 
         questionAnswers[48][0] = "avons réussi";
-        questionAnswers[48][1] = "sommes reussi";
+        questionAnswers[48][1] = "sommes réussi";
         questionAnswers[48][2] = "avez réussi";
         questionAnswers[49][0] = "achèterons";
         questionAnswers[49][1] = "achètera";
