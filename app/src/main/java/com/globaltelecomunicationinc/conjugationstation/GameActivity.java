@@ -91,8 +91,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[17] = "Les Mathematique ___ si ___ les eleves endorment.";
         LevelQuestions[18] = "Chloe ___ sa jambe ___ soir.";
         LevelQuestions[19] = "Chloe ___ sa jambe ___ soir.";
-        LevelQuestions[20] = "Claude est tres ___ une feis qui! ___ parler, il est impossible de L'arreter!";
-        LevelQuestions[21] = "Claude est tres ___ une feis qui! ___ parler, il est impossible de L'arreter!";
+        LevelQuestions[20] = "Claude est tres ___ une feis qu'il ___ parler, il est impossible de l'arreter!";
+        LevelQuestions[21] = "Claude est tres ___ une feis qu'il ___ parler, il est impossible de l'arreter!";
         LevelQuestions[22] = "___ attention! le prof ___ aux eleves in attentives.";
         LevelQuestions[23] = "___ attention! le prof ___ aux eleves in attentives.";
         LevelQuestions[24] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
