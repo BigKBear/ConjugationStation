@@ -79,49 +79,49 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[6] = "Pendant l'été les personnes ___ beacoup des mangues.";
         LevelQuestions[7] = "Les plages de la Barbade ___ les plus belles";
         LevelQuestions[8] = "Quand il ___ il fait froid.";
-        LevelQuestions[9] = "Ses ___ sont trôp sérré.";
+        LevelQuestions[9] = "Ses ___ sont trôp sérrés.";
 
         LevelQuestions[10] = "Ma soeur ___ est trois ans ___ jeune que moi.";
         LevelQuestions[11] = "Ma soeur ___ est trois ans ___ jeune que moi.";
-        LevelQuestions[12] = "les jeux olympique ___ lieu ___ en Brésil.";
-        LevelQuestions[13] = "les jeux olympique ___ lieu ___ en Brésil.";
+        LevelQuestions[12] = "Les Jeux Olympiques ___ lieu cet ___ au Bréil.";
+        LevelQuestions[13] = "Les Jeux Olympiques ___ lieu cet ___ au Bréil.";
         LevelQuestions[14] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
         LevelQuestions[15] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
-        LevelQuestions[16] = "Les Mathematique ___ si ___ les eleves endorment.";
-        LevelQuestions[17] = "Les Mathematique ___ si ___ les eleves endorment.";
+        LevelQuestions[16] = "Les Mathématiques ___ si ___ les élèves endorment.";
+        LevelQuestions[17] = "Les Mathématiques ___ si ___ les élèves endorment.";
         LevelQuestions[18] = "Chloe ___ sa jambe ___ soir.";
         LevelQuestions[19] = "Chloe ___ sa jambe ___ soir.";
-        LevelQuestions[20] = "Claude est tres ___ une feis qu'il ___ parler, il est impossible de l'arreter!";
-        LevelQuestions[21] = "Claude est tres ___ une feis qu'il ___ parler, il est impossible de l'arreter!";
-        LevelQuestions[22] = "___ attention! le prof ___ aux eleves in attentives.";
-        LevelQuestions[23] = "___ attention! le prof ___ aux eleves in attentives.";
+        LevelQuestions[20] = "Claude est trés ___ une feis qu'il ___ à parler, il est impossible de l'arrêter!";
+        LevelQuestions[21] = "Claude est trés ___ une feis qu'il ___ à parler, il est impossible de l'arrêter!";
+        LevelQuestions[22] = "___ attention! le prof ___ aux élèves in attentives.";
+        LevelQuestions[23] = "___ attention! le prof ___ aux élèves in attentives.";
         LevelQuestions[24] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
         LevelQuestions[25] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
         LevelQuestions[26] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
         LevelQuestions[27] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
-        LevelQuestions[28] = "Nous ___ les jeux de viders ___ tout le soir!";
-        LevelQuestions[29] = "Nous ___ les jeux de viders ___ tout le soir!";
+        LevelQuestions[28] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
+        LevelQuestions[29] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
 
         LevelQuestions[30] = "Oh non! Le chien ___ le petit garçon!";
         LevelQuestions[31] = "Ça c'est très ___. ";
         LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'année ___.";
         LevelQuestions[33] = "Manon ___ Paris avec sa fanille l'année ___.";
-        LevelQuestions[34] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
-        LevelQuestions[35] = "Le garçon méchant ___ les jeux de video au lieu de ___ ses devoirs.";
+        LevelQuestions[34] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ seo devoirs.";
+        LevelQuestions[35] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ seo devoirs.";
         LevelQuestions[36] = "Marle ___ de ___ au Marco.";
         LevelQuestions[37] = "Marle ___ de ___ au Marco.";
-        LevelQuestions[38] = "Cecile et ses amies ___ ent ville pour acheter les tenues ___ pour CropOver.";
-        LevelQuestions[39] = "Cecile et ses amies ___ ent ville pour acheter les tenues ___ pour CropOver.";
+        LevelQuestions[38] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
+        LevelQuestions[39] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
         LevelQuestions[40] = "La fille ___ et elle ___ son bras.";
         LevelQuestions[41] = "La fille ___ et elle ___ son bras.";
-        LevelQuestions[42] = "Elodie ___ beaucoup parce son chat ___.";
-        LevelQuestions[43] = "Elodie ___ beaucoup parce son chat ___.";
+        LevelQuestions[42] = "Elodie ___ beaucoup parce que son chat ___.";
+        LevelQuestions[43] = "Elodie ___ beaucoup parce que son chat ___.";
         LevelQuestions[44] = "Yanis ___ ses lunettes et il peut pas ___.";
         LevelQuestions[45] = "Yanis ___ ses lunettes et il peut pas ___.";
-        LevelQuestions[46] = "Le maman de Pierre lui ___ partout parce qui'l ___ facilement.";
-        LevelQuestions[47] = "Le maman de Pierre lui ___ partout parce qui'l ___ facilement.";
-        LevelQuestions[48] = "Nous ___ à nos examens donc nos parents nous ___.";
-        LevelQuestions[49] = "Nous ___ à nos examens donc nos parents nous ___.";
+        LevelQuestions[46] = "Le maman de Pierre lui ___ partout parce qu'il ___ facilement.";
+        LevelQuestions[47] = "Le maman de Pierre lui ___ partout parce qu'il ___ facilement.";
+        LevelQuestions[48] = "Nous ___ à nos examens donc nos parents nous ___ la glace.";
+        LevelQuestions[49] = "Nous ___ à nos examens donc nos parents nous ___ .";
 
         String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
@@ -143,7 +143,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[15] = "prendre";
         correctAnswers[16] = "sont";
         correctAnswers[17] = "ennuyeuses";
-        correctAnswers[18] = "a blesse";
+        correctAnswers[18] = "a blessé";
         correctAnswers[19] = "hier";
         correctAnswers[20] = "bavard";
         correctAnswers[21] = "commencer";
@@ -158,12 +158,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         correctAnswers[30] = "a mordu";
         correctAnswers[31] = "malheureux";
-        correctAnswers[32] = "a visite";
+        correctAnswers[32] = "a visité";
         correctAnswers[33] = "passé";
-        correctAnswers[34] = "a joue";
+        correctAnswers[34] = "a joué";
         correctAnswers[35] = "faire";
         correctAnswers[36] = "rêve";
-        correctAnswers[37] = "voyoger";
+        correctAnswers[37] = "voyager";
         correctAnswers[38] = "sont allé";
         correctAnswers[39] = "nouvelles";
         correctAnswers[40] = "est tombé";
@@ -197,8 +197,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je <u>umon</u> parapluie.</b>";
         shownAnswer[16] = "<b>Les Mathematiques <u>sont</u> si ___ les élèves endorment.</b>";
         shownAnswer[17] = "<b>Les Mathematiques <u>sont</u> si <u>ennuyeuses</u> les élèves endorment.</b>";
-        shownAnswer[18] = "<b>Chloe <u>a blesse</u> sa jambe ___ soir.</b>";
-        shownAnswer[19] = "<b>Chloe <u>a blesse</u> sa jambe <u>hier</u> soir.</b>";
+        shownAnswer[18] = "<b>Chloe <u>a blessé</u> sa jambe ___ soir.</b>";
+        shownAnswer[19] = "<b>Chloe <u>a blessé</u> sa jambe <u>hier</u> soir.</b>";
         shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qui! ___ à parler, il est impossible de L'arrêter!</b>";
         shownAnswer[21] = "<b>Claude est très <u>bavard</u> une feis qui! <u>commencer</u> à parler, il est impossible de L'arrêter!</b>";
         shownAnswer[22] = "<b><u>Faites</u> attention! le prof ___ aux élèves inattentives.</b>";
@@ -212,12 +212,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         shownAnswer[30] = "<b>Oh non! Le chien <u>a mordu</u> le petit garçon!</b>";
         shownAnswer[31] = "<b>Ça c'est très <u>malheureux</u>.</b>";
-        shownAnswer[32] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année ___.</b>";
-        shownAnswer[33] = "<b>Manon <u>a visite</u> Paris avec sa fanille l'année <u>passé</u>.</b>";
-        shownAnswer[34] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
-        shownAnswer[35] = "<b>Le garçon méchant <u>a joue</u> les jeux de video au lieu de ___ ses devoirs.</b>";
+        shownAnswer[32] = "<b>Manon <u>a visité</u> Paris avec sa fanille l'année ___.</b>";
+        shownAnswer[33] = "<b>Manon <u>a visité</u> Paris avec sa fanille l'année <u>passé</u>.</b>";
+        shownAnswer[34] = "<b>Le garçon méchant <u>a joué</u> les jeux de video au lieu de ___ ses devoirs.</b>";
+        shownAnswer[35] = "<b>Le garçon méchant <u>a joué</u> les jeux de video au lieu de ___ ses devoirs.</b>";
         shownAnswer[36] = "<b>Marle <u>rêve</u> de ___ au Marco.</b>";
-        shownAnswer[37] = "<b>Marle <u>rêve</u> de <u>voyoger</u> au Marco.</b>";
+        shownAnswer[37] = "<b>Marle <u>rêve</u> de <u>voyager</u> au Marco.</b>";
         shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues ___ pour CropOver.</b>";
         shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues <u>nouvelles</u> pour CropOver.</b>";
         shownAnswer[40] = "<b>La fille <u>est tombé</u> et elle ___ son bras.</b>";
@@ -409,7 +409,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[17][2] = "intéressant";
 
         questionAnswers[18][0] = "a blesser";
-        questionAnswers[18][1] = "a blesse";
+        questionAnswers[18][1] = "a blessé";
         questionAnswers[18][2] = "est blessé";
         questionAnswers[19][0] = "prochaine";
         questionAnswers[19][1] = "hier";
@@ -464,9 +464,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[33][1] = "prochaine";
         questionAnswers[33][2] = "";
 
-        questionAnswers[34][0] = "ont joue";
-        questionAnswers[34][1] = "a joue";
-        questionAnswers[34][2] = "avons joue";
+        questionAnswers[34][0] = "ont joué";
+        questionAnswers[34][1] = "a joué";
+        questionAnswers[34][2] = "avons joué";
         questionAnswers[35][0] = "fais";
         questionAnswers[35][1] = "faire";
         questionAnswers[35][2] = "faites";
@@ -476,7 +476,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[36][2] = "rêves";
         questionAnswers[37][0] = "voyage";
         questionAnswers[37][1] = "voyagera";
-        questionAnswers[37][2] = "voyoger";
+        questionAnswers[37][2] = "voyager";
 
         questionAnswers[38][0] = "est allé";
         questionAnswers[38][1] = "sommes allé";
@@ -964,6 +964,30 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     public void onClick(DialogInterface dialogInterface, int i) {
                         QuestionOneSetup();
                         Log.i("Level: ", String.valueOf(prefs.getInt("level", -1)));
+                        Intent g = new Intent(GameActivity.this, GameActivity.class);
+                        startActivity(g);
+                    }
+                })
+                .setNegativeButton(negativeButton, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        //resetGame();
+                        Intent g = new Intent(GameActivity.this, MainActivity.class);
+                        startActivity(g);
+                    }
+                }).setCancelable(false)
+                .show();
+    }
+
+    public void levelOver(String title, String message, String positiveButton, String negativeButton) {
+        new AlertDialog.Builder(this)
+                .setIcon(android.R.drawable.ic_dialog_alert)
+                .setTitle(title)
+                .setMessage(message)
+                .setPositiveButton(positiveButton, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        QuestionOneSetup();
                         Intent g = new Intent(GameActivity.this, GameActivity.class);
                         startActivity(g);
                     }
@@ -1687,7 +1711,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                QuestionOneSetup();
+                                //QuestionOneSetup();
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "", "Formidable!", "Start level 2", "Quit");
                             } else {
                                 //game over
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
