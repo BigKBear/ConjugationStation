@@ -78,7 +78,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[5] = "Ces sont ses ___ préfèrés";
         LevelQuestions[6] = "Pendant l'été les personnes ___ beacoup des mangues.";
         LevelQuestions[7] = "Les plages de la Barbade ___ les plus belles";
-        LevelQuestions[8] = "Quand il ___ il feut froid.";
+        LevelQuestions[8] = "Quand il ___ il fait froid.";
         LevelQuestions[9] = "Ses ___ sont trôp sérré.";
 
         LevelQuestions[10] = "Ma soeur ___ est trois ans ___ jeune que moi.";
