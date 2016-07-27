@@ -283,7 +283,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[46] = "ACCOMPAGNER";
         verb[47] = "SE PERDRE";
         verb[48] = "RÉUSSIR";
-        verb[49] = "ACHETTER";
+        verb[49] = "ACHETER";
 
         /*String[] image = new String[50];
         image[0] = "Assister ";
@@ -968,8 +968,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         QuestionOneSetup();
-                        Intent g = new Intent(GameActivity.this, GameActivity.class);
-                        startActivity(g);
+                        //Intent g = new Intent(GameActivity.this, GameActivity.class);
+                        //startActivity(g);
                     }
                 })
                 .setNegativeButton(negativeButton, new DialogInterface.OnClickListener() {
