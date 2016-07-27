@@ -95,10 +95,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[21] = "Claude est trés ___ une feis qu'il ___ à parler, il est impossible de l'arrêter!";
         LevelQuestions[22] = "___ attention! le prof ___ aux élèves in attentives.";
         LevelQuestions[23] = "___ attention! le prof ___ aux élèves in attentives.";
-        LevelQuestions[24] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
-        LevelQuestions[25] = "Je ___ le repulsif parce que moustiques me ___ beaucoup!";
-        LevelQuestions[26] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
-        LevelQuestions[27] = "Sara ___ ses devoirs tot donc elle ___ regarder la television.";
+        LevelQuestions[24] = "Je ___ le répulsif parce que moustiques me ___ beaucoup!";
+        LevelQuestions[25] = "Je ___ le répulsif parce que moustiques me ___ beaucoup!";
+        LevelQuestions[26] = "Sara ___ ses devoirs tot donc elle ___ regarder la télévision.";
+        LevelQuestions[27] = "Sara ___ ses devoirs tot donc elle ___ regarder la télévision.";
         LevelQuestions[28] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
         LevelQuestions[29] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
 
@@ -121,7 +121,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[46] = "Le maman de Pierre lui ___ partout parce qu'il ___ facilement.";
         LevelQuestions[47] = "Le maman de Pierre lui ___ partout parce qu'il ___ facilement.";
         LevelQuestions[48] = "Nous ___ à nos examens donc nos parents nous ___ la glace.";
-        LevelQuestions[49] = "Nous ___ à nos examens donc nos parents nous ___ .";
+        LevelQuestions[49] = "Nous ___ à nos examens donc nos parents nous ___ la glace.";
 
         String[] correctAnswers = new String[50];
         correctAnswers[0] = "attend";
@@ -186,40 +186,40 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[5] = "<b>Ces sont ses <u>chaussures</u> préfèrés.</b>";
         shownAnswer[6] = "<b>Pendant l'été les personnes <u>managent</u> beacoup des mangues.</b>";
         shownAnswer[7] = "<b>Les plages de la Barbade <u>sont</u> les plus belles.</b>";
-        shownAnswer[8] = "<b>Quand il <u>neige</u> il feut froid.</b>";
+        shownAnswer[8] = "<b>Quand il <u>neige</u> il fait froid.</b>";
         shownAnswer[9] = "<b>Ses <u>pantalons</u> sont trôp sérré.</b>";
 
         shownAnswer[10] = "<b>Ma soeur <u>cadette</u> est trois ans ___ jeune que moi.</b>";
         shownAnswer[11] = "<b>Ma soeur <u>cadette</u> est trois ans <u>plus</u> jeune que moi.</b>";
-        shownAnswer[12] = "<b>les jeux olympique <u>auront</u> lieu ___ en Brésil.</b>";
-        shownAnswer[13] = "<b>les jeux olympique <u>auront</u> lieu <u>été</u> en Brésil.</b>";
+        shownAnswer[12] = "<b>Les Jeux Olympiques <u>auront</u> lieu ___ en Bréil.</b>";
+        shownAnswer[13] = "<b>Les Jeux Olympiques <u>auront</u> lieu <u>été</u> en Bréil.</b>";
         shownAnswer[14] = "<b>Il <u>pleut</u> aujourd 'hui, donc je ___ mon parapluie.</b>";
         shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je <u>umon</u> parapluie.</b>";
         shownAnswer[16] = "<b>Les Mathematiques <u>sont</u> si ___ les élèves endorment.</b>";
         shownAnswer[17] = "<b>Les Mathematiques <u>sont</u> si <u>ennuyeuses</u> les élèves endorment.</b>";
         shownAnswer[18] = "<b>Chloe <u>a blessé</u> sa jambe ___ soir.</b>";
         shownAnswer[19] = "<b>Chloe <u>a blessé</u> sa jambe <u>hier</u> soir.</b>";
-        shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qui! ___ à parler, il est impossible de L'arrêter!</b>";
-        shownAnswer[21] = "<b>Claude est très <u>bavard</u> une feis qui! <u>commencer</u> à parler, il est impossible de L'arrêter!</b>";
-        shownAnswer[22] = "<b><u>Faites</u> attention! le prof ___ aux élèves inattentives.</b>";
-        shownAnswer[23] = "<b><u>Faites</u> attention! le prof <u>a dit</u> aux élèves inattentives.</b>";
+        shownAnswer[20] = "<b>Claude est très <u>bavard</u> une feis qu'il ___ à parler, il est impossible de l'arrêter!</b>";
+        shownAnswer[21] = "<b>Claude est très <u>bavard</u> une feis qu'il <u>commencer</u> à parler, il est impossible de l'arrêter!</b>";
+        shownAnswer[22] = "<b><u>Faites</u> attention! le prof ___ aux élèves in attentives.</b>";
+        shownAnswer[23] = "<b><u>Faites</u> attention! le prof <u>a dit</u> aux élèves in attentives.</b>";
         shownAnswer[24] = "<b>Je <u>mets</u> le répulsif parce que moustiques me ___ beaucoup!</b>";
         shownAnswer[25] = "<b>Je <u>mets</u> le répulsif parce que moustiques me <u>mordre</u> beaucoup!</b>";
         shownAnswer[26] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle ____ regarder le télévision.</b>";
         shownAnswer[27] = "<b>Sara a <u>fini</u> ses devoir tôt donc elle <u>peut</u> regarder le télévision.</b>";
-        shownAnswer[28] = "<b>Nous <u>jouerons</u> les jeux de viders ___ tout le soir!</b>";
-        shownAnswer[29] = "<b>Nous <u>jouerons</u> les jeux de viders <u>pendant</u> tout le soir!</b>";
+        shownAnswer[28] = "<b>Nous <u>jouerons</u> aux jeux de vidéo ___ tout le soir!</b>";
+        shownAnswer[29] = "<b>Nous <u>jouerons</u> aux jeux de vidéo <u>pendant</u> tout le soir!</b>";
 
         shownAnswer[30] = "<b>Oh non! Le chien <u>a mordu</u> le petit garçon!</b>";
         shownAnswer[31] = "<b>Ça c'est très <u>malheureux</u>.</b>";
         shownAnswer[32] = "<b>Manon <u>a visité</u> Paris avec sa fanille l'année ___.</b>";
         shownAnswer[33] = "<b>Manon <u>a visité</u> Paris avec sa fanille l'année <u>passé</u>.</b>";
-        shownAnswer[34] = "<b>Le garçon méchant <u>a joué</u> les jeux de video au lieu de ___ ses devoirs.</b>";
-        shownAnswer[35] = "<b>Le garçon méchant <u>a joué</u> les jeux de video au lieu de ___ ses devoirs.</b>";
+        shownAnswer[34] = "<b>Le garçon méchant <u>a joué</u> aux jeux de vidéo au lieu de ___ ses devoirs.</b>";
+        shownAnswer[35] = "<b>Le garçon méchant <u>a joué</u> aux jeux de vidéo au lieu de ___ ses devoirs.</b>";
         shownAnswer[36] = "<b>Marle <u>rêve</u> de ___ au Marco.</b>";
         shownAnswer[37] = "<b>Marle <u>rêve</u> de <u>voyager</u> au Marco.</b>";
-        shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues ___ pour CropOver.</b>";
-        shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> ent ville pour acheter les tenues <u>nouvelles</u> pour CropOver.</b>";
+        shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues ___ pour Crop Over.</b>";
+        shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues <u>nouvelles</u> pour Crop Over.</b>";
         shownAnswer[40] = "<b>La fille <u>est tombé</u> et elle ___ son bras.</b>";
         shownAnswer[41] = "<b>La fille <u>est tombé</u> et elle <u>a cassé</u> son bras.</b>";
         shownAnswer[42] = "<b>Elodie a <u>pleuré</u> beaucoup parce son chat ___.</b>";
@@ -228,8 +228,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[45] = "<b>Yanis <u>a perdu</u> ses lunettes et il peut pas <u>voir</u>.</b>";
         shownAnswer[46] = "<b>Le maman de Pierre lui <u>accompangne</u> partout parce qui'l ___ facilement.</b>";
         shownAnswer[47] = "<b>Le maman de Pierre lui <u>accompangne</u> partout parce qui'l <u>se perd</u> facilement.</b>";
-        shownAnswer[48] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parent nous ___.</b>";
-        shownAnswer[49] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parent nous <u>achèteront</u>.</b>";
+        shownAnswer[48] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parents nous ___ la glace.</b>";
+        shownAnswer[49] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parents nous <u>achèteront</u> la glace.</b>";
 
         String[] verb = new String[50];
         verb[0] = "ASSISTER";
