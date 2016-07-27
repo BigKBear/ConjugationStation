@@ -97,8 +97,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[23] = "___ attention! le prof ___ aux élèves inattentives.";
         LevelQuestions[24] = "Je ___ le répulsif parce que moustiques me ___ beaucoup!";
         LevelQuestions[25] = "Je ___ le répulsif parce que moustiques me ___ beaucoup!";
-        LevelQuestions[26] = "Sara ___ ses devoirs tot donc elle ___ regarder la télévision.";
-        LevelQuestions[27] = "Sara ___ ses devoirs tot donc elle ___ regarder la télévision.";
+        LevelQuestions[26] = "Sara ___ ses devoirs tôt donc elle ___ regarder la télévision.";
+        LevelQuestions[27] = "Sara ___ ses devoirs tôt donc elle ___ regarder la télévision.";
         LevelQuestions[28] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
         LevelQuestions[29] = "Nous ___ aux jeux de vidéo ___ tout le soir!";
 
@@ -106,10 +106,10 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[31] = "Ça c'est très ___. ";
         LevelQuestions[32] = "Manon ___ Paris avec sa fanille l'année ___.";
         LevelQuestions[33] = "Manon ___ Paris avec sa fanille l'année ___.";
-        LevelQuestions[34] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ seo devoirs.";
-        LevelQuestions[35] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ seo devoirs.";
-        LevelQuestions[36] = "Marle ___ de ___ au Marco.";
-        LevelQuestions[37] = "Marle ___ de ___ au Marco.";
+        LevelQuestions[34] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ ses devoirs.";
+        LevelQuestions[35] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ ses devoirs.";
+        LevelQuestions[36] = "Mark ___ de ___ au Maroc.";
+        LevelQuestions[37] = "Mark ___ de ___ au Maroc.";
         LevelQuestions[38] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
         LevelQuestions[39] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
         LevelQuestions[40] = "La fille ___ et elle ___ son bras.";
@@ -216,8 +216,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[33] = "<b>Manon <u>a visité</u> Paris avec sa fanille l'année <u>passé</u>.</b>";
         shownAnswer[34] = "<b>Le garçon méchant <u>a joué</u> aux jeux de vidéo au lieu de ___ ses devoirs.</b>";
         shownAnswer[35] = "<b>Le garçon méchant <u>a joué</u> aux jeux de vidéo au lieu de ___ ses devoirs.</b>";
-        shownAnswer[36] = "<b>Marle <u>rêve</u> de ___ au Marco.</b>";
-        shownAnswer[37] = "<b>Marle <u>rêve</u> de <u>voyager</u> au Marco.</b>";
+        shownAnswer[36] = "<b>Mark <u>rêve</u> de ___ au Maroc.</b>";
+        shownAnswer[37] = "<b>Mark <u>rêve</u> de <u>voyager</u> au Maroc.</b>";
         shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues ___ pour Crop Over.</b>";
         shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues <u>nouvelles</u> pour Crop Over.</b>";
         shownAnswer[40] = "<b>La fille <u>est tombé</u> et elle ___ son bras.</b>";
