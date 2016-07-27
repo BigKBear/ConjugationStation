@@ -1068,7 +1068,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionTwoSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1076,7 +1076,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 1:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1098,7 +1098,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionTwoSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Q1 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1114,7 +1114,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 2:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1136,7 +1136,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionThreeSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1144,7 +1144,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 3:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q2 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1166,7 +1166,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionThreeSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1182,7 +1182,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 4:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q3 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1204,7 +1204,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionFourSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1212,7 +1212,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 5:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q3 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1234,7 +1234,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionFourSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1250,7 +1250,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 6:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1273,7 +1273,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1281,7 +1281,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 7:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q4 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1304,7 +1304,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q2 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1321,7 +1321,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 8:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1344,7 +1344,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1352,7 +1352,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 9:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1375,7 +1375,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1392,7 +1392,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 10:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1414,7 +1414,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionSevenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1422,7 +1422,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 11:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1444,7 +1444,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionSevenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q6 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1460,7 +1460,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 12:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1482,7 +1482,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionEightSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1490,7 +1490,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 13:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1512,7 +1512,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionEightSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1528,7 +1528,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 14:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1550,7 +1550,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionNineSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1558,7 +1558,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 15:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1580,7 +1580,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             QuestionNineSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1596,7 +1596,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 16:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1619,7 +1619,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1627,7 +1627,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 17:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q9 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1650,7 +1650,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
-                            Toast.makeText(getApplicationContext(), "L1Q9 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1667,7 +1667,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 18:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q10 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1701,7 +1701,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                             }
                         } else {
-                            Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
                         break;
@@ -1709,12 +1709,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 19:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "Q10 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                            tvWrong.setText("Q10p2 Correct");
                             level1Score++;
                             leveldone = 10;//to start Q2L1
                             tvScore.setText(String.valueOf(level1Score) + "/10");
@@ -1733,7 +1732,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                             }
                         } else {
-                            Toast.makeText(getApplicationContext(), "Q10 Wrong", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1758,7 +1757,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 0:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1780,7 +1779,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionOneP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -1788,7 +1787,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 1:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1810,7 +1809,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionOneP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1825,7 +1824,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 2:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1847,7 +1846,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -1855,7 +1854,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 3:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q1.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1877,7 +1876,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q1.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1893,7 +1892,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 4:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q2 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1915,7 +1914,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTwoP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -1923,7 +1922,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 5:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q2 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1945,7 +1944,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTwoP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q2 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1960,7 +1959,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 6:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q2.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1982,7 +1981,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -1990,7 +1989,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 7:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q2.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2012,7 +2011,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q2.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2028,7 +2027,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 8:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2050,7 +2049,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2058,7 +2057,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 9:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q3 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2080,7 +2079,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q3 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2095,7 +2094,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 10:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2117,7 +2116,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2125,7 +2124,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 11:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q3.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2147,7 +2146,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q3.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2163,7 +2162,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 12:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2185,7 +2184,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFourP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2193,7 +2192,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 13:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q4 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2215,7 +2214,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFourP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q4 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2230,7 +2229,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 14:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2252,7 +2251,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFiveSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2260,7 +2259,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 15:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q4.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2282,7 +2281,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFiveSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q4.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2298,7 +2297,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 16:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2320,7 +2319,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFiveP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2328,7 +2327,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 17:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2350,7 +2349,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionFiveP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2365,7 +2364,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 18:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2387,7 +2386,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSixSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2395,7 +2394,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 19:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q5 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2417,7 +2416,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSixSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q5 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2433,7 +2432,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 20:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2455,7 +2454,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSixP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2463,7 +2462,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 21:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q6 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2485,7 +2484,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSixP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q6 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2500,7 +2499,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 22:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2522,7 +2521,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2530,7 +2529,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 23:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q6.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2552,7 +2551,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q6.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2568,7 +2567,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 24:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2590,7 +2589,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSevenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2598,7 +2597,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 25:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2620,7 +2619,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionSevenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2635,7 +2634,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 26:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2657,7 +2656,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionEightSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2665,7 +2664,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 27:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q7 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2687,7 +2686,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionEightSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q7 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2703,7 +2702,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 28:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2725,7 +2724,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionEightP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2733,7 +2732,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 29:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2755,7 +2754,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionEightP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2770,7 +2769,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 30:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2792,7 +2791,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionNineSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2800,7 +2799,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 31:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L1Q8 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2822,7 +2821,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionNineSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L1Q8 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2838,7 +2837,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 32:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2860,7 +2859,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2868,7 +2867,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 33:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2890,7 +2889,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q9 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2905,7 +2904,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 34:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2927,7 +2926,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -2935,7 +2934,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 35:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2957,7 +2956,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q9.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2974,7 +2973,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 36:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -2996,7 +2995,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -3004,7 +3003,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 37:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3026,7 +3025,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q10 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3042,7 +3041,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 38:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3076,7 +3075,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                 }
                             } else {
-                                Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
                             }
                             break;
@@ -3084,12 +3083,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                         case 39:
                             if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
                                 //go to next question
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
-                                tvWrong.setText("L1Q10p2 Correct");
+                                tvWrong.setText("C'est Ça!");
                                 level1Score++;
                                 leveldone = 40;//to start Q2L1
                                 tvScore.setText(String.valueOf(level1Score) + "/20");
@@ -3108,7 +3107,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                 }
                             } else {
-                                Toast.makeText(getApplicationContext(), "L2Q10.1 Wrong", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                 tvWrong.setVisibility(View.VISIBLE);
                                 tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3136,7 +3135,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 0:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3158,7 +3157,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionOneP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3166,7 +3165,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 1:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3188,7 +3187,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionOneP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3203,7 +3202,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 2:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3225,7 +3224,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTwoSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3233,7 +3232,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 3:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3255,7 +3254,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTwoSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3271,7 +3270,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 4:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q2 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3293,7 +3292,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTwoP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3301,7 +3300,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 5:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q2 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3323,7 +3322,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTwoP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q2 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3360,7 +3359,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionThreeSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3368,7 +3367,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 7:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q2.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3390,7 +3389,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionThreeSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q2.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3406,7 +3405,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 8:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q3 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3428,7 +3427,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionThreeP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3436,7 +3435,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 9:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q3 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3458,7 +3457,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionThreeP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q3 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3473,7 +3472,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 10:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q3.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3495,7 +3494,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFourSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3503,7 +3502,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 11:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].three1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q3.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3525,7 +3524,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFourSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q3.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3541,7 +3540,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 12:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q4 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3563,7 +3562,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFourP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3571,7 +3570,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 13:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q4 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3593,7 +3592,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFourP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q4 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3608,7 +3607,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 14:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q4.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3630,7 +3629,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFiveSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3638,7 +3637,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 15:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].four1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q4.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3660,7 +3659,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFiveSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q4.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3676,7 +3675,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 16:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3698,7 +3697,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFiveP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3706,7 +3705,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 17:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3728,7 +3727,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionFiveP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3743,7 +3742,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 18:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3765,7 +3764,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSixSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3773,7 +3772,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 19:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].five1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3795,7 +3794,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSixSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q5 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3811,7 +3810,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 20:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q6 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3833,7 +3832,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSixP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3841,7 +3840,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 21:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q6 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3863,7 +3862,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSixP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q6 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3878,7 +3877,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 22:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q6.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3900,7 +3899,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSevenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3908,7 +3907,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 23:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].six1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q6.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3930,7 +3929,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSevenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q6.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3946,7 +3945,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 24:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3968,7 +3967,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSevenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -3976,7 +3975,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 25:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -3998,7 +3997,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionSevenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4013,7 +4012,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 26:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4035,7 +4034,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionEightSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4043,7 +4042,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 27:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].seven1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4065,7 +4064,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionEightSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q7 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4081,7 +4080,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 28:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4103,7 +4102,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionEightP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4111,7 +4110,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 29:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4133,7 +4132,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionEightP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4148,7 +4147,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 30:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4170,7 +4169,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionNineSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4178,7 +4177,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 31:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].eight1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4200,7 +4199,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionNineSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q8 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4216,7 +4215,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 32:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q9 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4238,7 +4237,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionNineP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4246,7 +4245,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 33:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q9 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4268,7 +4267,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionNineP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q9 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4283,7 +4282,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 34:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q9.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4305,7 +4304,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4313,7 +4312,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 35:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].nine1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q9.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4335,7 +4334,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q9.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4352,7 +4351,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 36:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q9.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4374,7 +4373,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4382,7 +4381,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 37:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q109 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4404,7 +4403,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     QuestionTenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L3Q10 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4420,7 +4419,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 38:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L2Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4454,7 +4453,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
                                 }
                                 break;
@@ -4462,7 +4461,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             case 39:
                                 if (userAnswer.matches(levelData[prefs.getInt("level", -1)].ten1.correctAnswer)) {
                                     //go to next question
-                                    Toast.makeText(getApplicationContext(), "L3Q10.1 Correct", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -4485,7 +4484,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
-                                    Toast.makeText(getApplicationContext(), "L1Q10.1 Wrong", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                     tvWrong.setVisibility(View.VISIBLE);
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
