@@ -150,7 +150,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         correctAnswers[22] = "faites";
         correctAnswers[23] = "a dit";
         correctAnswers[24] = "mets";
-        correctAnswers[25] = "mordent";
+        correctAnswers[25] = "piquent";
         correctAnswers[26] = "a fini";
         correctAnswers[27] = "peut";
         correctAnswers[28] = "jouerons";
@@ -258,13 +258,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         verb[22] = "FAIRE";
         verb[23] = "DIRE";
         verb[24] = "METTRE";
-        verb[25] = "MORDRE";
+        verb[25] = "PIQUER";
         verb[26] = "FINIR";
         verb[27] = "POUVOIR";
         verb[28] = "JOUER";
         verb[29] = "";
 
-        verb[30] = "MORDRER";
+        verb[30] = "MORDRE";
         verb[31] = "";
         verb[32] = "VISITER";
         verb[33] = "";
@@ -432,9 +432,9 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[24][0] = "met";
         questionAnswers[24][1] = "mets";
         questionAnswers[24][2] = "mettent";
-        questionAnswers[25][0] = "mordent";
-        questionAnswers[25][1] = "mord";
-        questionAnswers[25][2] = "mords";
+        questionAnswers[25][0] = "piquons";
+        questionAnswers[25][1] = "piquez";
+        questionAnswers[25][2] = "piquent";
 
         questionAnswers[26][0] = "a fini";
         questionAnswers[26][1] = "est fini ";
