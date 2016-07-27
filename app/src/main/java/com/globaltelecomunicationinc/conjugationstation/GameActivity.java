@@ -616,27 +616,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     levelData[i].ten1 = questionData[49];
                     break;
                 default:
-                    levelData[i].one = questionData[0];
-                    levelData[i].two = questionData[1];
-                    levelData[i].three = questionData[2];
-                    levelData[i].four = questionData[3];
-                    levelData[i].five = questionData[4];
-                    levelData[i].six = questionData[5];
-                    levelData[i].seven = questionData[6];
-                    levelData[i].eight = questionData[7];
-                    levelData[i].nine = questionData[8];
-                    levelData[i].ten = questionData[9];
-
-                    levelData[i].one1 = questionData[10];
-                    levelData[i].two1 = questionData[11];
-                    levelData[i].three1 = questionData[12];
-                    levelData[i].four1 = questionData[13];
-                    levelData[i].five1 = questionData[14];
-                    levelData[i].six1 = questionData[15];
-                    levelData[i].seven1 = questionData[16];
-                    levelData[i].eight1 = questionData[17];
-                    levelData[i].nine1 = questionData[18];
-                    levelData[i].ten1 = questionData[19];
+                    Log.i("Level Data"," error loading level");
                     break;
             }
         }
