@@ -85,8 +85,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[11] = "Ma soeur ___ est trois ans ___ jeune que moi.";
         LevelQuestions[12] = "Les Jeux Olympiques ___ lieu cet ___ au Bréil.";
         LevelQuestions[13] = "Les Jeux Olympiques ___ lieu cet ___ au Bréil.";
-        LevelQuestions[14] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
-        LevelQuestions[15] = "Il ___ aujourd 'hui, donc je ___ mon parapluie.";
+        LevelQuestions[14] = "Il ___ aujourd 'hui, donc je vais ___ mon parapluie.";
+        LevelQuestions[15] = "Il ___ aujourd 'hui, donc je vais ___ mon parapluie.";
         LevelQuestions[16] = "Les Mathématiques ___ si ___ les élèves endorment.";
         LevelQuestions[17] = "Les Mathématiques ___ si ___ les élèves endorment.";
         LevelQuestions[18] = "Chloe ___ sa jambe ___ soir.";
@@ -193,8 +193,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[11] = "<b>Ma soeur <u>cadette</u> est trois ans <u>plus</u> jeune que moi.</b>";
         shownAnswer[12] = "<b>Les Jeux Olympiques <u>auront</u> lieu ___ en Bréil.</b>";
         shownAnswer[13] = "<b>Les Jeux Olympiques <u>auront</u> lieu <u>été</u> en Bréil.</b>";
-        shownAnswer[14] = "<b>Il <u>pleut</u> aujourd 'hui, donc je ___ mon parapluie.</b>";
-        shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je <u>umon</u> parapluie.</b>";
+        shownAnswer[14] = "<b>Il <u>pleut</u> aujourd 'hui, donc je vais ___ mon parapluie.</b>";
+        shownAnswer[15] = "<b>Il <u>pleut</u> aujourd 'hui, donc je vais <u>umon</u> parapluie.</b>";
         shownAnswer[16] = "<b>Les Mathematiques <u>sont</u> si ___ les élèves endorment.</b>";
         shownAnswer[17] = "<b>Les Mathematiques <u>sont</u> si <u>ennuyeuses</u> les élèves endorment.</b>";
         shownAnswer[18] = "<b>Chloe <u>a blessé</u> sa jambe ___ soir.</b>";
@@ -374,7 +374,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
         questionAnswers[8][0] = "neige";
         questionAnswers[8][1] = "neigera";
-        questionAnswers[8][2] = "neige";
+        questionAnswers[8][2] = "neiger";
 
         questionAnswers[9][0] = "chemise";
         questionAnswers[9][1] = "pantalons";
@@ -506,7 +506,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[45][1] = "vois";
         questionAnswers[45][2] = "voir";
 
-        questionAnswers[46][0] = "a accompagné";
+        questionAnswers[46][0] = "a \naccompagné";
         questionAnswers[46][1] = "accompagné";
         questionAnswers[46][2] = "accompagne";
         questionAnswers[47][0] = "me perds";
@@ -930,7 +930,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         resetGame();
 
         if (theUser.hasWon()) {
-            gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
+            gameOver("Game Finished", "You have read over the game!", "Restart", "quitter");
         }
     }
 
@@ -1046,7 +1046,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     case 0:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                             //go to next question
-                            Toast.makeText(getApplicationContext(), "L1Q1 Correct", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
                             tvWrong.setBackgroundResource(R.drawable.brick2);
@@ -1692,13 +1692,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
                                 //QuestionOneSetup();
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "", "Formidable!", "Start level 2", "Quit");
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
                             } else {
                                 //game over
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 0).apply();
                                 leveldone = 0;
-                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
@@ -1723,13 +1723,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                QuestionOneSetup();
+                                //QuestionOneSetup();
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
                             } else {
                                 //game over
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 0).apply();
                                 leveldone = 0;
-                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "Q10 Wrong", Toast.LENGTH_SHORT).show();
@@ -1743,7 +1744,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             prefs.edit().putInt("levelOneOver", level1Score).apply();
                             prefs.edit().putInt("level", 0).apply();
                             leveldone = 0;
-                            gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                            gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                         }
                         break;
                 }
@@ -3065,13 +3066,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                     prefs.edit().putInt("level", 2).apply();
                                     leveldone = 0;
-                                    QuestionOneSetup();
+                                    //QuestionOneSetup();
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
                                 } else {
                                     //game over
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
-                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                 }
                             } else {
                                 Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
@@ -3096,13 +3098,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                     prefs.edit().putInt("level", 2).apply();
                                     leveldone = 0;
-                                    QuestionOneSetup();
+                                    //QuestionOneSetup();
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
                                 } else {
                                     //game over
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                     prefs.edit().putInt("level", 0).apply();
                                     leveldone = 0;
-                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                 }
                             } else {
                                 Toast.makeText(getApplicationContext(), "L2Q10.1 Wrong", Toast.LENGTH_SHORT).show();
@@ -3116,7 +3119,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                             }
                             break;
                     }
@@ -4441,13 +4444,14 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 2).apply();
                                         leveldone = 0;
-                                        QuestionOneSetup();
+                                        //QuestionOneSetup();
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20 Excelent mon superstar!", "Très bien fait!\nVous avez completé le jue.", "Rejouer", "quitter");
                                     } else {
                                         //game over
                                         prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 2).apply();
                                         leveldone = 0;
-                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
                                     Toast.makeText(getApplicationContext(), "Try again ", Toast.LENGTH_SHORT).show();
@@ -4472,13 +4476,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 2).apply();
                                         leveldone = 0;
-                                        gameOver("Game Finished", "You have read over the game!", "Restart", "Quit");
+                                        gameOver("Game Finished", "You have read over the game!", "Restart", "quitter");
                                     } else {
                                         //game over
                                         prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                         prefs.edit().putInt("level", 0).apply();
                                         leveldone = 0;
-                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
                                     Toast.makeText(getApplicationContext(), "L1Q10.1 Wrong", Toast.LENGTH_SHORT).show();
@@ -4492,7 +4496,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
-                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "Quit");
+                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
 
                                 }
                                 break;
