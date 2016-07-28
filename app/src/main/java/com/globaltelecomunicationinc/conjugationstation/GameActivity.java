@@ -616,7 +616,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     levelData[i].ten1 = questionData[49];
                     break;
                 default:
-                    Log.i("Level Data"," error loading level");
+                    Log.i("Level Data", " error loading level");
                     break;
             }
         }
@@ -981,6 +981,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     }
                 }).setCancelable(false)
                 .show();
+
     }
 
     @Override
@@ -1044,6 +1045,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 switch (leveldone) {
                     //level 1 question 1 attempt 1
                     case 0:
+                        relativeLayout.setBackgroundResource(R.drawable.brick2);
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                             //go to next question
                             Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
@@ -1071,9 +1073,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
                         }
+                        //relativeLayout.setBackgroundResource(R.drawable.background2);
                         break;
                     //level 1 question 1 attempt 2
                     case 1:
+                        relativeLayout.setBackgroundResource(R.drawable.brick2);
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
                             //go to next question
                             Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
@@ -1112,6 +1116,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                     //level 1 question 2 attempt 1
                     case 2:
+                        relativeLayout.setBackgroundResource(R.drawable.background2);
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                             //go to next question
                             Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
@@ -1691,14 +1696,27 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                //QuestionOneSetup();
                                 levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
-                            } else {
-                                //game over
+                            } else if ((level1Score == 9) || (level1Score == 8)) {
+                                //Start Over level 1
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 0).apply();
                                 leveldone = 0;
-                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas", "Commencez niveau 1", "quitter");
+                            }else{
+                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1722,14 +1740,27 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                //QuestionOneSetup();
                                 levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
-                            } else {
-                                //game over
+                            } else if ((level1Score == 9) || (level1Score == 8)) {
+                                //Start Over level 1
                                 prefs.edit().putInt("levelOneOver", level1Score).apply();
                                 prefs.edit().putInt("level", 0).apply();
                                 leveldone = 0;
-                                gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas", "Commencez niveau 1", "quitter");
+                            }else{
+                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1743,7 +1774,33 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             prefs.edit().putInt("levelOneOver", level1Score).apply();
                             prefs.edit().putInt("level", 0).apply();
                             leveldone = 0;
-                            gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                            if (level1Score == 10) {
+                                //Start level 2
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 1).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                            } else if ((level1Score == 9) || (level1Score == 8)) {
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 1", "quitter");
+                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                //Start Over level 1
+                                prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                prefs.edit().putInt("level", 0).apply();
+                                leveldone = 0;
+                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas", "Commencez niveau 1", "quitter");
+                            }else{
+                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                            }
                         }
                         break;
                 }
@@ -3061,18 +3118,37 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 level2Score++;
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                                 if (level2Score == 20) {
-                                    //Start level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
-                                    leveldone = 0;
-                                    //QuestionOneSetup();
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
-                                } else {
-                                    //game over
+                                    //Start level 3
                                     prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
-                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
+                                } else if (level2Score >= 18){
+                                    //Start Over level 2
+                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait!", "Commencez niveau 2", "quitter");
+                                } else if (level2Score >= 15){
+                                    //Start Over level 2
+                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais reflechez un peu.", "Commencez niveau 2", "quitter");
+                                } else if (level2Score >= 10){
+                                    //Start Over level 2
+                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "", "Commencez niveau 2", "quitter");
+                                }else if (level2Score >= 0){
+                                    //Start Over level 2
+                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile mais persistez!", "Commencez niveau 2", "quitter");
+                                }else{
+                                    Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
                                 }
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3092,19 +3168,36 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 level1Score++;
                                 leveldone = 40;//to start Q2L1
                                 tvScore.setText(String.valueOf(level1Score) + "/20");
-                                if (level1Score == 20) {
+                                if (level1Score == 10) {
                                     //Start level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
+                                    prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                    prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
-                                    //QuestionOneSetup();
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
-                                } else {
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                } else if ((level1Score == 9) || (level1Score == 8)) {
                                     //game over
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                    prefs.edit().putInt("levelOneOver", level1Score).apply();
                                     prefs.edit().putInt("level", 0).apply();
                                     leveldone = 0;
-                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Genial!", "Commencez niveau 2", "quitter");
+                                } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 4)) {
+                                    //game over
+                                    prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 2", "quitter");
+                                } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                    //game over
+                                    prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de fair des erreurs. Ne lâchezpas", "Commencez niveau 2", "quitter");
+                                } else {
+                                    //game over
+                                    prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                    prefs.edit().putInt("level", 0).apply();
+                                    leveldone = 0;
+                                    gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                 }
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4438,19 +4531,36 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     }.start();
                                     level3Score++;
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
-                                    if (level3Score == 20) {
+                                    if (level1Score == 20) {
                                         //Start level 2
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 1).apply();
                                         leveldone = 0;
-                                        //QuestionOneSetup();
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20 Excelent mon superstar!", "Très bien fait!\nVous avez completé le jue.", "Rejouer", "quitter");
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 19) {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Genial!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 17) {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 14) {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de fair des erreurs. Ne lâchezpas", "Commencez niveau 2", "quitter");
                                     } else {
                                         //game over
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
                                         leveldone = 0;
-                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4471,17 +4581,35 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     leveldone = 40;//to start Q2L1
                                     tvScore.setText(String.valueOf(level1Score) + "/20");
                                     if (level1Score == 20) {
-                                        //Start level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
+                                        //Start level 2
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 1).apply();
                                         leveldone = 0;
-                                        gameOver("Game Finished", "You have read over the game!", "Restart", "quitter");
-                                    } else {
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 19) {
                                         //game over
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
                                         prefs.edit().putInt("level", 0).apply();
                                         leveldone = 0;
-                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Genial!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 17) {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort!", "Commencez niveau 2", "quitter");
+                                    } else if (level1Score >= 14) {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de fair des erreurs. Ne lâchezpas", "Commencez niveau 2", "quitter");
+                                    } else {
+                                        //game over
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        gameOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + " correct", "Nice try but you must get all question correct to finish the game", "Retry", "quitter");
                                     }
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
