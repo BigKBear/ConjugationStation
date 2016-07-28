@@ -292,13 +292,13 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         image[0] = "bus_stop";
         image[1] = "sick_person";
         image[2] = "sun_heat";
-        image[3] = "dress";
-        image[4] = "shoes";
-        image[5] = "background2";
-        image[6] = "background2";
-        image[7] = "background2";
+        image[3] = "background2";
+        image[4] = "dress";
+        image[5] = "shoes";
+        image[6] = "mango";
+        image[7] = "beach";
         image[8] = "background2";
-        image[9] = "background2";
+        image[9] = "pants";
 
         image[10] = "background2";
         image[11] = "background2";
@@ -310,8 +310,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         image[17] = "background2";
         image[18] = "background2";
         image[19] = "background2";
-        image[20] = "background2";
-        image[21] = "background2";
+        image[20] = "talk_off";
+        image[21] = "talk_off";
         image[22] = "background2";
         image[23] = "background2";
         image[24] = "background2";
@@ -1173,7 +1173,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                     //level 1 question 2 attempt 1
                     case 2:
-                        relativeLayout.setBackgroundResource(R.drawable.background2);
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].two.correctAnswer)) {
                             //go to next question
                             Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_SHORT).show();
