@@ -510,7 +510,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[45][1] = "vois";
         questionAnswers[45][2] = "voir";
 
-        questionAnswers[46][0] = "a \naccompagné";
+        questionAnswers[46][0] = "a_accompagné";
         questionAnswers[46][1] = "accompagné";
         questionAnswers[46][2] = "accompagne";
         questionAnswers[47][0] = "me perds";
@@ -949,8 +949,6 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
     public void QuestionTenP2Setup() {
         relativeLayout.setBackgroundResource(getDrawable(this,levelData[prefs.getInt("level", -1)].ten1.bgpicture));
         relativeLayout.getBackground().setAlpha(120);
-        String pic = levelData[prefs.getInt("level", -1)].ten1.bgpicture;
-        relativeLayout.setBackgroundResource(getResources().getIdentifier(pic,"raw","com.globaltelecomunicationinc.conjugationstation"));
         tvLevelName.setText(levelData[prefs.getInt("level", -1)].name);
         tvScore.setText(String.valueOf(levelData[prefs.getInt("level", -1)].score));
 
@@ -1121,11 +1119,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionTwoSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 2;//to start Q2L1
-                            QuestionTwoSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1152,11 +1150,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionTwoSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 2;//to start Q2L1
-                            QuestionTwoSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1166,7 +1164,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                             leveldone = 2;//to start Q2L1
-                            QuestionTwoSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionTwoSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1189,12 +1196,12 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
 
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
+                                    QuestionThreeSetup();
                                     tvWrong.setVisibility(View.INVISIBLE);
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 4;//to start Q2L1
-                            QuestionThreeSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1220,11 +1227,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionThreeSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 4;//to start Q3L1
-                            QuestionThreeSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1234,7 +1241,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                             leveldone = 4;//to start Q3L1
-                            QuestionThreeSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionThreeSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1258,11 +1274,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionFourSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 6;//to start Q4L1
-                            QuestionFourSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1288,11 +1304,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionFourSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 6;//to start Q4L1
-                            QuestionFourSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1302,7 +1318,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                             leveldone = 6;//to start Q4L1
-                            QuestionFourSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionFourSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1326,11 +1351,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionFiveSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 8;//to start Q2L1
-                            QuestionFiveSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1357,11 +1382,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionFiveSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 8;//to start Q4L1
-                            QuestionFiveSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1372,7 +1397,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                             leveldone = 8;//to start Q4L1
-                            QuestionFiveSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionFiveSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         }
@@ -1397,11 +1431,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionSixSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 10;//to start Q6L1
-                            QuestionSixSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1428,11 +1462,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionSixSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 10;//to start Q6L1
-                            QuestionSixSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1443,7 +1477,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                             leveldone = 10;//to start Q6L1
-                            QuestionSixSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionSixSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         }
@@ -1468,11 +1511,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionSevenSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 12;//to start Q7L1
-                            QuestionSevenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1498,11 +1541,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionSevenSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 12;//to start Q7L1
-                            QuestionSevenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1512,7 +1555,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                             leveldone = 12;//to start Q7L1
-                            QuestionSevenSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionSevenSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1536,11 +1588,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionEightSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 14;//to start Q2L1
-                            QuestionEightSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1566,11 +1618,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionEightSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 14;//to start Q8L1
-                            QuestionEightSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1580,7 +1632,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                             leveldone = 14;//to start Q8L1
-                            QuestionEightSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionEightSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1604,11 +1665,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionNineSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 16;//to start Q2L1
-                            QuestionNineSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1634,11 +1695,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionNineSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 16;//to start Q9L1
-                            QuestionNineSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1648,7 +1709,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                             leveldone = 16;//to start Q9L1
-                            QuestionNineSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionNineSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                         }
                         break;
@@ -1672,11 +1742,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionTenSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 18;//to start Q2L1
-                            QuestionTenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1703,11 +1773,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    QuestionTenSetup();
                                 }
                             }.start();
                             level1Score++;
                             leveldone = 18;//to start Q10L1
-                            QuestionTenSetup();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         } else {
@@ -1718,7 +1788,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                             leveldone = 18;//to start Q10L1
-                            QuestionTenSetup();
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    QuestionTenSetup();
+                                }
+                            }.start();
                             tvScore.setText(String.valueOf(level1Score) + "/10");
                             tvVerb.setVisibility(View.INVISIBLE);
                         }
@@ -1743,39 +1822,39 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 public void onFinish() {
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                     tvWrong.setVisibility(View.INVISIBLE);
+                                    if (level1Score == 10) {
+                                        //Start level 2
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 1).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                    } else if ((level1Score == 9) || (level1Score == 8)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    }else{
+                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                    }
                                 }
                             }.start();
                             level1Score++;
                             tvScore.setText(String.valueOf(level1Score) + "/10");
-                            if (level1Score == 10) {
-                                //Start level 2
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 1).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
-                            } else if ((level1Score == 9) || (level1Score == 8)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            }else{
-                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                            }
                         } else {
                             Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                             leveldone++;
@@ -1791,37 +1870,48 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             tvWrong.setBackgroundResource(R.drawable.brick2);
                             tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                             level1Score++;
-                            leveldone = 10;//to start Q2L1
+                            leveldone = 200;//to start Q2L1
                             tvScore.setText(String.valueOf(level1Score) + "/10");
-                            if (level1Score == 10) {
-                                //Start level 2
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 1).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
-                            } else if ((level1Score == 9) || (level1Score == 8)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            }else{
-                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                            }
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
+                                    tvWrong.setVisibility(View.INVISIBLE);
+                                    if (level1Score == 10) {
+                                        //Start level 2
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 1).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                    } else if ((level1Score == 9) || (level1Score == 8)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    }else{
+                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }.start();
                         } else {
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
@@ -1834,35 +1924,44 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                             prefs.edit().putInt("levelOneOver", level1Score).apply();
                             prefs.edit().putInt("level", 0).apply();
                             leveldone = 0;
-                            if (level1Score == 10) {
-                                //Start level 2
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 1).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
-                            } else if ((level1Score == 9) || (level1Score == 8)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
-                                //Start Over level 1
-                                prefs.edit().putInt("levelOneOver", level1Score).apply();
-                                prefs.edit().putInt("level", 0).apply();
-                                leveldone = 0;
-                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
-                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                            }else{
-                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                            }
+                            new CountDownTimer(1500, 1000) {
+                                public void onTick(long miliSecondsUntilDone) {
+                                    //Countdown is counting down (in this case every second)
+                                    Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                }
+
+                                public void onFinish() {
+                                    if (level1Score == 10) {
+                                        //Start level 2
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 1).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Formidable!", "Commencez niveau 2", "quitter");
+                                    } else if ((level1Score == 9) || (level1Score == 8)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Génial! \n Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 7) || (level1Score == 6) || (level1Score == 5) ){
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "Bon Effort! \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    } else if ((level1Score == 4) || (level1Score == 3) || (level1Score == 2) || (level1Score == 1) || (level1Score == 0)) {
+                                        //Start Over level 1
+                                        prefs.edit().putInt("levelOneOver", level1Score).apply();
+                                        prefs.edit().putInt("level", 0).apply();
+                                        leveldone = 0;
+                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level1Score + "/10", "C'est normale de faire des erreurs. Ne lâchez pas \n" +
+                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                    }else{
+                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            }.start();
                         }
                         break;
                 }
@@ -1891,11 +1990,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionOneP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1921,11 +2020,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionOneP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -1935,7 +2034,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                 leveldone = 2;//to start Q2L1
-                                QuestionOneP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionOneP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -1958,11 +2066,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTwoSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -1988,11 +2096,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTwoSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2002,7 +2110,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                 leveldone = 4;//to start Q2L1
-                                QuestionTwoSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionTwoSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2026,11 +2143,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTwoP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 6;//to start Q2L1
-                                QuestionTwoP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2056,11 +2173,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTwoP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 6;//to start Q3L1
-                                QuestionTwoP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2070,7 +2187,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                 leveldone = 6;//to start Q3L1
-                                QuestionTwoP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionTwoP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2093,11 +2219,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionThreeSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 8;//to start Q2L1
-                                QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2123,11 +2249,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionThreeSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 8;//to start Q3L1
-                                QuestionThreeSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2137,7 +2263,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                 leveldone = 8;//to start Q3L1
-                                QuestionThreeSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionThreeSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2161,11 +2296,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionThreeP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 10;//to start Q4L1
-                                QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2191,11 +2326,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionThreeP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 10;//to start Q4L1
-                                QuestionThreeP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2205,7 +2340,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                 leveldone = 10;//to start Q4L1
-                                QuestionThreeP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionThreeP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2228,11 +2372,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFourSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 12;//to start Q4L1
-                                QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2258,11 +2402,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFourSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 12;//to start Q4L1
-                                QuestionFourSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2272,7 +2416,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                 leveldone = 12;//to start Q4L1
-                                QuestionFourSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionFourSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2296,11 +2449,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFourP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 14;//to start Q2L1
-                                QuestionFourP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2326,11 +2479,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFourP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 14;//to start Q4L1
-                                QuestionFourP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2340,7 +2493,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 leveldone = 14;//to start Q4L1
-                                QuestionFourP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionFourP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2363,11 +2525,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFiveSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 16;//to start Q2L1
-                                QuestionFiveSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2393,11 +2555,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFiveSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 16;//to start Q4L1
-                                QuestionFiveSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2407,7 +2569,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                 leveldone = 16;//to start Q4L1
-                                QuestionFiveSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionFiveSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2431,11 +2602,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFiveP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 18;//to start Q6L1
-                                QuestionFiveP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2461,11 +2632,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionFiveP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 18;//to start Q6L1
-                                QuestionFiveP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2475,7 +2646,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 leveldone = 18;//to start Q6L1
-                                QuestionFiveP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionFiveP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2498,11 +2678,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSixSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 20;//to start Q6L1
-                                QuestionSixSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2528,11 +2708,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSixSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 20;//to start Q6L1
-                                QuestionSixSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2542,7 +2722,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                 leveldone = 20;//to start Q6L1
-                                QuestionSixSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionSixSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2566,11 +2755,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSixP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 22;//to start Q7L1
-                                QuestionSixP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2596,11 +2785,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSixP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 22;//to start Q7L1
-                                QuestionSixP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2610,7 +2799,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                 leveldone = 22;//to start Q7L1
-                                QuestionSixP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionSixP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2633,11 +2831,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSevenSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 24;//to start Q7L1
-                                QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2663,11 +2861,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSevenSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 24;//to start Q7L1
-                                QuestionSevenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2677,7 +2875,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                 leveldone = 24;//to start Q7L1
-                                QuestionSevenSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionSevenSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2701,11 +2908,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSevenP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 26;//to start Q2L1
-                                QuestionSevenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2731,11 +2938,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionSevenP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 26;//to start Q8L1
-                                QuestionSevenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2745,7 +2952,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 leveldone = 26;//to start Q8L1
-                                QuestionSevenP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionSevenP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2768,11 +2984,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionEightSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 28;//to start Q2L1
-                                QuestionEightSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2798,11 +3014,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionEightSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 28;//to start Q8L1
-                                QuestionEightSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2812,7 +3028,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                 leveldone = 28;//to start Q8L1
-                                QuestionEightSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionEightSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2836,11 +3061,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionEightP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 30;//to start Q2L1
-                                QuestionEightP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2866,11 +3091,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionEightP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 30;//to start Q9L1
-                                QuestionEightP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2880,7 +3105,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                 leveldone = 30;//to start Q9L1
-                                QuestionEightP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionEightP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2903,11 +3137,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionNineSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 32;//to start Q2L1
-                                QuestionNineSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -2933,11 +3167,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionNineSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 32;//to start Q9L1
-                                QuestionNineSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -2947,7 +3181,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                 leveldone = 32;//to start Q9L1
-                                QuestionNineSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionNineSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -2971,11 +3214,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionNineP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 34;//to start Q2L1
-                                QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3001,11 +3244,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionNineP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 34;//to start Q10L1
-                                QuestionNineP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3015,7 +3258,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 leveldone = 34;//to start Q10L1
-                                QuestionNineP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionNineP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -3038,11 +3290,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTenSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 36;//to start Q2L1
-                                QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3068,11 +3320,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTenSetup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 36;//to start Q10L1
-                                QuestionTenSetup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3082,7 +3334,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                 leveldone = 36;//to start Q10L1
-                                QuestionTenSetup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionTenSetup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -3107,11 +3368,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTenP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 38;//to start Q2L1
-                                QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3137,11 +3398,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        QuestionTenP2Setup();
                                     }
                                 }.start();
                                 level2Score++;
                                 leveldone = 38;//to start Q10L1
-                                QuestionTenP2Setup();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3151,7 +3412,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                 leveldone = 36;//to start Q10L1
-                                QuestionTenP2Setup();
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        QuestionTenP2Setup();
+                                    }
+                                }.start();
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
                             }
                             break;
@@ -3175,47 +3445,47 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     public void onFinish() {
                                         TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                         tvWrong.setVisibility(View.INVISIBLE);
+                                        if (level2Score == 20) {
+                                            //Start level 3
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 2).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
+                                        } else if (level2Score >= 18){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 15){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 10){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else if (level2Score >= 0){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else{
+                                            Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                        }
                                     }
                                 }.start();
                                 level2Score++;
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
-                                if (level2Score == 20) {
-                                    //Start level 3
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
-                                } else if (level2Score >= 18){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 15){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 10){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else if (level2Score >= 0){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else{
-                                    Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                }
                             } else {
                                 Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                 leveldone++;
@@ -3234,43 +3504,54 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 level1Score++;
                                 leveldone = 40;//to start Q2L1
                                 tvScore.setText(String.valueOf(level1Score) + "/20");
-                                if (level2Score == 20) {
-                                    //Start level 3
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
-                                } else if (level2Score >= 18){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 15){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 10){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else if (level2Score >= 0){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else{
-                                    Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                }
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
+                                        tvWrong.setVisibility(View.INVISIBLE);
+                                        if (level2Score == 20) {
+                                            //Start level 3
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 2).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
+                                        } else if (level2Score >= 18){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 15){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 10){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else if (level2Score >= 0){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else{
+                                            Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                }.start();
                             } else {
                                 Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                 TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
@@ -3279,47 +3560,56 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                 tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten1.shownAnswer));
                                 tvScore.setText(String.valueOf(level2Score) + "/20");
-                                leveldone = 10;//to start Q2L1
+                                leveldone = 20;//to start Q2L1
                                 prefs.edit().putInt("levelTwoOver", level2Score).apply();
                                 prefs.edit().putInt("level", 1).apply();
                                 leveldone = 0;
-                                if (level2Score == 20) {
-                                    //Start level 3
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 2).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
-                                } else if (level2Score >= 18){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 15){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                } else if (level2Score >= 10){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else if (level2Score >= 0){
-                                    //Start Over level 2
-                                    prefs.edit().putInt("levelTwoOver", level2Score).apply();
-                                    prefs.edit().putInt("level", 1).apply();
-                                    leveldone = 0;
-                                    levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
-                                            " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                }else{
-                                    Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                }
+                                new CountDownTimer(1500, 1000) {
+                                    public void onTick(long miliSecondsUntilDone) {
+                                        //Countdown is counting down (in this case every second)
+                                        Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                    }
+
+                                    public void onFinish() {
+                                        if (level2Score == 20) {
+                                            //Start level 3
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 2).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Superbe!", "Commencez niveau 3", "quitter");
+                                        } else if (level2Score >= 18){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bon travail \n Presque Parfait! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 15){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Pas mal! \n Mais réfléchissez un peu. \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        } else if (level2Score >= 10){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "Bien, mais continuez à travaller \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else if (level2Score >= 0){
+                                            //Start Over level 2
+                                            prefs.edit().putInt("levelTwoOver", level2Score).apply();
+                                            prefs.edit().putInt("level", 1).apply();
+                                            leveldone = 0;
+                                            levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level2Score + "/20", "C'est pas facile, mais persistez! \n" +
+                                                    " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                        }else{
+                                            Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                        }
+                                    }
+                                }.start();
                             }
                             break;
                     }
@@ -3351,11 +3641,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionOneP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 2;//to start Q2L1
-                                    QuestionOneP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3381,11 +3671,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionOneP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 2;//to start Q2L1
-                                    QuestionOneP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3395,7 +3685,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one.shownAnswer));
                                     leveldone = 2;//to start Q2L1
-                                    QuestionOneP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionOneP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3418,11 +3717,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTwoSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 4;//to start Q2L1
-                                    QuestionTwoSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3448,11 +3747,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTwoSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 4;//to start Q2L1
-                                    QuestionTwoSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3462,7 +3761,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].one1.shownAnswer));
                                     leveldone = 4;//to start Q2L1
-                                    QuestionTwoSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionTwoSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3486,11 +3794,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTwoP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 6;//to start Q2L1
-                                    QuestionTwoP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3516,11 +3824,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTwoP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 6;//to start Q3L1
-                                    QuestionTwoP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3530,7 +3838,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two.shownAnswer));
                                     leveldone = 6;//to start Q3L1
-                                    QuestionTwoP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionTwoP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3553,11 +3870,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionThreeSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 8;//to start Q2L1
-                                    QuestionThreeSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3583,11 +3900,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong2);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionThreeSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 8;//to start Q3L1
-                                    QuestionThreeSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3597,7 +3914,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].two1.shownAnswer));
                                     leveldone = 8;//to start Q3L1
-                                    QuestionThreeSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionThreeSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3621,11 +3947,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionThreeP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 10;//to start Q4L1
-                                    QuestionThreeP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3651,11 +3977,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionThreeP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 10;//to start Q4L1
-                                    QuestionThreeP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3665,7 +3991,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three.shownAnswer));
                                     leveldone = 10;//to start Q4L1
-                                    QuestionThreeP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionThreeP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3688,11 +4023,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFourSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 12;//to start Q4L1
-                                    QuestionFourSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3718,11 +4053,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong3);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFourSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 12;//to start Q4L1
-                                    QuestionFourSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3732,7 +4067,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].three1.shownAnswer));
                                     leveldone = 12;//to start Q4L1
-                                    QuestionFourSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionFourSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3756,11 +4100,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFourP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 14;//to start Q2L1
-                                    QuestionFourP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3786,11 +4130,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFourP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 14;//to start Q4L1
-                                    QuestionFourP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3800,7 +4144,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     leveldone = 14;//to start Q4L1
-                                    QuestionFourP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionFourP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3823,11 +4176,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFiveSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 16;//to start Q2L1
-                                    QuestionFiveSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3853,11 +4206,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong4);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFiveSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 16;//to start Q4L1
-                                    QuestionFiveSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3867,7 +4220,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].four.shownAnswer));
                                     leveldone = 16;//to start Q4L1
-                                    QuestionFiveSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionFiveSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3891,11 +4253,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFiveP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 18;//to start Q6L1
-                                    QuestionFiveP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3921,11 +4283,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionFiveP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 18;//to start Q6L1
-                                    QuestionFiveP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -3935,7 +4297,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     leveldone = 18;//to start Q6L1
-                                    QuestionFiveP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionFiveP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -3958,11 +4329,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSixSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 20;//to start Q6L1
-                                    QuestionSixSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -3988,11 +4359,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong5);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSixSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 20;//to start Q6L1
-                                    QuestionSixSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4002,7 +4373,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].five.shownAnswer));
                                     leveldone = 20;//to start Q6L1
-                                    QuestionSixSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionSixSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4026,11 +4406,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSixP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 22;//to start Q7L1
-                                    QuestionSixP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4056,11 +4436,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSixP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 22;//to start Q7L1
-                                    QuestionSixP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4070,7 +4450,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six.shownAnswer));
                                     leveldone = 22;//to start Q7L1
-                                    QuestionSixP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionSixP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4093,11 +4482,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSevenSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 24;//to start Q7L1
-                                    QuestionSevenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4123,11 +4512,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong6);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSevenSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 24;//to start Q7L1
-                                    QuestionSevenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4137,7 +4526,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].six1.shownAnswer));
                                     leveldone = 24;//to start Q7L1
-                                    QuestionSevenSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionSevenSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4161,11 +4559,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSevenP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 26;//to start Q2L1
-                                    QuestionSevenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4191,11 +4589,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionSevenP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 26;//to start Q8L1
-                                    QuestionSevenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4205,7 +4603,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     leveldone = 26;//to start Q8L1
-                                    QuestionSevenP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionSevenP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4228,11 +4635,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionEightSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 28;//to start Q2L1
-                                    QuestionEightSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4258,11 +4665,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong7);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionEightSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 28;//to start Q8L1
-                                    QuestionEightSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4272,7 +4679,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].seven.shownAnswer));
                                     leveldone = 28;//to start Q8L1
-                                    QuestionEightSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionEightSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4296,11 +4712,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionEightP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 30;//to start Q2L1
-                                    QuestionEightP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4326,11 +4742,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionEightP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 30;//to start Q9L1
-                                    QuestionEightP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4340,7 +4756,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight.shownAnswer));
                                     leveldone = 30;//to start Q9L1
-                                    QuestionEightP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionEightP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4363,11 +4788,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionNineSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 32;//to start Q2L1
-                                    QuestionNineSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4393,11 +4818,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionNineSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 32;//to start Q9L1
-                                    QuestionNineSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4407,7 +4832,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].eight1.shownAnswer));
                                     leveldone = 32;//to start Q9L1
-                                    QuestionNineSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionNineSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4431,11 +4865,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionNineP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 34;//to start Q2L1
-                                    QuestionNineP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4461,11 +4895,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionNineP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 34;//to start Q10L1
-                                    QuestionNineP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4475,7 +4909,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     leveldone = 34;//to start Q10L1
-                                    QuestionNineP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionNineP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4498,11 +4941,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong9);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTenSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 36;//to start Q2L1
-                                    QuestionTenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4528,11 +4971,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTenSetup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 36;//to start Q10L1
-                                    QuestionTenSetup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4542,7 +4985,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].nine.shownAnswer));
                                     leveldone = 36;//to start Q10L1
-                                    QuestionTenSetup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionTenSetup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4567,11 +5019,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTenP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 38;//to start Q2L1
-                                    QuestionTenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
@@ -4597,11 +5049,11 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong8);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            QuestionTenP2Setup();
                                         }
                                     }.start();
                                     level3Score++;
                                     leveldone = 36;//to start Q10L1
-                                    QuestionTenP2Setup();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
@@ -4611,7 +5063,16 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
                                     leveldone = 36;//to start Q10L1
-                                    QuestionTenP2Setup();
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            QuestionTenP2Setup();
+                                        }
+                                    }.start();
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
                                 }
                                 break;
@@ -4635,47 +5096,47 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                         public void onFinish() {
                                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
                                             tvWrong.setVisibility(View.INVISIBLE);
+                                            if (level3Score == 20) {
+                                                //Start level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 2).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Félicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
+                                            } else if (level3Score >= 18){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 15){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 10){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else if (level3Score >= 0){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else{
+                                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                            }
                                         }
                                     }.start();
                                     level3Score++;
                                     tvScore.setText(String.valueOf(level3Score) + "/20");
-                                    if (level3Score == 20) {
-                                        //Start level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Fèlicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
-                                    } else if (level3Score >= 18){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 15){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 10){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else if (level3Score >= 0){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                    }
                                 } else {
                                     Toast.makeText(getApplicationContext(), "réessayer ", Toast.LENGTH_SHORT).show();
                                     leveldone++;
@@ -4694,43 +5155,54 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     level1Score++;
                                     leveldone = 40;//to start Q2L1
                                     tvScore.setText(String.valueOf(level1Score) + "/20");
-                                    if (level3Score == 20) {
-                                        //Start level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Fèlicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
-                                    } else if (level3Score >= 18){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 15){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 10){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else if (level3Score >= 0){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                    }
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
+
+                                        public void onFinish() {
+                                            TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
+                                            tvWrong.setVisibility(View.INVISIBLE);
+                                            if (level3Score == 20) {
+                                                //Start level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 2).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Félicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
+                                            } else if (level3Score >= 18){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 15){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 10){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else if (level3Score >= 0){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else{
+                                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    }.start();
                                 } else {
                                     Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_SHORT).show();
                                     TextView tvWrong = (TextView) findViewById(R.id.tvWrong10);
@@ -4743,44 +5215,52 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     prefs.edit().putInt("levelThreeOver", level3Score).apply();
                                     prefs.edit().putInt("level", 1).apply();
                                     leveldone = 0;
-                                    if (level3Score == 20) {
-                                        //Start level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 2).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Fèlicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
-                                    } else if (level3Score >= 18){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 15){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    } else if (level3Score >= 10){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else if (level3Score >= 0){
-                                        //Start Over level 3
-                                        prefs.edit().putInt("levelThreeOver", level3Score).apply();
-                                        prefs.edit().putInt("level", 1).apply();
-                                        leveldone = 0;
-                                        levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
-                                                " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
-                                    }else{
-                                        Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
-                                    }
+                                    new CountDownTimer(1500, 1000) {
+                                        public void onTick(long miliSecondsUntilDone) {
+                                            //Countdown is counting down (in this case every second)
+                                            Log.i("Seconds Left", String.valueOf(miliSecondsUntilDone / 1000));
+                                        }
 
+                                        public void onFinish() {
+                                            if (level3Score == 20) {
+                                                //Start level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 2).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Excellent mon superstar! \n Félicitations! Vous avez complété le jeu.", "Rejouer?", "quitter");
+                                            } else if (level3Score >= 18){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Assez bien! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 15){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Allez, tenez bon vous y etes presque! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            } else if (level3Score >= 10){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Pas mal, \n mais continuez à travailler. \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else if (level3Score >= 0){
+                                                //Start Over level 3
+                                                prefs.edit().putInt("levelThreeOver", level3Score).apply();
+                                                prefs.edit().putInt("level", 1).apply();
+                                                leveldone = 0;
+                                                levelOver(levelData[prefs.getInt("level", -1)].name + "\n " + level3Score + "/20", "Réfléchissez un peu \n Bon courage! \n" +
+                                                        " Bien joué mais toutes les réponses doivent être correctes  pour avancer.", "réessayer", "quitter");
+                                            }else{
+                                                Toast.makeText(getApplicationContext(), "Error occured please restart.", Toast.LENGTH_SHORT).show();
+                                            }
+                                        }
+                                    }.start();
                                 }
                                 break;
                         }
@@ -4811,7 +5291,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                 Toast.makeText(getApplicationContext(), "Pause Button clicked ", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnQuit:
-                finish();
+                Intent g = new Intent(GameActivity.this, MainActivity.class);
+                startActivity(g);
                 break;
         }
     }
