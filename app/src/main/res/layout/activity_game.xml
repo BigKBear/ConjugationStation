@@ -63,7 +63,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tvQuestion"
-        android:fillViewport="false">
+        android:fillViewport="false"
+        android:layout_above="@+id/btnPause">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -245,16 +246,6 @@
             android:textSize="12sp" />
 
     </LinearLayout>
-
-    <TextView
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="Correct!"
-        android:id="@+id/tvResult"
-        android:textSize="40sp"
-        android:layout_above="@+id/btnPause"
-        android:layout_centerHorizontal="true"
-        android:visibility="invisible"  />
 
     <TextView
         android:layout_width="wrap_content"
