@@ -112,8 +112,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         LevelQuestions[35] = "Le garçon méchant ___ aux jeux vidéo au lieu de ___ ses devoirs.";
         LevelQuestions[36] = "Mark ___ de ___ au Maroc.";
         LevelQuestions[37] = "Mark ___ de ___ au Maroc.";
-        LevelQuestions[38] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
-        LevelQuestions[39] = "Cecile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
+        LevelQuestions[38] = "Cécile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
+        LevelQuestions[39] = "Cécile et ses amies ___ en ville pour acheter les tenues ___ pour Crop Over.";
         LevelQuestions[40] = "La fille ___ et elle ___ son bras.";
         LevelQuestions[41] = "La fille ___ et elle ___ son bras.";
         LevelQuestions[42] = "Elodie ___ beaucoup parce que son chat ___.";
@@ -220,8 +220,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[35] = "<b>Le garçon méchant <u>a joué</u> aux jeux de vidéo au lieu de ___ ses devoirs.</b>";
         shownAnswer[36] = "<b>Mark <u>rêve</u> de ___ au Maroc.</b>";
         shownAnswer[37] = "<b>Mark <u>rêve</u> de <u>voyager</u> au Maroc.</b>";
-        shownAnswer[38] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues ___ pour Crop Over.</b>";
-        shownAnswer[39] = "<b>Cecile et ses amies <u>sont allé</u> en ville pour acheter les tenues <u>nouvelles</u> pour Crop Over.</b>";
+        shownAnswer[38] = "<b>Cécile et ses amies <u>sont allé</u> en ville pour acheter les tenues ___ pour Crop Over.</b>";
+        shownAnswer[39] = "<b>Cécile et ses amies <u>sont allé</u> en ville pour acheter les tenues <u>nouvelles</u> pour Crop Over.</b>";
         shownAnswer[40] = "<b>La fille <u>est tombé</u> et elle ___ son bras.</b>";
         shownAnswer[41] = "<b>La fille <u>est tombé</u> et elle <u>a cassé</u> son bras.</b>";
         shownAnswer[42] = "<b>Elodie a <u>pleuré</u> beaucoup parce son chat ___.</b>";
@@ -234,7 +234,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         shownAnswer[49] = "<b>Nous <u>avons réussi</u> à nons examens donc hes parents nous <u>achèteront</u> la glace.</b>";
 
         String[] verb = new String[50];
-        verb[0] = "ASSISTER";
+        verb[0] = "ATTENDRE";
         verb[1] = "AVOIR";
         verb[2] = "FAIRE";
         verb[3] = "AIMER";
@@ -509,8 +509,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
         questionAnswers[45][1] = "vois";
         questionAnswers[45][2] = "voir";
 
-        questionAnswers[46][0] = "a_accompagné";
-        questionAnswers[46][1] = "accompagné";
+        questionAnswers[46][0] = "accompagnent";
+        questionAnswers[46][1] = "accompagner";
         questionAnswers[46][2] = "accompagne";
         questionAnswers[47][0] = "me perds";
         questionAnswers[47][1] = "se perd";
@@ -1131,8 +1131,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     //level 1 question 1 attempt 1
                     case 0:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                            MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
-                            mp.start();
+                            /*MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
+                            mp.start();*/
                             //go to next question
                             Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_LONG).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
@@ -1164,8 +1164,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                     //level 1 question 1 attempt 2
                     case 1:
                         if (userAnswer.matches(levelData[prefs.getInt("level", -1)].one.correctAnswer)) {
-                            MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
-                            mp.start();
+                            /*MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
+                            mp.start();*/
                             //go to next question
                             Toast.makeText(getApplicationContext(), "C'est Ça!", Toast.LENGTH_LONG).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
@@ -1189,8 +1189,8 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                 }
                             }.start();
                         } else {
-                            MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
-                            mp.start();
+                            /*MediaPlayer mp = MediaPlayer.create(getApplicationContext(),R.raw.angry_chicken);
+                            mp.start();*/
                             Toast.makeText(getApplicationContext(), "pas exactement", Toast.LENGTH_LONG).show();
                             TextView tvWrong = (TextView) findViewById(R.id.tvWrong1);
                             tvWrong.setVisibility(View.VISIBLE);
@@ -5086,7 +5086,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                             tvWrong.setVisibility(View.INVISIBLE);
                                             QuestionTenP2Setup();
                                             level3Score++;
-                                            leveldone = 36;//to start Q10L1
+                                            leveldone = 38;//to start Q10L1
                                             tvScore.setText(String.valueOf(level3Score) + "/20");
                                         }
                                     }.start();
@@ -5097,7 +5097,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setBackgroundResource(R.drawable.brick2);
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText(Html.fromHtml(levelData[prefs.getInt("level", -1)].ten.shownAnswer));
-                                    leveldone = 36;//to start Q10L1
+                                    leveldone = 38;//to start Q10L1
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
                                             //Countdown is counting down (in this case every second)
@@ -5188,7 +5188,7 @@ public class GameActivity extends AppCompatActivity implements View.OnClickListe
                                     tvWrong.setGravity(Gravity.CENTER_VERTICAL);
                                     tvWrong.setText("L1Q10p2 Correct");
                                     level1Score++;
-                                    leveldone = 40;//to start Q2L1
+                                    //leveldone = 40;//to start Q2L1
                                     tvScore.setText(String.valueOf(level1Score) + "/20");
                                     new CountDownTimer(1500, 1000) {
                                         public void onTick(long miliSecondsUntilDone) {
